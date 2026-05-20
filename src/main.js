@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Loading screen fade out
-window.addEventListener('load', () => {
+function hideLoader() {
   const loader = document.getElementById('loading-screen');
   if (loader) {
     setTimeout(() => {
@@ -49,4 +49,12 @@ window.addEventListener('load', () => {
       }, 500);
     }, 600);
   }
-});
+}
+
+if (document.readyState === 'complete') {
+  hideLoader();
+} else {
+  window.addEventListener('load', hideLoader);
+  // Fallback just in case load event fails or takes too long
+  setTimeout(hideLoader, 3000);
+}
