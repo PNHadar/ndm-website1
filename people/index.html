@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>People & Labs - NDM Group</title>
+    <style>
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1.5rem;
+        margin-bottom: 4rem;
+      }
+      
+      .staff-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .name-card {
+        background: var(--glass-bg);
+        border: 1px solid var(--glass-border);
+        border-radius: 12px;
+        overflow: hidden;
+        text-align: center;
+        transition: transform 0.3s ease, background 0.3s ease;
+        cursor: pointer;
+        position: relative;
+      }
+
+      .name-card:hover {
+        transform: translateY(-5px);
+        background: rgba(255,255,255,0.05);
+      }
+
+      .name-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-bottom: 1px solid var(--glass-border);
+        object-position: top; /* Important for headshots */
+      }
+
+      .name-card-content {
+        padding: 1.5rem 1rem;
+      }
+
+      .name-card-content h3 {
+        margin-bottom: 0.25rem;
+        font-size: 1.1rem;
+      }
+
+      .name-card-content p {
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        line-height: 1.3;
+      }
+
+      @media (max-width: 1200px) {
+        .team-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .team-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .staff-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 480px) {
+        .team-grid, .staff-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Modal Styles */
+      .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(5px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+      }
+
+      .modal-overlay.active {
+        opacity: 1;
+        pointer-events: all;
+      }
+
+      .modal-content {
+        background: #111;
+        border: 1px solid var(--glass-border);
+        border-radius: 16px;
+        width: 90%;
+        max-width: 600px;
+        padding: 2.5rem;
+        position: relative;
+        transform: translateY(20px);
+        transition: transform 0.3s ease;
+      }
+
+      .modal-overlay.active .modal-content {
+        transform: translateY(0);
+      }
+
+      .modal-close {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        background: none;
+        border: none;
+        color: var(--text-muted);
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+
+      .modal-close:hover {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Global Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="/" class="nav-brand" style="font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem;">
+          <img src="/photos/NDMLogo.png" alt="NDM Logo" style="height: 32px; width: auto;">
+          <span><strong>N</strong>euro<strong>D</strong>ynamics & <strong>M</strong>odulation (NDM) Group</span>
+        </a>
+        <button class="mobile-menu-btn" aria-label="Toggle Navigation">☰</button>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/research/">Research & Teams</a></li>
+          <li><a href="/people/" class="active">People & Labs</a></li>
+          <li><a href="/resources/">Resources & Opportunities</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <main style="padding-top: calc(var(--nav-height) + 4rem); min-height: 80vh; padding-bottom: 4rem;">
+      <div class="container">
+        
+        <div style="text-align: center; margin-bottom: 4rem;">
+          <h1 class="text-gradient fade-in">People & Labs</h1>
+          <p class="text-muted fade-in" style="font-size: 1.2rem; max-width: 800px; margin: 0 auto;">
+            Click on a lab below to view the Principal Investigator's bio and link to their associated research teams.
+          </p>
+        </div>
+
+        <h2 class="fade-in" style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem;">Principal Investigator Labs</h2>
+        
+        <div class="team-grid fade-in">
+          <!-- Cash Lab -->
+          <div class="name-card" onclick="openModal('modal-cash')">
+            <img src="/photos/SydneyCash_headshot_cropped.jpg" alt="Sydney Cash">
+            <div class="name-card-content">
+              <h3>Cash Lab</h3>
+              <p>Dr. Sydney Cash</p>
+            </div>
+          </div>
+
+          <!-- Paulk Lab -->
+          <div class="name-card" onclick="openModal('modal-paulk')">
+            <img src="/photos/AngeliquePaulk_headshot.png" alt="Angelique Paulk">
+            <div class="name-card-content">
+              <h3 style="color: #f43f5e;">Paulk Lab</h3>
+              <p>Dr. Angelique Paulk</p>
+            </div>
+          </div>
+
+          <!-- Salami Lab -->
+          <div class="name-card" onclick="openModal('modal-salami')">
+            <img src="/photos/PariyaSalami_headshot.png" alt="Pariya Salami">
+            <div class="name-card-content">
+              <h3>Salami Lab</h3>
+              <p>Dr. Pariya Salami</p>
+            </div>
+          </div>
+
+          <!-- Zelmann Lab -->
+          <div class="name-card" onclick="openModal('modal-zelmann')">
+            <img src="/photos/RinaZelmann_headshot.png" alt="Rina Zelmann">
+            <div class="name-card-content">
+              <h3>Zelmann Lab</h3>
+              <p>Dr. Rina Zelmann</p>
+            </div>
+          </div>
+
+          <!-- Hadar Lab -->
+          <div class="name-card" onclick="openModal('modal-hadar')">
+            <img src="/photos/PeterHadar_headshot.png" alt="Peter Hadar">
+            <div class="name-card-content">
+              <h3 style="color: #eab308;">Hadar Lab</h3>
+              <p>Dr. Peter Hadar</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="fade-in" style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--glass-border); padding-bottom: 0.5rem;">Fellows & Staff</h2>
+        
+        <div class="staff-grid fade-in">
+          
+          <div class="name-card">
+            <img src="/photos/YanglingChou_headshot.png" alt="Yangling Chou">
+            <div class="name-card-content">
+              <h3>Yangling Chou</h3>
+              <p>Program Director of CNTR &<br>Laboratory Manager of the NDM Group</p>
+            </div>
+          </div>
+
+          <div class="name-card">
+            <img src="/photos/AndrewShoPerley_Headshot.jpg" alt="Andrew Sho Perley">
+            <div class="name-card-content">
+              <h3>Andrew Sho Perley, Ph.D.</h3>
+              <p>Fellow</p>
+            </div>
+          </div>
+
+          <div class="name-card">
+            <img src="/photos/TamirAvigdor_headshot.jpeg" alt="Tamir Avigdor">
+            <div class="name-card-content">
+              <h3>Tamir Avigdor, Ph.D.</h3>
+              <p>Fellow</p>
+            </div>
+          </div>
+
+          <div class="name-card">
+            <img src="/photos/TommyWilson_headshot.jpg" alt="Tommy Wilson">
+            <div class="name-card-content">
+              <h3>Tommy Wilson, M.D., Ph.D.</h3>
+              <p>Fellow</p>
+            </div>
+          </div>
+
+          <div class="name-card">
+            <img src="/photos/DevangSehgal_headshot.jpg" alt="Devang Sehgal">
+            <div class="name-card-content">
+              <h3>Devang Sehgal</h3>
+              <p>Graduate Student</p>
+            </div>
+          </div>
+
+          <div class="name-card">
+            <img src="/photos/JasmineZou_headshot.jpeg" alt="Jasmine Zou">
+            <div class="name-card-content">
+              <h3>Jasmine Zou</h3>
+              <p>Graduate Student</p>
+            </div>
+          </div>
+
+          <div class="name-card">
+            <img src="/photos/HaziqRabbani_headshot.jpeg" alt="Haziq Rabbani">
+            <div class="name-card-content">
+              <h3>Haziq Rabbani</h3>
+              <p>Graduate Student</p>
+            </div>
+          </div>
+
+          <div class="name-card">
+            <img src="/photos/IpsitaDas_headshot.jpg" alt="Ipsita Das">
+            <div class="name-card-content">
+              <h3>Ipsita Das</h3>
+              <p>Clinical Research Coordinator</p>
+            </div>
+          </div>
+
+          <div class="name-card">
+            <img src="/photos/BrianCoughlin_headshot.png" alt="Brian Coughlin">
+            <div class="name-card-content">
+              <h3>Brian Coughlin</h3>
+              <p>Senior Clinical Research Technician</p>
+            </div>
+          </div>
+
+          <div class="name-card">
+            <img src="/photos/EmoryPeng_headshot.jpg" alt="Emory Peng">
+            <div class="name-card-content">
+              <h3>Emory Peng</h3>
+              <p>Clinical Research Technician</p>
+            </div>
+          </div>
+
+          <div class="name-card">
+            <img src="/photos/KrishmaShenoy_headshot.jpeg" alt="Krishma Shenoy">
+            <div class="name-card-content">
+              <h3>Krishma Shenoy</h3>
+              <p>Clinical Research Technician</p>
+            </div>
+          </div>
+
+          <div class="name-card">
+            <img src="/photos/BrianJi_headshot.jpg" alt="Brian Ji">
+            <div class="name-card-content">
+              <h3>Brian Ji</h3>
+              <p>Clinical Research Technician</p>
+            </div>
+          </div>
+
+          <div class="name-card">
+            <img src="/photos/SophiaSherzai_headshot.jpg" alt="Sophia Sherzai">
+            <div class="name-card-content">
+              <h3>Sophia Sherzai</h3>
+              <p>Clinical Research Technician</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Modals -->
+    <div class="modal-overlay" id="modal-cash" onclick="closeModal(event, this)">
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeModal(event, this.parentElement.parentElement)">&times;</button>
+        <h2 style="color: var(--primary-color); margin-bottom: 0.5rem;">Cash Lab</h2>
+        <h4 style="margin-bottom: 1.5rem;">Dr. Sydney Cash, MD, PhD</h4>
+        <p class="text-muted" style="margin-bottom: 1.5rem; line-height: 1.6;">
+          Division Chief of MGB Neurology Division of Epilepsy and Neurophysiology and Professor. He is the founding director of the NDM Group and co-director of the Center for Neurotechnology and Neurorecovery (CNTR). His work focuses on understanding brain physiology at multiple scales, from single neurons to large-scale networks, particularly in the contexts of epilepsy, sleep, and cognition.
+        </p>
+        <p style="font-weight: 500; margin-bottom: 0.5rem;">Associated Teams:</p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="/research/epilepsy-neuromodulation/" class="btn btn-outline" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">Epilepsy & Neuromodulation</a>
+          <a href="/research/cognition-sleep/" class="btn btn-outline" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">Cognition & Sleep</a>
+          <a href="/research/neurotechnology/" class="btn btn-outline" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">Neurotechnology</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-paulk" onclick="closeModal(event, this)">
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeModal(event, this.parentElement.parentElement)">&times;</button>
+        <h2 style="color: #f43f5e; margin-bottom: 0.5rem;">Paulk Lab</h2>
+        <h4 style="margin-bottom: 1.5rem;">Dr. Angelique Paulk, Ph.D.</h4>
+        <p class="text-muted" style="margin-bottom: 1.5rem; line-height: 1.6;">
+          Assistant Professor and a leading neuroscientist focused on systems neuroscience and the development of next-generation high-density recording technologies. Her lab pioneers the use of Neuropixels and advanced microelectrodes in the human brain. Notably, her NIH-funded research is paving the way for the emerging field of Cancer Neuroscience, exploring how tumor infiltration alters neural activity signatures.
+        </p>
+        <p style="font-weight: 500; margin-bottom: 0.5rem;">Associated Teams:</p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="/research/cancer-neuroscience/" class="btn btn-outline" style="font-size: 0.85rem; padding: 0.4rem 0.8rem; border-color: #f43f5e; color: #f43f5e;">Cancer Neuroscience</a>
+          <a href="/research/neurotechnology/" class="btn btn-outline" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">Neurotechnology</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-salami" onclick="closeModal(event, this)">
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeModal(event, this.parentElement.parentElement)">&times;</button>
+        <h2 style="color: var(--primary-color); margin-bottom: 0.5rem;">Salami Lab</h2>
+        <h4 style="margin-bottom: 1.5rem;">Dr. Pariya Salami, Ph.D.</h4>
+        <p class="text-muted" style="margin-bottom: 1.5rem; line-height: 1.6;">
+          Instructor and an investigator focusing on neurophysiology, electroencephalography (EEG), and advanced signal processing. Her lab specializes in deploying sophisticated computational algorithms to extract meaningful patterns from brain activity, significantly contributing to our understanding of epileptic networks and the mechanisms of neuromodulation.
+        </p>
+        <p style="font-weight: 500; margin-bottom: 0.5rem;">Associated Teams:</p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="/research/epilepsy-neuromodulation/" class="btn btn-outline" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">Epilepsy & Neuromodulation</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-zelmann" onclick="closeModal(event, this)">
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeModal(event, this.parentElement.parentElement)">&times;</button>
+        <h2 style="color: var(--primary-color); margin-bottom: 0.5rem;">Zelmann Lab</h2>
+        <h4 style="margin-bottom: 1.5rem;">Dr. Rina Zelmann, Ph.D.</h4>
+        <p class="text-muted" style="margin-bottom: 1.5rem; line-height: 1.6;">
+          Assistant Professor whose lab operates at the intersection of biomedical engineering and clinical neuroscience. Her research heavily utilizes intracranial EEG to map brain dynamics. She plays a crucial role in analyzing high-frequency oscillations and studying both pathological states like epilepsy and physiological states such as sleep and memory consolidation.
+        </p>
+        <p style="font-weight: 500; margin-bottom: 0.5rem;">Associated Teams:</p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="/research/cognition-sleep/" class="btn btn-outline" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">Cognition & Sleep</a>
+          <a href="/research/epilepsy-neuromodulation/" class="btn btn-outline" style="font-size: 0.85rem; padding: 0.4rem 0.8rem;">Epilepsy & Neuromodulation</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-hadar" onclick="closeModal(event, this)">
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeModal(event, this.parentElement.parentElement)">&times;</button>
+        <h2 style="color: #eab308; margin-bottom: 0.5rem;">Hadar Lab</h2>
+        <h4 style="margin-bottom: 1.5rem;">Dr. Peter Hadar, MD, MS</h4>
+        <p class="text-muted" style="margin-bottom: 1.5rem; line-height: 1.6;">
+          Instructor who leads initiatives at the bleeding edge of Artificial Intelligence in medicine. His lab investigates the clinical applications of deep learning and Large Language Models (LLMs) in neurology. This includes developing AI-derived biomarkers from massive sleep EEG cohorts and engineering frameworks to safely integrate generative AI into neurological practice and medical education.
+        </p>
+        <p style="font-weight: 500; margin-bottom: 0.5rem;">Associated Teams:</p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="/research/ai-neurology/" class="btn btn-outline" style="font-size: 0.85rem; padding: 0.4rem 0.8rem; border-color: #eab308; color: #eab308;">AI in Neurology & Neuroscience</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Global Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom">
+          <p>&copy; 2026 NeuroDynamics and NeuroModulation Group - MGH/Harvard. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function openModal(id) {
+        document.getElementById(id).classList.add('active');
+      }
+      function closeModal(e, element) {
+        if (e.target === element || e.target.classList.contains('modal-close')) {
+          element.classList.remove('active');
+        }
+      }
+    </script>
+    <script type="module" src="/main.js"></script>
+    <link rel="stylesheet" href="/style.css">
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - NDM Group</title>
+  </head>
+  <body>
+    <!-- Global Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="/" class="nav-brand" style="font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem;">
+          <img src="/photos/NDMLogo.png" alt="NDM Logo" style="height: 32px; width: auto;">
+          <span><strong>N</strong>euro<strong>D</strong>ynamics & <strong>M</strong>odulation (NDM) Group</span>
+        </a>
+        <button class="mobile-menu-btn" aria-label="Toggle Navigation">☰</button>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/research/">Research & Teams</a></li>
+          <li><a href="/people/">People & Labs</a></li>
+          <li><a href="/resources/">Resources & Opportunities</a></li>
+          <li><a href="/contact/" class="active">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <main style="padding-top: calc(var(--nav-height) + 4rem); min-height: 80vh;">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+          
+          <div class="fade-in">
+            <h1 class="text-gradient">Get In Touch</h1>
+            <p class="text-muted" style="font-size: 1.1rem; margin-bottom: 2rem;">
+              The NDM Group is located at Mass General Brigham and Harvard Medical School.
+            </p>
+            
+            <div class="glass-panel" style="margin-bottom: 2rem;">
+              <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Address</h3>
+              <p class="text-muted">Massachusetts General Hospital<br>55 Fruit Street<br>Boston, MA 02114</p>
+            </div>
+
+            <div class="glass-panel">
+              <h3 style="color: var(--secondary-color); margin-bottom: 0.5rem;">Email</h3>
+              <p class="text-muted"><a href="mailto:HarvardMedicalSchool@example.com" class="text-gradient">HarvardMedicalSchool@example.com</a></p>
+            </div>
+          </div>
+
+          <div class="glass-panel fade-in" style="transition-delay: 0.2s;">
+            <h2 style="margin-bottom: 1.5rem;">Send a Message</h2>
+            <form style="display: flex; flex-direction: column; gap: 1rem;">
+              <div>
+                <label style="display: block; margin-bottom: 0.5rem; color: var(--text-muted);">Name</label>
+                <input type="text" style="width: 100%; padding: 0.8rem; background: rgba(0,0,0,0.2); border: 1px solid var(--glass-border); color: white; border-radius: 8px;" />
+              </div>
+              <div>
+                <label style="display: block; margin-bottom: 0.5rem; color: var(--text-muted);">Email</label>
+                <input type="email" style="width: 100%; padding: 0.8rem; background: rgba(0,0,0,0.2); border: 1px solid var(--glass-border); color: white; border-radius: 8px;" />
+              </div>
+              <div>
+                <label style="display: block; margin-bottom: 0.5rem; color: var(--text-muted);">Message / Inquiry</label>
+                <textarea rows="4" style="width: 100%; padding: 0.8rem; background: rgba(0,0,0,0.2); border: 1px solid var(--glass-border); color: white; border-radius: 8px; resize: vertical;"></textarea>
+              </div>
+              <button type="button" class="btn btn-primary" style="align-self: flex-start; margin-top: 1rem;">Submit Message</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom" style="text-align: center;">
+          <p>&copy; 2026 NeuroDynamics and NeuroModulation Group - MGH/Harvard. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+    <link rel="stylesheet" href="/style.css">
+  </body>
+</html>
