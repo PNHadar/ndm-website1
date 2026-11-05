@@ -1,0 +1,16 @@
+name: case-studies
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - ipython
+  - jupyter
+  - jupyterlab
+  - matplotlib
+  - scipy
+  - numpy
+  - statsmodels
+  - pip
+  - pip:
+      - nitime

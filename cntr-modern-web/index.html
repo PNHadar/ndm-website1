@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="text-scale" content="scale" />
+  <meta name="description" content="MGH Center for Neurotechnology and Neurorecovery (CNTR) — Creating, testing, and deploying novel neurotechnologies to improve the care of people with nervous system injury or disease." />
+  <title>MGH Center for Neurotechnology and Neurorecovery (CNTR) | Harvard Medical School</title>
+
+  <!-- Synchronous theme check to prevent Flash of Unstyled Content (FOUC) -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("cntr-theme");
+        if (saved === "light" || saved === "dark") {
+          document.documentElement.setAttribute("data-theme", saved);
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Institutional Top Bar -->
+  <div class="inst-bar">
+    <div class="container inst-bar__inner">
+      <div class="inst-bar__affil">
+        <span class="inst-badge">MGH &bull; HMS</span>
+        <span>Massachusetts General Hospital &bull; Department of Neurology</span>
+      </div>
+      <div class="inst-bar__links">
+        <a href="/clinical-programs" data-nav="/clinical-programs">Clinical Referrals: (617) 724-9247</a>
+        <a href="/inquiry-services-page" data-nav="/inquiry-services-page">Inquiries &amp; Services</a>
+        <a href="/support-us" data-nav="/support-us">Support CNTR</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- IntersectionObserver sentinel for state-aware sticky header -->
+  <div id="scroll-sentinel" aria-hidden="true" style="block-size:1px;"></div>
+
+  <!-- Primary Sticky Header -->
+  <header class="site-header" data-scrolled="false">
+    <div class="container site-header__inner">
+      <a href="/" data-nav="/" class="brand" aria-label="MGH Center for Neurotechnology and Neurorecovery Home">
+        <div class="brand__mark" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="9" stroke-opacity="0.45"></circle>
+            <path d="M7 12c1.5-3 3.5-3 5 0s3.5 3 5 0" stroke-linecap="round"></path>
+            <circle cx="7" cy="12" r="1.5" fill="currentColor"></circle>
+            <circle cx="12" cy="12" r="1.5" fill="currentColor"></circle>
+            <circle cx="17" cy="12" r="1.5" fill="currentColor"></circle>
+          </svg>
+        </div>
+        <div class="brand__text">
+          <span class="brand__acronym">MGH CNTR</span>
+          <span class="brand__sub">Center for Neurotechnology &amp; Neurorecovery</span>
+        </div>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary Navigation">
+        <a href="/" data-nav="/" data-route="/" class="nav-link">Home</a>
+        <a href="/about" data-nav="/about" data-route="/about" class="nav-link">About</a>
+        <a href="/challenges" data-nav="/challenges" data-route="/challenges" class="nav-link">5 Challenges</a>
+        <a href="/research" data-nav="/research" data-route="/research" class="nav-link">Labs (16)</a>
+        <a href="/ourteam" data-nav="/ourteam" data-route="/ourteam" class="nav-link">Our Team (90)</a>
+        <a href="/clinical-programs" data-nav="/clinical-programs" data-route="/clinical-programs" class="nav-link">Clinical Programs</a>
+        <a href="/clinical-trials" data-nav="/clinical-trials" data-route="/clinical-trials" class="nav-link">Trials</a>
+        <a href="/publications" data-nav="/publications" data-route="/publications" class="nav-link">Publications</a>
+        <a href="/podcast" data-nav="/podcast" data-route="/podcast" class="nav-link">Podcast</a>
+        <a href="/news" data-nav="/news" data-route="/news" class="nav-link">News</a>
+        <a href="/jobs" data-nav="/jobs" data-route="/jobs" class="nav-link">Join Us</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" id="open-search-btn" class="search-trigger" aria-label="Search site">
+          <span aria-hidden="true">&#128269;</span>
+          <span>Search</span>
+          <kbd>⌘K</kbd>
+        </button>
+        <button type="button" id="theme-toggle-btn" class="icon-btn" aria-label="Toggle color theme" title="Toggle light/dark mode">
+          <span aria-hidden="true">&#9680;</span>
+        </button>
+        <button type="button" id="mobile-menu-btn" class="icon-btn mobile-menu-btn" aria-label="Open navigation menu">
+          <span aria-hidden="true">&#9776;</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content" tabindex="-1"></main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>MGH CNTR</h3>
+          <p style="font-size:0.9rem;color:#94a3b8;margin-block-end:0.75rem;">
+            Massachusetts General Hospital<br/>
+            Department of Neurology<br/>
+            Suite #310, 101 Merrimac St.<br/>
+            Boston, MA 02114
+          </p>
+          <p style="font-size:0.9rem;color:#cbd5e1;">
+            Phone: <a href="tel:6177249247" style="color:#38bdf8;">(617) 724-9247</a>
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Research &amp; Discovery</h3>
+          <ul class="footer-links">
+            <li><a href="/research" data-nav="/research">16 Research Laboratories</a></li>
+            <li><a href="/challenges" data-nav="/challenges">Five Core Neurological Challenges</a></li>
+            <li><a href="/publications" data-nav="/publications">Peer-Reviewed Publications</a></li>
+            <li><a href="/clinical-trials" data-nav="/clinical-trials">Active Clinical Trials</a></li>
+            <li><a href="/podcast" data-nav="/podcast">The CNTR Podcast (15 Episodes)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Clinical Programs</h3>
+          <ul class="footer-links">
+            <li><a href="/clinical-programs" data-nav="/clinical-programs">Clinical Programs Overview</a></li>
+            <li><a href="/adult-epilepsy-service" data-nav="/adult-epilepsy-service">MGH Adult Epilepsy Service</a></li>
+            <li><a href="/emerging-consciousness-program" data-nav="/emerging-consciousness-program">Takesian Family Emerging Consciousness Program</a></li>
+            <li><a href="/neurorecovery-clinic" data-nav="/neurorecovery-clinic">MGH NeuroRecovery Clinic</a></li>
+            <li><a href="/brain-computer-interface-clinic" data-nav="/brain-computer-interface-clinic">Brain-Computer Interface (BCI) Clinic</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>People &amp; Community</h3>
+          <ul class="footer-links">
+            <li><a href="/about" data-nav="/about">About CNTR &amp; Leadership</a></li>
+            <li><a href="/ourteam" data-nav="/ourteam">Our Team Directory (90+)</a></li>
+            <li><a href="/our-team-collaborators" data-nav="/our-team-collaborators">Collaborators &amp; Affiliates</a></li>
+            <li><a href="/news" data-nav="/news">News &amp; Media Coverage</a></li>
+            <li><a href="/jobs" data-nav="/jobs">Join Us / Open Positions (7)</a></li>
+            <li><a href="/inquiry-services-page" data-nav="/inquiry-services-page">Inquiries &amp; Collaboration</a></li>
+            <li><a href="/support-us" data-nav="/support-us">Support Our Mission (MGH Giving)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; Massachusetts General Hospital &bull; Center for Neurotechnology and Neurorecovery (CNTR). All rights reserved.</span>
+        <span>Affiliated with Harvard Medical School &bull; Mass General Brigham</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Global Search Modal Dialog (<dialog closedby="any"> + <search> landmark) -->
+  <dialog id="search-dialog" class="site-dialog" closedby="any" aria-labelledby="search-dialog-title">
+    <div class="dialog-header">
+      <div>
+        <span class="card__badge">Instant Directory Search</span>
+        <h2 id="search-dialog-title" style="font-size:1.15rem;margin-block-start:0.2rem;">Search MGH CNTR</h2>
+      </div>
+      <button type="button" class="btn btn--sm btn--outline" data-close-dialog>Close (Esc)</button>
+    </div>
+    <div class="dialog-body">
+      <search aria-label="Global site search">
+        <div class="search-input-wrap">
+          <span class="search-input-icon" aria-hidden="true">&#128269;</span>
+          <input
+            type="search"
+            id="global-search-input"
+            class="search-input"
+            placeholder="Search labs, faculty, publications, clinical trials, podcasts, news, or jobs..."
+            aria-label="Search across all CNTR directories"
+          />
+        </div>
+      </search>
+      <div id="global-search-results" style="display:flex;flex-direction:column;gap:0.6rem;"></div>
+    </div>
+  </dialog>
+
+  <!-- Detail Modal Dialog (Team Bio, Podcast Episode, News Story, Job Details) -->
+  <dialog id="detail-dialog" class="site-dialog" closedby="any" aria-labelledby="detail-dialog-title">
+    <div class="dialog-header">
+      <div>
+        <span id="detail-dialog-badge" class="card__badge">MGH CNTR</span>
+        <h2 id="detail-dialog-title" style="font-size:1.2rem;margin-block-start:0.25rem;">Details</h2>
+      </div>
+      <button type="button" class="btn btn--sm btn--outline" data-close-dialog>Close (Esc)</button>
+    </div>
+    <div id="detail-dialog-body" class="dialog-body"></div>
+  </dialog>
+
+  <!-- Mobile Navigation Drawer Dialog -->
+  <dialog id="mobile-nav-dialog" class="site-dialog" closedby="any" aria-labelledby="mobile-nav-title">
+    <div class="dialog-header">
+      <h2 id="mobile-nav-title" style="font-size:1.1rem;">MGH CNTR Navigation</h2>
+      <button type="button" class="btn btn--sm btn--outline" data-close-dialog>Close</button>
+    </div>
+    <div class="dialog-body">
+      <nav aria-label="Mobile Navigation" style="display:flex;flex-direction:column;gap:0.5rem;">
+        <a href="/" data-nav="/" class="nav-link">Home</a>
+        <a href="/about" data-nav="/about" class="nav-link">About CNTR</a>
+        <a href="/challenges" data-nav="/challenges" class="nav-link">Five Core Challenges</a>
+        <a href="/research" data-nav="/research" class="nav-link">Research Laboratories (16)</a>
+        <a href="/ourteam" data-nav="/ourteam" class="nav-link">Our Team &amp; Faculty (90)</a>
+        <a href="/our-team-collaborators" data-nav="/our-team-collaborators" class="nav-link">Collaborators</a>
+        <a href="/clinical-programs" data-nav="/clinical-programs" class="nav-link">Clinical Programs Overview</a>
+        <a href="/adult-epilepsy-service" data-nav="/adult-epilepsy-service" class="nav-link" style="padding-inline-start:1.5rem;">&bull; Adult Epilepsy Service</a>
+        <a href="/emerging-consciousness-program" data-nav="/emerging-consciousness-program" class="nav-link" style="padding-inline-start:1.5rem;">&bull; Emerging Consciousness Program</a>
+        <a href="/neurorecovery-clinic" data-nav="/neurorecovery-clinic" class="nav-link" style="padding-inline-start:1.5rem;">&bull; NeuroRecovery Clinic</a>
+        <a href="/brain-computer-interface-clinic" data-nav="/brain-computer-interface-clinic" class="nav-link" style="padding-inline-start:1.5rem;">&bull; Brain-Computer Interface Clinic</a>
+        <a href="/clinical-trials" data-nav="/clinical-trials" class="nav-link">Clinical Trials</a>
+        <a href="/publications" data-nav="/publications" class="nav-link">Publications</a>
+        <a href="/podcast" data-nav="/podcast" class="nav-link">The CNTR Podcast (15)</a>
+        <a href="/news" data-nav="/news" class="nav-link">News &amp; Media (29)</a>
+        <a href="/jobs" data-nav="/jobs" class="nav-link">Join Us / Careers (7)</a>
+        <a href="/inquiry-services-page" data-nav="/inquiry-services-page" class="nav-link">Inquiries &amp; Services</a>
+        <a href="/support-us" data-nav="/support-us" class="nav-link">Support Us</a>
+      </nav>
+    </div>
+  </dialog>
+
+  <script src="data/cntr-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

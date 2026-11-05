@@ -534,9 +534,9 @@ function initCommandPalette() {
       { title: 'Paulk Lab — Dr. Angelique Paulk, PhD', category: 'Principal Investigator Lab', url: `${rootPrefix}people/#lab-paulk`, keywords: 'Neuropixels Cancer Neuroscience stimulation microelectrodes' },
       { title: 'Salami Lab — Dr. Pariya Salami, PhD', category: 'Principal Investigator Lab', url: `${rootPrefix}people/#lab-salami`, keywords: 'seizure onset termination dynamics EEG signal processing' },
       { title: 'Zelmann Lab — Dr. Rina Zelmann, PhD', category: 'Principal Investigator Lab', url: `${rootPrefix}people/#lab-zelmann`, keywords: 'CLoSES closed-loop stimulation HFOs sleep spindles iEEG' },
-      { title: 'Hadar Lab — Dr. Peter Hadar, MD, MS (Epilepsy Therapeutics & AI)', category: 'Principal Investigator Lab', url: `${rootPrefix}people/#lab-hadar`, keywords: 'Epilepsy Therapeutics AI neurology LLMs sleep EEG biomarkers prompt engineering' },
+      { title: 'Hadar Lab — Dr. Peter Hadar, MD, MSc (Epilepsy Therapeutics, AI, NeuroEconomics)', category: 'Principal Investigator Lab', url: `${rootPrefix}people/#lab-hadar`, keywords: 'Epilepsy Therapeutics AI NeuroEconomics neurology LLMs sleep EEG biomarkers prompt engineering' },
       { title: 'Publications & Open Science Repository', category: 'Resources', url: `${rootPrefix}resources/#publications`, keywords: 'Nature Neuroscience Nature Communications PNAS Brain Epilepsia papers code' },
-      { title: 'Join NeuroHINTS Lab / Contact Us', category: 'Opportunities & Contact', url: `${rootPrefix}contact/`, keywords: 'postdoc graduate student fellowship MGH Harvard Boston Fruit Street' }
+      { title: 'Join NeuroHINTS Labs / Contact Us', category: 'Opportunities & Contact', url: `${rootPrefix}contact/`, keywords: 'postdoc graduate student fellowship MGH Harvard Boston Fruit Street' }
     ];
 
     dialog.innerHTML = `
@@ -544,7 +544,7 @@ function initCommandPalette() {
         <div class="dialog-header">
           <div>
             <span class="eyebrow" style="margin-block-end:0.35rem;"><span class="eyebrow__dot"></span>Quick Navigation</span>
-            <h2 id="global-search-title" style="font-size:1.35rem;margin:0;">Search NeuroHINTS Lab</h2>
+            <h2 id="global-search-title" style="font-size:1.35rem;margin:0;">Search NeuroHINTS Labs</h2>
           </div>
           <button type="button" class="dialog-close-btn" commandfor="global-search-dialog" command="close" aria-label="Close search dialog">✕</button>
         </div>
@@ -630,7 +630,7 @@ function initContactForm() {
     if (submitBtn) submitBtn.disabled = true;
     if (statusBox) {
       statusBox.hidden = false;
-      statusBox.textContent = '✓ Thank you for reaching out to the NeuroHINTS Lab at MGH / Harvard Medical School. Your inquiry has been prepared.';
+      statusBox.textContent = '✓ Thank you for reaching out to the NeuroHINTS Labs at MGH / Harvard Medical School. Your inquiry has been prepared.';
     }
   });
 }

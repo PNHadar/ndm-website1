@@ -471,12 +471,14 @@
     align-items: center;
     gap: 0.75rem;
     text-decoration: none;
-    flex-shrink: 0;
+    flex-shrink: 1;
+    min-inline-size: 0;
   }
 
   .nav-brand__mark {
     inline-size: 2.85rem;
     block-size: auto;
+    flex-shrink: 0;
     filter: drop-shadow(0 3px 8px rgba(0, 58, 150, 0.16));
     transition: transform 0.3s ease;
   }
@@ -489,6 +491,7 @@
     display: flex;
     flex-direction: column;
     line-height: 1.15;
+    min-inline-size: 0;
   }
 
   .nav-brand__title {
@@ -496,6 +499,7 @@
     font-weight: 800;
     letter-spacing: -0.03em;
     color: var(--text-color);
+    overflow-wrap: break-word;
   }
 
   .nav-brand__title .neuro-part {
@@ -520,6 +524,8 @@
     letter-spacing: 0.03em;
     color: var(--text-muted);
     text-transform: uppercase;
+    white-space: normal;
+    overflow-wrap: break-word;
   }
 
   .nav-links {
@@ -1580,11 +1586,13 @@
     gap: 1.5rem;
   }
 
-  .person-card {
+  .person-card,
+  .pi-card {
     background: var(--surface-color);
     border: 1px solid var(--glass-border);
     border-block-start: 3px solid var(--mgb-teal);
     border-radius: var(--radius-md);
+    padding: 0;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -1594,14 +1602,16 @@
     position: relative;
   }
 
-  .person-card:hover {
+  .person-card:hover,
+  .pi-card:hover {
     transform: translateY(-5px);
     border-color: var(--mgb-teal);
     border-block-start-color: var(--mgb-navy);
     box-shadow: var(--shadow-glow);
   }
 
-  .person-card__img-wrap {
+  .person-card__img-wrap,
+  .pi-card__img-wrap {
     aspect-ratio: 4 / 4.2;
     overflow: hidden;
     background: var(--surface-elevated);
@@ -1609,7 +1619,8 @@
     position: relative;
   }
 
-  .person-card__img-wrap img {
+  .person-card__img-wrap img,
+  .pi-card__img-wrap img {
     inline-size: 100%;
     block-size: 100%;
     object-fit: cover;
@@ -1617,39 +1628,68 @@
     transition: transform 0.4s ease;
   }
 
-  .person-card:hover .person-card__img-wrap img {
+  .person-card:hover .person-card__img-wrap img,
+  .pi-card:hover .pi-card__img-wrap img {
     transform: scale(1.04);
   }
 
-  .person-card__body {
+  .pi-card__lab-badge {
+    position: absolute;
+    inset-block-end: 0.6rem;
+    inset-inline-start: 0.6rem;
+    padding: 0.22rem 0.65rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid rgba(1, 130, 142, 0.35);
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--mgb-navy);
+    box-shadow: 0 4px 12px rgba(0, 58, 150, 0.14);
+  }
+
+  .person-card__body,
+  .pi-card__body {
     padding: 1.15rem 1.2rem;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     gap: 0.25rem;
+    min-inline-size: 0;
   }
 
-  .person-card__role-tag {
+  .person-card__role-tag,
+  .pi-card__role {
     font-family: var(--font-mono);
     font-size: 0.68rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
     color: var(--mgb-teal);
     font-weight: 700;
+    margin: 0;
   }
 
-  .person-card__name {
+  .person-card__name,
+  .pi-card__name {
     font-size: 1.08rem;
     font-weight: 700;
     color: var(--text-color);
     margin: 0;
   }
 
-  .person-card__title {
+  .person-card__title,
+  .pi-card__bio {
     font-size: 0.85rem;
     color: var(--text-muted);
-    line-height: 1.4;
+    line-height: 1.45;
     margin: 0;
+  }
+
+  .pi-card__actions {
+    margin-block-start: auto;
+    padding-block-start: 0.65rem;
   }
 
   /* Native <dialog> Modals with Scroll Containment & Light-Dismiss */
@@ -1945,6 +1985,28 @@
     }
   }
 
+  /* Ensure all grid and flex children can shrink so text wraps naturally on phones */
+  :where(
+    .hero-grid,
+    .scale-panel,
+    .team-showcase-card,
+    .feature-split,
+    .pi-grid,
+    .staff-grid,
+    .pillar-grid,
+    .group-variations-grid,
+    .footer-content,
+    .pub-item
+  ) > * {
+    min-inline-size: 0;
+    max-inline-size: 100%;
+  }
+
+  :where(h1, h2, h3, h4, h5, h6, p, li, a, span, figcaption, .eyebrow, .affil-chip, .tag-chip) {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
   /* Responsive Breakpoints using em units to respect OS/user text scale */
   @media (max-width: 64em) {
     .hero-grid,
@@ -1966,21 +2028,35 @@
       display: none;
     }
 
+    .navbar .container {
+      gap: 0.5rem;
+    }
+
+    .nav-icon-btn span:not([aria-hidden]),
+    .nav-icon-btn kbd {
+      display: none;
+    }
+
+    .nav-icon-btn {
+      padding-inline: 0.55rem;
+    }
+
     .nav-links {
-      position: fixed;
-      inset-block-start: var(--nav-height);
+      position: absolute;
+      inset-block-start: 100%;
       inset-inline: 0;
+      z-index: 1005;
       background: var(--surface-color);
       border-block-end: 2px solid var(--mgb-teal);
       flex-direction: column;
       align-items: stretch;
-      padding: 1.25rem 1.5rem;
-      gap: 0.5rem;
+      padding: 1rem 1.25rem;
+      gap: 0.35rem;
       box-shadow: 0 20px 40px rgba(0, 58, 150, 0.18);
-      transform: translateY(-120%);
+      transform: translateY(-12px);
       opacity: 0;
       pointer-events: none;
-      transition: transform 0.28s ease, opacity 0.28s ease;
+      transition: transform 0.24s ease, opacity 0.24s ease;
     }
 
     .nav-links.show {
@@ -1992,15 +2068,159 @@
     .nav-links a {
       display: block;
       padding: 0.65rem 0.5rem;
-      font-size: 1.05rem;
+      font-size: 1rem;
+      white-space: normal;
     }
 
     .mobile-menu-btn {
       display: inline-flex;
+      flex-shrink: 0;
     }
 
     .footer-content {
       grid-template-columns: 1fr;
+    }
+  }
+
+  /* Phone-Specific Layout & Text Wrapping Refinements (< 38em / ~608px) */
+  @media (max-width: 38em) {
+    .container {
+      padding-inline: 1rem;
+    }
+
+    section {
+      padding-block: 2.25rem;
+    }
+
+    .inst-ribbon__left {
+      font-size: 0.7rem;
+      line-height: 1.35;
+    }
+
+    .nav-brand {
+      gap: 0.5rem;
+    }
+
+    .nav-brand__mark {
+      inline-size: 2.25rem;
+    }
+
+    .nav-brand__title {
+      font-size: 1.08rem;
+    }
+
+    .nav-brand__sub {
+      font-size: 0.58rem;
+      line-height: 1.2;
+    }
+
+    .eyebrow {
+      font-size: 0.68rem;
+      padding: 0.3rem 0.65rem;
+      white-space: normal;
+      line-height: 1.35;
+    }
+
+    .hero {
+      min-block-size: auto;
+      padding-block: 1.75rem 2.25rem;
+    }
+
+    .hero-title {
+      font-size: clamp(1.75rem, 7vw, 2.25rem);
+      line-height: 1.14;
+    }
+
+    .hero-lead {
+      font-size: 1rem;
+      line-height: 1.55;
+    }
+
+    .hero-body {
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+
+    .hero-cta-row {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.65rem;
+    }
+
+    .hero-cta-row .btn {
+      inline-size: 100%;
+      justify-content: center;
+    }
+
+    .mgb-partner-bar {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      padding: 0.75rem;
+      justify-items: start;
+    }
+
+    .mgb-partner-divider {
+      display: none;
+    }
+
+    .mgb-partner-bar img {
+      block-size: 1.5rem;
+      max-inline-size: 100%;
+    }
+
+    .group-variations-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+
+    .group-emblem-card {
+      padding: 0.95rem 0.65rem;
+    }
+
+    .group-emblem-card__img {
+      inline-size: min(100%, 6rem);
+    }
+
+    .pi-grid,
+    .staff-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    /* Compact horizontal-wrap layout for PI and Staff cards on phone so text wraps comfortably beside or below photos */
+    .person-card,
+    .pi-card {
+      display: grid;
+      grid-template-columns: 6.75rem minmax(0, 1fr);
+      align-items: stretch;
+    }
+
+    .person-card__img-wrap,
+    .pi-card__img-wrap {
+      aspect-ratio: auto;
+      min-block-size: 7.5rem;
+      border-block-end: none;
+      border-inline-end: 1px solid var(--glass-border);
+    }
+
+    .person-card__body,
+    .pi-card__body {
+      padding: 0.85rem 0.95rem;
+      min-inline-size: 0;
+    }
+
+    .filter-bar {
+      padding: 0.85rem;
+    }
+
+    .search-input-wrap {
+      flex: 1 1 100%;
+      max-inline-size: 100%;
+    }
+
+    .pub-item {
+      padding: 1rem;
     }
   }
 }
