@@ -102,33 +102,35 @@
 
     <!-- Main Landmark -->
     <main id="main-content" tabindex="-1">
-      <!-- Editorial Academic Hero Section -->
-      <section class="hero">
+      <!-- Home Hero Section: Same Website Layout + New NeuroHINTS Title & Updated Mission Text -->
+      <section class="hero" style="padding-block: clamp(2.5rem, 5vw, 4.25rem);">
         <div class="container hero-grid">
-          <!-- Left Column: Mission & Institutional Identity -->
+          <!-- Left Column: New Title + Updated Original Text -->
           <div class="fade-in">
             <div class="eyebrow">
               <span class="eyebrow__dot" aria-hidden="true"></span>
-              <span>Massachusetts General Hospital &bull; Harvard Medical School</span>
+              <span>Mass General Brigham &bull; Harvard Medical School</span>
             </div>
 
-            <h1 class="hero-title" style="font-family: var(--font-serif); font-weight: 600;">
-              Decoding &amp; Modulating the <span class="text-gradient">Human Brain</span> Across Scales
+            <h1 class="hero-title" style="font-family: var(--font-serif); font-weight: 600; margin-block-end: 0.4rem;">
+              Decoding the <span class="text-gradient">Human Brain</span>
             </h1>
 
-            <p class="hero-lead">
-              The <strong>NeuroHINTS Lab</strong> (<em>Human Intracranial Neurophysiology, Neurotechnology, and Stimulation</em>; formerly the NeuroDynamics &amp; NeuroModulation Group) is a collaborative, team-based research enterprise focused on bringing together experts in neurology, neurosurgery, engineering, and computational neuroscience to understand human brain function under normal and pathological conditions.
+            <p style="font-family: var(--font-serif); font-size: clamp(1.1rem, 1.8vw, 1.35rem); font-weight: 600; color: var(--mgb-navy); line-height: 1.35; margin-block: 0 1.15rem;">
+              <span class="neuro-part">Neuro</span><span class="hints-part">HINTS</span> Lab &mdash; <strong>H</strong>uman <strong>I</strong>ntracranial <strong>N</strong>europhysiology, Neuro<strong>T</strong>echnology, and <strong>S</strong>timulation
             </p>
 
-            <p class="hero-body">
-              We focus on approaches that extract neural information at multiple spatial and temporal scales&mdash;from single cortical neurons recorded with high-density <strong>Neuropixels</strong> and laminar microarrays to large-scale <strong>sEEG/ECoG networks</strong>, closed-loop electrical stimulation, and clinical <strong>AI biomarkers</strong>&mdash;and combine them into a unified understanding of human brain physiology to design therapeutic interventions and brain-computer neuroprosthetics.
+            <p class="hero-lead" style="margin-block-end: 1rem;">
+              The <strong>NeuroHINTS Lab</strong> (<em>Human Intracranial Neurophysiology, Neurotechnology, and Stimulation</em>) is a collaborative, team-based research enterprise focused on bringing together experts to understand brain function under normal and pathological conditions. We aim to develop advanced techniques for diagnosing and treating devastating neuropsychiatric diseases.
+            </p>
+
+            <p class="hero-body" style="margin-block-end: 1.5rem;">
+              We focus on using approaches which extract information at multiple scales and then combine them into a more complete and meaningful understanding of brain physiology; our research allows us to design therapeutic interventions including brain-computer (machine) neuroprosthetics. To reach these goals we are actively developing new methods (neurotechnology &amp; AI) for measuring and modulating neural activity in the brain and using sophisticated signal processing and machine learning techniques to better understand complex neural signals. We are a founding lab of the Clinical Data Animation Center (CDAC) and the Center for Neurotechnology and Neurorecovery (CNTR). We are also part of the consortium of labs involved in the BrainGate Clinical Trial.
             </p>
 
             <div class="hero-cta-row">
-              <a href="./research/" class="btn btn-primary">Explore Research &amp; Teams &rarr;</a>
-              <a href="#people-section" class="btn btn-outline">People &amp; PI Labs (18)</a>
-              <a href="#publications-section" class="btn btn-outline">Publications</a>
-              <a href="#contact-section" class="btn btn-outline">Contact Us</a>
+              <a href="./research/" class="btn btn-primary">Explore Our Teams &rarr;</a>
+              <a href="./contact/" class="btn btn-outline">Contact Us</a>
             </div>
 
             <!-- Official Mass General Brigham, MGH, BWH & Harvard Medical School Institutional Bar -->
@@ -141,779 +143,314 @@
               <span class="mgb-partner-divider" aria-hidden="true"></span>
               <img src="./photos/hms_logo.svg" alt="Harvard Medical School Teaching Hospital" width="155" height="28" loading="lazy" />
             </div>
-
-            <div class="affil-strip" aria-label="Founding Consortia and Institutional Affiliations">
-              <span class="affil-chip">Founding Lab &bull; Center for Neurotechnology &amp; Neurorecovery (CNTR)</span>
-              <span class="affil-chip">Founding Lab &bull; Clinical Data Animation Center (CDAC)</span>
-              <span class="affil-chip">Consortium Member &bull; BrainGate Clinical Trial</span>
-            </div>
           </div>
 
-          <!-- Right Column: Clean Academic Identity + Scientific Figure Mosaic -->
-          <div class="hero-showcase fade-in">
-            <div class="hero-logo-stage" style="padding: 0.5rem 0.5rem 1rem; margin-block-end: 0.75rem; border-block-end: 1px solid var(--glass-border); inline-size: 100%;">
-              <img
-                src="./photos/neurohints_logo_dark.png"
-                alt="NeuroHINTS Lab — Human Intracranial Neurophysiology, Neurotechnology, and Stimulation"
-                width="420"
-                height="410"
-                fetchpriority="high"
-                class="hero-logo-img logo-for-dark"
-                style="inline-size: min(100%, 260px);"
-              />
-              <img
-                src="./photos/neurohints_logo_light.png"
-                alt="NeuroHINTS Lab — Human Intracranial Neurophysiology, Neurotechnology, and Stimulation"
-                width="420"
-                height="410"
-                fetchpriority="high"
-                class="hero-logo-img logo-for-light"
-                style="inline-size: min(100%, 260px);"
-              />
-            </div>
-
-            <!-- Real Scientific Figures from the Lab -->
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; inline-size: 100%; text-align: start;">
-              <a href="./research/epilepsy-neuromodulation/" class="feature-figure" style="text-decoration: none;">
-                <img src="./photos/EpilepsyTeam_primary.png" alt="Intracranial electrode mapping in epilepsy" width="280" height="160" style="block-size: 112px; object-fit: cover;" />
-                <figcaption style="font-size: 0.72rem; font-weight: 600; color: var(--text-secondary);">Epilepsy &amp; Cortical Stimulation</figcaption>
-              </a>
-              <a href="./research/cognition-sleep/" class="feature-figure" style="text-decoration: none;">
-                <img src="./photos/CognitionSleepTeam_primary.png" alt="Sleep spindles and cognition" width="280" height="160" style="block-size: 112px; object-fit: cover;" />
-                <figcaption style="font-size: 0.72rem; font-weight: 600; color: var(--text-secondary);">Cognition, Sleep &amp; Memory</figcaption>
-              </a>
-              <a href="./research/neurotechnology/" class="feature-figure" style="text-decoration: none;">
-                <img src="./photos/NeurotechnologyTeam_primary.png" alt="High-density human Neuropixels and microarrays" width="280" height="160" style="block-size: 112px; object-fit: cover;" />
-                <figcaption style="font-size: 0.72rem; font-weight: 600; color: var(--text-secondary);">Neuropixels &amp; Closed-Loop BCIs</figcaption>
-              </a>
-              <a href="./research/cancer-neuroscience/" class="feature-figure" style="text-decoration: none;">
-                <img src="./photos/CancerTeam_primary.jpg" alt="Cancer neuroscience and glioma electrophysiology" width="280" height="160" style="block-size: 112px; object-fit: cover;" />
-                <figcaption style="font-size: 0.72rem; font-weight: 600; color: var(--text-secondary);">Cancer Neuroscience &amp; AI</figcaption>
-              </a>
-            </div>
+          <!-- Right Column: Official NeuroHINTS Lab Logo -->
+          <div class="hero-showcase fade-in" style="justify-content: center; padding: 1.75rem;">
+            <img
+              src="./photos/neurohints_logo_dark.png"
+              alt="NeuroHINTS Lab — Human Intracranial Neurophysiology, Neurotechnology, and Stimulation"
+              width="420"
+              height="410"
+              fetchpriority="high"
+              class="hero-logo-img logo-for-dark"
+              style="inline-size: min(100%, 340px);"
+            />
+            <img
+              src="./photos/neurohints_logo_light.png"
+              alt="NeuroHINTS Lab — Human Intracranial Neurophysiology, Neurotechnology, and Stimulation"
+              width="420"
+              height="410"
+              fetchpriority="high"
+              class="hero-logo-img logo-for-light"
+              style="inline-size: min(100%, 340px);"
+            />
           </div>
         </div>
       </section>
 
-      <!-- Five Specialized Research Teams, Scientific Topics & Group Emblems -->
-      <section id="research-section" style="border-block-start: 1px solid var(--glass-border);">
+      <!-- Top Part of Research & Teams Only: Intro + 5 Research Group Variations -->
+      <section style="padding-block: 2.5rem; border-block-start: 1px solid var(--glass-border);">
         <div class="container">
-          <div class="fade-in" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1.5rem; margin-block-end: 2.25rem;">
+          <div class="fade-in" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem; margin-block-end: 1.5rem;">
             <div>
-              <span class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Research Programs &amp; Scientific Topics</span>
-              <h2 style="font-family: var(--font-serif);">Five Collaborative Research Teams</h2>
-              <p class="text-muted" style="margin-block-end: 0;">
-                Our enterprise is organized into five specialized teams integrating human intracranial electrophysiology, neural engineering, oncology, and clinical AI.
+              <span class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Interdisciplinary Science &amp; Group Identities</span>
+              <h2 style="font-family: var(--font-serif); margin-block-end: 0.35rem;">Research Groups &amp; Specialized Teams</h2>
+              <p class="text-muted" style="max-inline-size: 72ch; margin-block-end: 0;">
+                The NeuroHINTS Lab is organized into specialized research groups and five collaborative teams. Together, we integrate single-neuron and intracranial electrophysiology, neural engineering, clinical neurology, oncology, and artificial intelligence to decode and modulate the human brain.
               </p>
             </div>
-            <a href="./research/" class="btn btn-outline">Open Full Research &amp; Teams Hub &rarr;</a>
+            <a href="./research/" class="btn btn-outline">View All Research &amp; Teams &rarr;</a>
           </div>
 
-          <!-- Refined 5 Research Group Emblem Strip -->
-          <div class="group-variations-grid fade-in" role="region" aria-label="NeuroHINTS Lab Research Group Variations">
-            <a href="./research/epilepsy-neuromodulation/" class="group-emblem-card" style="--group-accent: #01828e;">
-              <img src="./photos/group_mark_stimulation.png" alt="Stimulation Group emblem" width="120" height="130" loading="lazy" class="group-emblem-card__img" style="inline-size: 5.5rem;" />
+          <div class="group-variations-grid fade-in" style="margin-block-end: 0;" role="region" aria-label="NeuroHINTS Lab Research Group Variations">
+            <a href="./research/neurotechnology/" class="group-emblem-card" style="--group-accent: #01828e;">
+              <img src="./photos/group_mark_stimulation.png" alt="Stimulation Group emblem" width="140" height="150" loading="lazy" class="group-emblem-card__img" />
+              <span class="group-emblem-card__brand"><span class="neuro-part">Neuro</span><span class="hints-part">HINTS</span></span>
+              <span class="group-emblem-card__lab">LAB</span>
               <span class="group-emblem-card__group">Stimulation Group</span>
               <span class="group-emblem-card__sub">SPES &bull; CCEP &bull; Closed-Loop BCI</span>
             </a>
             <a href="./research/epilepsy-neuromodulation/" class="group-emblem-card" style="--group-accent: #15803d;">
-              <img src="./photos/group_mark_epilepsy.png" alt="Epilepsy Group emblem" width="120" height="130" loading="lazy" class="group-emblem-card__img" style="inline-size: 5.5rem;" />
+              <img src="./photos/group_mark_epilepsy.png" alt="Epilepsy Group emblem" width="140" height="150" loading="lazy" class="group-emblem-card__img" />
+              <span class="group-emblem-card__brand"><span class="neuro-part">Neuro</span><span class="hints-part">HINTS</span></span>
+              <span class="group-emblem-card__lab">LAB</span>
               <span class="group-emblem-card__group">Epilepsy Group</span>
-              <span class="group-emblem-card__sub">Seizure Dynamics &bull; Therapeutics</span>
+              <span class="group-emblem-card__sub">sEEG Networks &bull; Seizure Dynamics</span>
             </a>
             <a href="./research/cancer-neuroscience/" class="group-emblem-card" style="--group-accent: #df6d51;">
-              <img src="./photos/group_mark_tumor.png" alt="Tumor Group emblem" width="120" height="130" loading="lazy" class="group-emblem-card__img" style="inline-size: 5.5rem;" />
+              <img src="./photos/group_mark_tumor.png" alt="Tumor Group emblem" width="140" height="150" loading="lazy" class="group-emblem-card__img" />
+              <span class="group-emblem-card__brand"><span class="neuro-part">Neuro</span><span class="hints-part">HINTS</span></span>
+              <span class="group-emblem-card__lab">LAB</span>
               <span class="group-emblem-card__group">Tumor Group</span>
-              <span class="group-emblem-card__sub">Cancer Neuroscience &amp; Glioma</span>
+              <span class="group-emblem-card__sub">Cancer Neuroscience &bull; Glioma Circuits</span>
             </a>
             <a href="./research/cognition-sleep/" class="group-emblem-card" style="--group-accent: #003a96;">
-              <img src="./photos/group_mark_sleep.png" alt="Sleep Group emblem" width="120" height="130" loading="lazy" class="group-emblem-card__img" style="inline-size: 5.5rem;" />
+              <img src="./photos/group_mark_sleep.png" alt="Sleep Group emblem" width="140" height="150" loading="lazy" class="group-emblem-card__img" />
+              <span class="group-emblem-card__brand"><span class="neuro-part">Neuro</span><span class="hints-part">HINTS</span></span>
+              <span class="group-emblem-card__lab">LAB</span>
               <span class="group-emblem-card__group">Sleep Group</span>
-              <span class="group-emblem-card__sub">Spindles &bull; Ripples &bull; Replay</span>
+              <span class="group-emblem-card__sub">Spindles &bull; Ripples &bull; Memory Replay</span>
             </a>
             <a href="./research/cognition-sleep/" class="group-emblem-card" style="--group-accent: #5b21b6;">
-              <img src="./photos/group_mark_cognitive.png" alt="Cognitive Group emblem" width="120" height="130" loading="lazy" class="group-emblem-card__img" style="inline-size: 5.5rem;" />
+              <img src="./photos/group_mark_cognitive.png" alt="Cognitive Group emblem" width="140" height="150" loading="lazy" class="group-emblem-card__img" />
+              <span class="group-emblem-card__brand"><span class="neuro-part">Neuro</span><span class="hints-part">HINTS</span></span>
+              <span class="group-emblem-card__lab">LAB</span>
               <span class="group-emblem-card__group">Cognitive Group</span>
               <span class="group-emblem-card__sub">Language &bull; Memory &bull; Clinical AI</span>
             </a>
           </div>
-
-          <div class="pillar-grid">
-            <!-- Team 1: Epilepsy & Neuromodulation -->
-            <a href="./research/epilepsy-neuromodulation/" class="glass-panel pillar-card fade-in">
-              <div class="pillar-card__media">
-                <img src="./photos/EpilepsyTeam_primary.png" alt="Epilepsy and Neuromodulation Team" width="600" height="340" loading="lazy" />
-                <span class="pillar-card__badge">Team 01 &bull; Epilepsy &amp; Stimulation</span>
-              </div>
-              <div class="pillar-card__body">
-                <h3 style="color: var(--mgb-navy); font-size: 1.25rem;">Epilepsy &amp; Neuromodulation Team</h3>
-                <p class="text-muted" style="font-size: 0.92rem; margin-block-end: 0.75rem;">
-                  Investigating the spatial and temporal dynamics of seizure initiation and termination, cortical oscillations (alpha rhythms, slow waves, ripples), and direct electrical cortical stimulation (SPES, CCEP, and 100 Hz theta-burst) to map and treat drug-resistant epilepsy.
-                </p>
-                <div class="pillar-card__tags">
-                  <span class="tag-chip">Oscillations (Alpha / Slow Waves / Ripples)</span>
-                  <span class="tag-chip">Seizure Initiation &amp; Termination</span>
-                  <span class="tag-chip">Direct Cortical Stimulation</span>
-                </div>
-              </div>
-            </a>
-
-            <!-- Team 2: Cognition & Sleep -->
-            <a href="./research/cognition-sleep/" class="glass-panel pillar-card fade-in">
-              <div class="pillar-card__media">
-                <img src="./photos/CognitionSleepTeam_primary.png" alt="Cognition and Sleep Team" width="600" height="340" loading="lazy" />
-                <span class="pillar-card__badge">Team 02 &bull; Sleep &amp; Memory</span>
-              </div>
-              <div class="pillar-card__body">
-                <h3 style="color: var(--mgb-teal); font-size: 1.25rem;">Cognition &amp; Sleep Team</h3>
-                <p class="text-muted" style="font-size: 0.92rem; margin-block-end: 0.75rem;">
-                  Understanding how memory is consolidated and how information is processed across waking cognition, NREM sleep, and dreams via travelling cortical spindles, hippocampal ripples, motor replay, and closed-loop stimulation.
-                </p>
-                <div class="pillar-card__tags">
-                  <span class="tag-chip">Spindles, Ripples &amp; Memory Consolidation</span>
-                  <span class="tag-chip">Neural Replay &amp; Stimulation</span>
-                  <span class="tag-chip">Dreams &amp; Epilepsy Sleep</span>
-                </div>
-              </div>
-            </a>
-
-            <!-- Team 3: Neurotechnology -->
-            <a href="./research/neurotechnology/" class="glass-panel pillar-card fade-in">
-              <div class="pillar-card__media">
-                <img src="./photos/NeurotechnologyTeam_primary.png" alt="Neurotechnology Team" width="600" height="340" loading="lazy" />
-                <span class="pillar-card__badge">Team 03 &bull; Neural Engineering</span>
-              </div>
-              <div class="pillar-card__body">
-                <h3 style="color: var(--accent-color); font-size: 1.25rem;">Neurotechnology Team</h3>
-                <p class="text-muted" style="font-size: 0.92rem; margin-block-end: 0.75rem;">
-                  Developing high-density microelectrode recordings (intraoperative human Neuropixels, PtNR grids), micromagnetic coils, and closed-loop brain-computer interfaces (CLoSES, BrainGate) to decode and modulate neural circuits in real time.
-                </p>
-                <div class="pillar-card__tags">
-                  <span class="tag-chip">Micro-Arrays &amp; Human Neuropixels</span>
-                  <span class="tag-chip">BrainGate BCIs</span>
-                  <span class="tag-chip">Closed-Loop Stimulation (CLoSES)</span>
-                </div>
-              </div>
-            </a>
-
-            <!-- Team 4: Cancer Neuroscience -->
-            <a href="./research/cancer-neuroscience/" class="glass-panel pillar-card fade-in">
-              <div class="pillar-card__media">
-                <img src="./photos/CancerTeam_primary.jpg" alt="Cancer Neuroscience Team" width="600" height="340" loading="lazy" />
-                <span class="pillar-card__badge">Team 04 &bull; Oncology &amp; Circuits</span>
-              </div>
-              <div class="pillar-card__body">
-                <h3 style="color: var(--crimson-color); font-size: 1.25rem;">Cancer Neuroscience Team</h3>
-                <p class="text-muted" style="font-size: 0.92rem; margin-block-end: 0.75rem;">
-                  NIH-funded research exploring how glioma and brain tumor infiltration alters local cellular and network electrophysiology in the human cortex using intraoperative high-density ECoG and single-unit Neuropixels.
-                </p>
-                <div class="pillar-card__tags">
-                  <span class="tag-chip">Glioma Infiltration Signatures</span>
-                  <span class="tag-chip">Intraoperative ECoG &amp; Neuropixels</span>
-                  <span class="tag-chip">Peritumoral Hyperexcitability</span>
-                </div>
-              </div>
-            </a>
-
-            <!-- Team 5: AI in Neurology & Neuroscience -->
-            <a href="./research/ai-neurology/" class="glass-panel pillar-card fade-in">
-              <div class="pillar-card__media">
-                <img src="./photos/AITeam_primary.png" alt="AI in Neurology and Neuroscience Team" width="600" height="340" loading="lazy" />
-                <span class="pillar-card__badge">Team 05 &bull; Epilepsy Therapeutics &amp; AI</span>
-              </div>
-              <div class="pillar-card__body">
-                <h3 style="color: var(--amber-color); font-size: 1.25rem;">AI in Neurology &amp; Neuroscience Team</h3>
-                <p class="text-muted" style="font-size: 0.92rem; margin-block-end: 0.75rem;">
-                  Pioneering epilepsy therapeutics and clinical applications of Large Language Models (LLMs), prompt engineering in neurology, and deep-learning biomarkers from sleep and intracranial EEG for brain age, cognition, and mortality.
-                </p>
-                <div class="pillar-card__tags">
-                  <span class="tag-chip">Epilepsy Therapeutics &amp; AI</span>
-                  <span class="tag-chip">LLMs in Clinical Neurology</span>
-                  <span class="tag-chip">Sleep EEG Deep-Learning Biomarkers</span>
-                </div>
-              </div>
-            </a>
-          </div>
         </div>
       </section>
 
-      <!-- Interactive Multi-Scale Brain Physiology & Scientific Topics Explorer -->
-      <section style="background: var(--surface-elevated); border-block: 1px solid var(--glass-border);">
+      <!-- The Five Principal Investigator Laboratories -->
+      <section style="padding-block: 2.75rem; background: var(--surface-elevated); border-block-start: 1px solid var(--glass-border);">
         <div class="container">
-          <div class="fade-in" style="margin-block-end: 2rem;">
-            <span class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Research Topics Across Scales</span>
-            <h2 style="font-family: var(--font-serif);">Featured Scientific Topics &amp; Experimental Paradigms</h2>
-            <p class="text-muted" style="margin-block-end: 0;">
-              Select a research domain below to inspect experimental figures and methods from our human intracranial studies.
-            </p>
-          </div>
-
-          <div class="scale-tabs fade-in" role="tablist" aria-label="Neurophysiology Research Topics">
-            <button type="button" role="tab" id="tab-micro" aria-selected="true" aria-controls="panel-micro" data-scale-target="panel-micro" class="scale-tab">
-              <span>01 &bull; Human Neuropixels &amp; Micro-Arrays</span>
-            </button>
-            <button type="button" role="tab" id="tab-meso" aria-selected="false" aria-controls="panel-meso" data-scale-target="panel-meso" tabindex="-1" class="scale-tab">
-              <span>02 &bull; Sleep Spindles, Ripples &amp; Replay</span>
-            </button>
-            <button type="button" role="tab" id="tab-macro" aria-selected="false" aria-controls="panel-macro" data-scale-target="panel-macro" tabindex="-1" class="scale-tab">
-              <span>03 &bull; Seizure Dynamics &amp; Cortical Stimulation</span>
-            </button>
-            <button type="button" role="tab" id="tab-clinical" aria-selected="false" aria-controls="panel-clinical" data-scale-target="panel-clinical" tabindex="-1" class="scale-tab">
-              <span>04 &bull; Epilepsy Therapeutics &amp; Clinical AI</span>
-            </button>
-          </div>
-
-          <!-- Topic Panel 1 -->
-          <div id="panel-micro" role="tabpanel" aria-labelledby="tab-micro" class="glass-panel scale-panel">
+          <div class="fade-in" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem; margin-block-end: 1.75rem;">
             <div>
-              <span class="tag-chip" style="margin-block-end: 0.75rem; display: inline-block; color: var(--mgb-navy);">
-                Single Units &bull; Neuropixels &bull; Pt Nanorods &bull; BrainGate BCI
-              </span>
-              <h3>High-Density Micro-Arrays &amp; Single-Neuron Recording in Humans</h3>
-              <p class="text-muted">
-                Using intraoperative <strong>Neuropixels</strong> probes, flexible platinum nanorod (PtNR) micro-grids, laminar microelectrode arrays, and Utah arrays, we resolve hundreds of individual cortical neurons simultaneously across human cortical layers during language, cognition, focal seizures, and brain tumor resection.
-              </p>
-              <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-                <a href="./research/neurotechnology/" class="btn btn-primary btn-sm">Explore Neurotechnology Topics &rarr;</a>
-                <a href="./research/cancer-neuroscience/" class="btn btn-outline btn-sm">Cancer Neuroscience &rarr;</a>
-              </div>
-            </div>
-            <figure class="feature-figure">
-              <img src="./photos/Neurotechnology2.png" alt="High-density microelectrode array recording across human cortical layers" width="600" height="380" loading="lazy" />
-              <figcaption>High-density microfabricated neural interfaces resolving single-unit and laminar LFP activity in the human cortex.</figcaption>
-            </figure>
-          </div>
-
-          <!-- Topic Panel 2 -->
-          <div id="panel-meso" role="tabpanel" aria-labelledby="tab-meso" class="glass-panel scale-panel" hidden>
-            <div>
-              <span class="tag-chip" style="margin-block-end: 0.75rem; display: inline-block; color: var(--mgb-teal);">
-                Cortical Layers &bull; Travelling Spindles &bull; Sharp-Wave Ripples &bull; Memory Replay
-              </span>
-              <h3>Cortical Oscillations, Sleep Spindles &amp; Memory Consolidation</h3>
-              <p class="text-muted">
-                By recording across superficial and deep cortical layers simultaneously, our teams have shown how slow oscillations, travelling sleep spindles, and cortical/hippocampal ripples coordinate spike-timing plasticity, motor cortex replay, and memory consolidation during human sleep.
-              </p>
-              <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-                <a href="./research/cognition-sleep/" class="btn btn-primary btn-sm">Explore Cognition &amp; Sleep Topics &rarr;</a>
-              </div>
-            </div>
-            <figure class="feature-figure">
-              <img src="./photos/CognitionSleep1.png" alt="Intracranial sleep spindle and oscillation dynamics in human cortex" width="600" height="380" loading="lazy" />
-              <figcaption>Intracranial tracking of sleep spindles, slow oscillations, and memory replay in the human brain.</figcaption>
-            </figure>
-          </div>
-
-          <!-- Topic Panel 3 -->
-          <div id="panel-macro" role="tabpanel" aria-labelledby="tab-macro" class="glass-panel scale-panel" hidden>
-            <div>
-              <span class="tag-chip" style="margin-block-end: 0.75rem; display: inline-block; color: var(--secondary-color);">
-                Direct Electrical Stimulation &bull; CLoSES Closed-Loop BCI &bull; Seizure Termination
-              </span>
-              <h3>Seizure Initiation, Termination &amp; Closed-Loop Cortical Stimulation</h3>
-              <p class="text-muted">
-                Through single-pulse electrical stimulation (SPES), 100 Hz theta-burst protocols, and our open-source <strong>CLoSES</strong> (Closed-Loop System for Electrical Stimulation) platform, we map cortico-cortical evoked potentials (CCEPs) and deliver real-time, state-dependent stimulation locked to endogenous oscillations or epileptic discharges.
-              </p>
-              <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-                <a href="./research/epilepsy-neuromodulation/" class="btn btn-primary btn-sm">Explore Epilepsy &amp; Neuromodulation Topics &rarr;</a>
-              </div>
-            </div>
-            <figure class="feature-figure">
-              <img src="./photos/Epilepsy3.png" alt="Direct electrical cortical stimulation and network connectivity mapping" width="600" height="380" loading="lazy" />
-              <figcaption>Mapping and remodeling human cortical networks via parameter-tuned intracranial electrical stimulation.</figcaption>
-            </figure>
-          </div>
-
-          <!-- Topic Panel 4 -->
-          <div id="panel-clinical" role="tabpanel" aria-labelledby="tab-clinical" class="glass-panel scale-panel" hidden>
-            <div>
-              <span class="tag-chip" style="margin-block-end: 0.75rem; display: inline-block; color: var(--amber-color);">
-                Epilepsy Therapeutics &bull; Deep Learning EEG Biomarkers &bull; Clinical LLMs
-              </span>
-              <h3>Epilepsy Therapeutics, Deep-Learning EEG Biomarkers &amp; Clinical LLMs</h3>
-              <p class="text-muted">
-                Extending from intracranial physiology to large-scale clinical epilepsy cohorts and sleep EEG repositories, we advance novel epilepsy therapeutics, train deep neural networks to quantify Brain Age and neurological risk, and build validated Large Language Model (LLM) frameworks for clinical neurology.
-              </p>
-              <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-                <a href="./research/ai-neurology/" class="btn btn-primary btn-sm">Explore AI in Neurology Topics &rarr;</a>
-                <a href="./people/#lab-hadar" class="btn btn-outline btn-sm">Hadar Lab &rarr;</a>
-              </div>
-            </div>
-            <figure class="feature-figure">
-              <img src="./photos/AITeam_primary.png" alt="AI in Neurology and Deep Learning Sleep EEG Biomarkers" width="600" height="380" loading="lazy" />
-              <figcaption>Epilepsy therapeutics, deep learning biomarker extraction, and clinical LLM reasoning frameworks.</figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <!-- Complete People & Labs Directory (All 5 PI Labs + All 13 Fellows, Students & Staff with Photos) -->
-      <section id="people-section">
-        <div class="container">
-          <div class="fade-in" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1.5rem; margin-block-end: 2rem;">
-            <div>
-              <span class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>People &amp; Laboratories</span>
-              <h2 style="font-family: var(--font-serif);">Principal Investigator Labs</h2>
+              <span class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Principal Investigator Laboratories</span>
+              <h2 style="font-family: var(--font-serif); margin-block-end: 0.25rem;">Our Five Affiliated Labs</h2>
               <p class="text-muted" style="margin-block-end: 0;">
-                Click on any Principal Investigator card below to view their full laboratory biography and associated research teams.
+                Five principal investigator laboratories collaborating across Massachusetts General Hospital, Brigham and Women's Hospital, and Harvard Medical School.
               </p>
             </div>
-            <a href="./people/" class="btn btn-outline">Open Dedicated People Directory &rarr;</a>
+            <a href="./people/" class="btn btn-outline">Meet All 18 Lab Members &rarr;</a>
           </div>
 
-          <!-- 5 Principal Investigator Labs with Native <dialog> Modals -->
           <div class="pi-grid fade-in">
-            <button type="button" class="person-card" commandfor="home-modal-cash" command="show-modal" aria-haspopup="dialog">
-              <div class="person-card__img-wrap">
-                <img src="./photos/SydneyCash_headshot_cropped.jpg" alt="Dr. Sydney Cash, MD, PhD" width="320" height="340" loading="lazy" />
+            <!-- 1. Cash Lab -->
+            <article class="glass-panel pi-card">
+              <div class="pi-card__img-wrap">
+                <img src="./photos/SydneyCash_headshot_cropped.jpg" alt="Dr. Sydney Cash, MD, PhD" width="320" height="360" loading="lazy" />
+                <span class="pi-card__lab-badge">Cash Lab</span>
               </div>
-              <div class="person-card__body">
-                <span class="person-card__role-tag" style="color: var(--mgb-navy);">Cash Lab &bull; Founding Director</span>
-                <h3 class="person-card__name">Dr. Sydney Cash, MD, PhD</h3>
-                <p class="person-card__title">Division Chief of MGB Epilepsy &amp; Neurophysiology &bull; Professor of Neurology, HMS</p>
-                <span style="margin-block-start: auto; padding-block-start: 0.6rem; font-size: 0.8rem; font-weight: 600; color: var(--mgb-teal);">View Lab Bio &rarr;</span>
-              </div>
-            </button>
-
-            <button type="button" class="person-card" commandfor="home-modal-paulk" command="show-modal" aria-haspopup="dialog">
-              <div class="person-card__img-wrap">
-                <img src="./photos/AngeliquePaulk_headshot.png" alt="Dr. Angelique Paulk, PhD" width="320" height="340" loading="lazy" />
-              </div>
-              <div class="person-card__body">
-                <span class="person-card__role-tag" style="color: var(--crimson-color);">Paulk Lab &bull; Principal Investigator</span>
-                <h3 class="person-card__name">Dr. Angelique Paulk, PhD</h3>
-                <p class="person-card__title">Assistant Professor &bull; Human Neuropixels, Microelectrodes &amp; Cancer Neuroscience</p>
-                <span style="margin-block-start: auto; padding-block-start: 0.6rem; font-size: 0.8rem; font-weight: 600; color: var(--crimson-color);">View Lab Bio &rarr;</span>
-              </div>
-            </button>
-
-            <button type="button" class="person-card" commandfor="home-modal-salami" command="show-modal" aria-haspopup="dialog">
-              <div class="person-card__img-wrap">
-                <img src="./photos/PariyaSalami_headshot.png" alt="Dr. Pariya Salami, PhD" width="320" height="340" loading="lazy" />
-              </div>
-              <div class="person-card__body">
-                <span class="person-card__role-tag" style="color: var(--secondary-color);">Salami Lab &bull; Principal Investigator</span>
-                <h3 class="person-card__name">Dr. Pariya Salami, PhD</h3>
-                <p class="person-card__title">Instructor &bull; Seizure Initiation/Termination Dynamics &amp; Computational EEG</p>
-                <span style="margin-block-start: auto; padding-block-start: 0.6rem; font-size: 0.8rem; font-weight: 600; color: var(--secondary-color);">View Lab Bio &rarr;</span>
-              </div>
-            </button>
-
-            <button type="button" class="person-card" commandfor="home-modal-zelmann" command="show-modal" aria-haspopup="dialog">
-              <div class="person-card__img-wrap">
-                <img src="./photos/RinaZelmann_headshot.png" alt="Dr. Rina Zelmann, PhD" width="320" height="340" loading="lazy" />
-              </div>
-              <div class="person-card__body">
-                <span class="person-card__role-tag" style="color: var(--mgb-teal);">Zelmann Lab &bull; Principal Investigator</span>
-                <h3 class="person-card__name">Dr. Rina Zelmann, PhD</h3>
-                <p class="person-card__title">Assistant Professor &bull; Closed-Loop iEEG Stimulation (CLoSES), HFOs &amp; Sleep</p>
-                <span style="margin-block-start: auto; padding-block-start: 0.6rem; font-size: 0.8rem; font-weight: 600; color: var(--mgb-teal);">View Lab Bio &rarr;</span>
-              </div>
-            </button>
-
-            <button type="button" class="person-card" commandfor="home-modal-hadar" command="show-modal" aria-haspopup="dialog">
-              <div class="person-card__img-wrap">
-                <img src="./photos/PeterHadar_headshot.png" alt="Dr. Peter Hadar, MD, MS" width="320" height="340" loading="lazy" />
-              </div>
-              <div class="person-card__body">
-                <span class="person-card__role-tag" style="color: var(--amber-color);">Hadar Lab &bull; Principal Investigator</span>
-                <h3 class="person-card__name">Dr. Peter Hadar, MD, MS</h3>
-                <p class="person-card__title">Instructor &bull; Epilepsy Therapeutics &amp; AI</p>
-                <span style="margin-block-start: auto; padding-block-start: 0.6rem; font-size: 0.8rem; font-weight: 600; color: var(--amber-color);">View Lab Bio &rarr;</span>
-              </div>
-            </button>
-          </div>
-
-          <!-- All 13 Fellows, Graduate Students & Clinical Research Staff -->
-          <div class="fade-in" style="margin-block-end: 1.5rem;">
-            <h2 style="font-family: var(--font-serif); margin-block-end: 0.4rem;">Fellows, Graduate Students &amp; Staff</h2>
-            <p class="text-muted" style="margin-block-end: 1.25rem;">
-              Our multidisciplinary team of postdoctoral fellows, graduate students, and clinical research staff at Massachusetts General Hospital and Harvard Medical School.
-            </p>
-          </div>
-
-          <div class="staff-grid fade-in">
-            <article class="person-card">
-              <div class="person-card__img-wrap">
-                <img src="./photos/YanglingChou_headshot.png" alt="Yangling Chou" width="280" height="300" loading="lazy" />
-              </div>
-              <div class="person-card__body">
-                <span class="person-card__role-tag">Program Leadership</span>
-                <h3 class="person-card__name">Yangling Chou</h3>
-                <p class="person-card__title">Program Director of CNTR &amp; Laboratory Manager of the NeuroHINTS Lab</p>
-              </div>
-            </article>
-
-            <article class="person-card">
-              <div class="person-card__img-wrap">
-                <img src="./photos/AndrewShoPerley_Headshot.jpg" alt="Andrew Sho Perley, Ph.D." width="280" height="300" loading="lazy" />
-              </div>
-              <div class="person-card__body">
-                <span class="person-card__role-tag">Fellow</span>
-                <h3 class="person-card__name">Andrew Sho Perley, Ph.D.</h3>
-                <p class="person-card__title">Fellow</p>
-              </div>
-            </article>
-
-            <article class="person-card">
-              <div class="person-card__img-wrap">
-                <img src="./photos/TamirAvigdor_headshot.jpeg" alt="Tamir Avigdor, Ph.D." width="280" height="300" loading="lazy" />
-              </div>
-              <div class="person-card__body">
-                <span class="person-card__role-tag">Fellow</span>
-                <h3 class="person-card__name">Tamir Avigdor, Ph.D.</h3>
-                <p class="person-card__title">Fellow</p>
-              </div>
-            </article>
-
-            <article class="person-card">
-              <div class="person-card__img-wrap">
-                <img src="./photos/TommyWilson_headshot.jpg" alt="Tommy Wilson, M.D., Ph.D." width="280" height="300" loading="lazy" />
-              </div>
-              <div class="person-card__body">
-                <span class="person-card__role-tag">Fellow</span>
-                <h3 class="person-card__name">Tommy Wilson, M.D., Ph.D.</h3>
-                <p class="person-card__title">Fellow</p>
-              </div>
-            </article>
-
-            <article class="person-card">
-              <div class="person-card__img-wrap">
-                <img src="./photos/DevangSehgal_headshot.jpg" alt="Devang Sehgal" width="280" height="300" loading="lazy" />
-              </div>
-              <div class="person-card__body">
-                <span class="person-card__role-tag">Graduate Student</span>
-                <h3 class="person-card__name">Devang Sehgal</h3>
-                <p class="person-card__title">Graduate Student</p>
-              </div>
-            </article>
-
-            <article class="person-card">
-              <div class="person-card__img-wrap">
-                <img src="./photos/JasmineZou_headshot.jpeg" alt="Jasmine Zou" width="280" height="300" loading="lazy" />
-              </div>
-              <div class="person-card__body">
-                <span class="person-card__role-tag">Graduate Student</span>
-                <h3 class="person-card__name">Jasmine Zou</h3>
-                <p class="person-card__title">Graduate Student</p>
-              </div>
-            </article>
-
-            <article class="person-card">
-              <div class="person-card__img-wrap">
-                <img src="./photos/HaziqRabbani_headshot.jpeg" alt="Haziq Rabbani" width="280" height="300" loading="lazy" />
-              </div>
-              <div class="person-card__body">
-                <span class="person-card__role-tag">Graduate Student</span>
-                <h3 class="person-card__name">Haziq Rabbani</h3>
-                <p class="person-card__title">Graduate Student</p>
-              </div>
-            </article>
-
-            <article class="person-card">
-              <div class="person-card__img-wrap">
-                <img src="./photos/IpsitaDas_headshot.jpg" alt="Ipsita Das" width="280" height="300" loading="lazy" />
-              </div>
-              <div class="person-card__body">
-                <span class="person-card__role-tag">Clinical Research</span>
-                <h3 class="person-card__name">Ipsita Das</h3>
-                <p class="person-card__title">Clinical Research Coordinator</p>
-              </div>
-            </article>
-
-            <article class="person-card">
-              <div class="person-card__img-wrap">
-                <img src="./photos/BrianCoughlin_headshot.png" alt="Brian Coughlin" width="280" height="300" loading="lazy" />
-              </div>
-              <div class="person-card__body">
-                <span class="person-card__role-tag">Clinical Research</span>
-                <h3 class="person-card__name">Brian Coughlin</h3>
-                <p class="person-card__title">Senior Clinical Research Technician</p>
-              </div>
-            </article>
-
-            <article class="person-card">
-              <div class="person-card__img-wrap">
-                <img src="./photos/EmoryPeng_headshot.jpg" alt="Emory Peng" width="280" height="300" loading="lazy" />
-              </div>
-              <div class="person-card__body">
-                <span class="person-card__role-tag">Clinical Research</span>
-                <h3 class="person-card__name">Emory Peng</h3>
-                <p class="person-card__title">Clinical Research Technician</p>
-              </div>
-            </article>
-
-            <article class="person-card">
-              <div class="person-card__img-wrap">
-                <img src="./photos/KrishmaShenoy_headshot.jpeg" alt="Krishma Shenoy" width="280" height="300" loading="lazy" />
-              </div>
-              <div class="person-card__body">
-                <span class="person-card__role-tag">Clinical Research</span>
-                <h3 class="person-card__name">Krishma Shenoy</h3>
-                <p class="person-card__title">Clinical Research Technician</p>
-              </div>
-            </article>
-
-            <article class="person-card">
-              <div class="person-card__img-wrap">
-                <img src="./photos/BrianJi_headshot.jpg" alt="Brian Ji" width="280" height="300" loading="lazy" />
-              </div>
-              <div class="person-card__body">
-                <span class="person-card__role-tag">Clinical Research</span>
-                <h3 class="person-card__name">Brian Ji</h3>
-                <p class="person-card__title">Clinical Research Technician</p>
-              </div>
-            </article>
-
-            <article class="person-card">
-              <div class="person-card__img-wrap">
-                <img src="./photos/SophiaSherzai_headshot.jpg" alt="Sophia Sherzai" width="280" height="300" loading="lazy" />
-              </div>
-              <div class="person-card__body">
-                <span class="person-card__role-tag">Clinical Research</span>
-                <h3 class="person-card__name">Sophia Sherzai</h3>
-                <p class="person-card__title">Clinical Research Technician</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Selected Peer-Reviewed Publications & Open Science Resources -->
-      <section id="publications-section" style="background: var(--surface-elevated); border-block-start: 1px solid var(--glass-border);">
-        <div class="container">
-          <div class="fade-in" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1.5rem; margin-block-end: 2rem;">
-            <div>
-              <span class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Peer-Reviewed Literature &amp; Open Science</span>
-              <h2 style="font-family: var(--font-serif);">Selected Publications &amp; Resources</h2>
-              <p class="text-muted" style="margin-block-end: 0;">
-                Representative publications across our five research teams. Browse the complete searchable repository on our Resources &amp; Publications page.
-              </p>
-            </div>
-            <a href="./resources/#publications" class="btn btn-primary">View All 36+ Publications &amp; Code &rarr;</a>
-          </div>
-
-          <ul class="pub-list fade-in" role="list">
-            <li class="pub-item">
-              <div class="pub-item__meta">
-                <span class="pub-year">2024</span>
-                <span class="pub-journal">Nature</span>
-                <span class="tag-chip">Neurotechnology &bull; Cognition</span>
-              </div>
-              <p style="margin: 0; font-size: 0.95rem;">
-                <strong>Leonard MK, Gwilliams L, Sellers KK, Chung JE, Xu D, Mischler G, Mesgarani N, Welkenhuysen M, Dutta B, Cash SS, Paulk AC, et al.</strong> Large-scale single-neuron speech sound encoding across the depth of human cortex. <em>Nature</em>. 2024;626(7999):593-602. <a href="https://doi.org/10.1038/s41586-023-06839-2" target="_blank" rel="noopener" style="color: var(--mgb-teal); font-weight: 600;">doi:10.1038/s41586-023-06839-2</a>
-              </p>
-            </li>
-
-            <li class="pub-item">
-              <div class="pub-item__meta">
-                <span class="pub-year">2024</span>
-                <span class="pub-journal">Nature Communications</span>
-                <span class="tag-chip">Epilepsy &bull; Stimulation &bull; Hadar / Zelmann / Cash / Paulk Labs</span>
-              </div>
-              <p style="margin: 0; font-size: 0.95rem;">
-                <strong>Huang Y, Zelmann R, Hadar P, Dezha-Peralta J, Richardson RM, Williams ZM, Cash SS, Keller CJ, Paulk AC.</strong> Theta-burst direct electrical stimulation remodels human brain networks. <em>Nature Communications</em>. 2024;15(1):6982. <a href="https://doi.org/10.1038/s41467-024-51443-1" target="_blank" rel="noopener" style="color: var(--mgb-teal); font-weight: 600;">doi:10.1038/s41467-024-51443-1</a>
-              </p>
-            </li>
-
-            <li class="pub-item">
-              <div class="pub-item__meta">
-                <span class="pub-year">2022</span>
-                <span class="pub-journal">Nature Neuroscience</span>
-                <span class="tag-chip">Human Neuropixels &bull; Paulk &amp; Cash Labs</span>
-              </div>
-              <p style="margin: 0; font-size: 0.95rem;">
-                <strong>Paulk AC, Kfir Y, Khanna AR, Mustroph ML, Trautmann EM, Soper DJ, Stavisky SD, Welkenhuysen M, Dutta B, Shenoy KV, Hochberg LR, Richardson RM, Williams ZM, Cash SS.</strong> Large-scale neural recordings with single neuron resolution using Neuropixels probes in human cortex. <em>Nature Neuroscience</em>. 2022;25(2):252-263. <a href="https://doi.org/10.1038/s41593-021-00997-0" target="_blank" rel="noopener" style="color: var(--mgb-teal); font-weight: 600;">doi:10.1038/s41593-021-00997-0</a>
-              </p>
-            </li>
-
-            <li class="pub-item">
-              <div class="pub-item__meta">
-                <span class="pub-year">2023</span>
-                <span class="pub-journal">Journal of Neural Engineering</span>
-                <span class="tag-chip">CLoSES Closed-Loop Platform &bull; Zelmann &amp; Cash Labs</span>
-              </div>
-              <p style="margin: 0; font-size: 0.95rem;">
-                <strong>Zelmann R, Paulk AC, Basu I, Sarma A, Yousefi A, Crocker B, Eskandar E, Williams Z, Darcey T, Cash SS, Widge AS.</strong> CLoSES: A platform for closed-loop intracranial stimulation in humans. <em>Journal of Neural Engineering</em>. 2020;17(5):056015. <a href="https://doi.org/10.1088/1741-2552/abb580" target="_blank" rel="noopener" style="color: var(--mgb-teal); font-weight: 600;">doi:10.1088/1741-2552/abb580</a>
-              </p>
-            </li>
-
-            <li class="pub-item">
-              <div class="pub-item__meta">
-                <span class="pub-year">2022</span>
-                <span class="pub-journal">Epilepsia</span>
-                <span class="tag-chip">Seizure Dynamics &bull; Salami &amp; Cash Labs</span>
-              </div>
-              <p style="margin: 0; font-size: 0.95rem;">
-                <strong>Salami P, Peled N, Nadkarni SS, Stufflebeam SM, Cash SS.</strong> Seizure onset and termination dynamics across human focal epilepsy networks. <em>Epilepsia</em>. 2022;63(7):1724-1736. <a href="https://doi.org/10.1111/epi.17265" target="_blank" rel="noopener" style="color: var(--mgb-teal); font-weight: 600;">doi:10.1111/epi.17265</a>
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- Contact Us & Opportunities Section -->
-      <section id="contact-section" style="border-block-start: 1px solid var(--glass-border);">
-        <div class="container">
-          <div style="display: grid; grid-template-columns: 1fr 1.15fr; gap: 3rem; align-items: start;" class="feature-split">
-            <div class="fade-in">
-              <span class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Get In Touch &amp; Join Us</span>
-              <h2 style="font-family: var(--font-serif);">Contact the NeuroHINTS Lab</h2>
-              <p class="text-muted">
-                The NeuroHINTS Lab is located at Massachusetts General Hospital (Mass General Brigham) and Harvard Medical School. We welcome inquiries from prospective postdoctoral fellows, graduate students, clinical trainees, and scientific collaborators.
-              </p>
-
-              <div class="glass-panel" style="margin-block-end: 1.25rem;">
-                <h3 style="font-size: 1.05rem; color: var(--mgb-navy); margin-block-end: 0.35rem;">Laboratory Headquarters</h3>
-                <p class="text-muted" style="margin: 0; font-size: 0.94rem;">
-                  Department of Neurology, Massachusetts General Hospital<br />
-                  55 Fruit Street, Boston, MA 02114<br />
-                  Harvard Medical School
+              <div class="pi-card__body">
+                <h3 class="pi-card__name">Dr. Sydney Cash, MD, PhD</h3>
+                <p class="pi-card__role">Division Chief &bull; Professor of Neurology, HMS</p>
+                <p class="pi-card__bio">
+                  Founding Director of the NeuroHINTS Lab and Co-Director of CNTR. Multi-scale human brain physiology in epilepsy, sleep, and cognition.
                 </p>
+                <div class="pi-card__actions">
+                  <button type="button" class="btn btn-outline" style="padding: 0.45rem 0.9rem; font-size: 0.82rem;" commandfor="modal-cash" command="show-modal">
+                    Read Lab Bio
+                  </button>
+                </div>
               </div>
+            </article>
 
-              <div class="glass-panel">
-                <h3 style="font-size: 1.05rem; color: var(--mgb-teal); margin-block-end: 0.35rem;">Philanthropic Support</h3>
-                <p class="text-muted" style="font-size: 0.92rem; margin-block-end: 0.85rem;">
-                  Philanthropic gifts directly accelerate our human intracranial neurophysiology, epilepsy, sleep, cancer neuroscience, and clinical AI discoveries at MGH.
+            <!-- 2. Paulk Lab -->
+            <article class="glass-panel pi-card">
+              <div class="pi-card__img-wrap">
+                <img src="./photos/AngeliquePaulk_headshot.png" alt="Dr. Angelique Paulk, Ph.D." width="320" height="360" loading="lazy" />
+                <span class="pi-card__lab-badge" style="color: var(--accent-color);">Paulk Lab</span>
+              </div>
+              <div class="pi-card__body">
+                <h3 class="pi-card__name">Dr. Angelique Paulk, Ph.D.</h3>
+                <p class="pi-card__role">Assistant Professor of Neurology, MGH &amp; HMS</p>
+                <p class="pi-card__bio">
+                  Systems neuroscience, human Neuropixels and high-density microelectrodes, direct cortical stimulation, and NIH-funded Cancer Neuroscience.
                 </p>
-                <a
-                  href="https://giving.massgeneral.org/donate?re_fund=208223&is_designation=1&designation=Cash%20Laboratory"
-                  target="_blank"
-                  rel="noopener"
-                  class="btn btn-primary btn-sm"
-                >
-                  Donate via MGH Giving (Cash Laboratory) &rarr;
-                </a>
+                <div class="pi-card__actions">
+                  <button type="button" class="btn btn-outline" style="padding: 0.45rem 0.9rem; font-size: 0.82rem;" commandfor="modal-paulk" command="show-modal">
+                    Read Lab Bio
+                  </button>
+                </div>
               </div>
-            </div>
+            </article>
 
-            <div class="glass-panel fade-in">
-              <h3 style="font-family: var(--font-serif); margin-block-end: 0.4rem;">Send a Message or Fellowship Inquiry</h3>
-              <p class="text-muted" style="font-size: 0.9rem; margin-block-end: 1.25rem;">
-                Reach out regarding research collaborations, postdoctoral fellowships, or graduate student rotations.
-              </p>
-              <form id="neurohints-contact-form">
-                <div class="form-group">
-                  <label for="home-contact-name" class="form-label">Full Name</label>
-                  <input type="text" id="home-contact-name" name="name" class="form-control" autocomplete="name" required />
+            <!-- 3. Salami Lab -->
+            <article class="glass-panel pi-card">
+              <div class="pi-card__img-wrap">
+                <img src="./photos/PariyaSalami_headshot.png" alt="Dr. Pariya Salami, Ph.D." width="320" height="360" loading="lazy" />
+                <span class="pi-card__lab-badge" style="color: var(--emerald-color);">Salami Lab</span>
+              </div>
+              <div class="pi-card__body">
+                <h3 class="pi-card__name">Dr. Pariya Salami, Ph.D.</h3>
+                <p class="pi-card__role">Instructor in Neurology, MGH &amp; HMS</p>
+                <p class="pi-card__bio">
+                  Intracranial EEG signal processing and computational neurophysiology investigating how seizures initiate, spread, and terminate.
+                </p>
+                <div class="pi-card__actions">
+                  <button type="button" class="btn btn-outline" style="padding: 0.45rem 0.9rem; font-size: 0.82rem;" commandfor="modal-salami" command="show-modal">
+                    Read Lab Bio
+                  </button>
                 </div>
-                <div class="form-group">
-                  <label for="home-contact-email" class="form-label">Email Address</label>
-                  <input type="email" id="home-contact-email" name="email" class="form-control" autocomplete="email" inputmode="email" autocapitalize="off" spellcheck="false" required />
+              </div>
+            </article>
+
+            <!-- 4. Zelmann Lab -->
+            <article class="glass-panel pi-card">
+              <div class="pi-card__img-wrap">
+                <img src="./photos/RinaZelmann_headshot.png" alt="Dr. Rina Zelmann, Ph.D." width="320" height="360" loading="lazy" />
+                <span class="pi-card__lab-badge" style="color: var(--secondary-color);">Zelmann Lab</span>
+              </div>
+              <div class="pi-card__body">
+                <h3 class="pi-card__name">Dr. Rina Zelmann, Ph.D.</h3>
+                <p class="pi-card__role">Assistant Professor of Neurology, MGH &amp; HMS</p>
+                <p class="pi-card__bio">
+                  Biomedical engineering and clinical neuroscience: high-frequency oscillations, sleep spindles, and CLoSES closed-loop intracranial stimulation.
+                </p>
+                <div class="pi-card__actions">
+                  <button type="button" class="btn btn-outline" style="padding: 0.45rem 0.9rem; font-size: 0.82rem;" commandfor="modal-zelmann" command="show-modal">
+                    Read Lab Bio
+                  </button>
                 </div>
-                <div class="form-group">
-                  <label for="home-contact-msg" class="form-label">Message / Research Interest</label>
-                  <textarea id="home-contact-msg" name="message" class="form-control" rows="4" required></textarea>
+              </div>
+            </article>
+
+            <!-- 5. Hadar Lab -->
+            <article class="glass-panel pi-card">
+              <div class="pi-card__img-wrap">
+                <img src="./photos/PeterHadar_headshot.png" alt="Dr. Peter Hadar, MD, MS" width="320" height="360" loading="lazy" />
+                <span class="pi-card__lab-badge" style="color: var(--amber-color);">Hadar Lab</span>
+              </div>
+              <div class="pi-card__body">
+                <h3 class="pi-card__name">Dr. Peter Hadar, MD, MS</h3>
+                <p class="pi-card__role">Epilepsy Therapeutics &amp; AI &bull; MGH / BWH / HMS</p>
+                <p class="pi-card__bio">
+                  Epilepsy therapeutics, clinical AI, deep-learning biomarkers on sleep and clinical EEG, and Large Language Models in neurology.
+                </p>
+                <div class="pi-card__actions">
+                  <button type="button" class="btn btn-outline" style="padding: 0.45rem 0.9rem; font-size: 0.82rem;" commandfor="modal-hadar" command="show-modal">
+                    Read Lab Bio
+                  </button>
                 </div>
-                <div id="contact-form-status" role="status" aria-live="polite" hidden style="padding: 0.75rem 1rem; margin-block-end: 1rem; border-radius: var(--radius-sm); background: var(--surface-elevated); border: 1px solid var(--mgb-teal); color: var(--mgb-navy); font-weight: 600; font-size: 0.9rem;"></div>
-                <button type="submit" class="btn btn-primary">Submit Inquiry</button>
-              </form>
-            </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Native <dialog> Modals for the 5 Principal Investigator Labs on Homepage -->
-    <dialog class="lab-dialog" id="home-modal-cash" closedby="any" aria-labelledby="home-title-cash">
+    <!-- Native <dialog> Biography Modals for Principal Investigator Labs -->
+    <dialog class="lab-dialog" id="modal-cash" closedby="any" aria-labelledby="dialog-title-cash">
       <div class="dialog-inner">
         <div class="dialog-header">
           <div>
-            <span class="eyebrow" style="margin-block-end: 0.35rem;"><span class="eyebrow__dot"></span>Cash Lab &bull; Founding Director</span>
-            <h2 id="home-title-cash" style="margin: 0; font-size: var(--text-xl);">Dr. Sydney Cash, MD, PhD</h2>
-            <p class="text-muted" style="margin: 0.25rem 0 0; font-size: 0.9rem;">Division Chief of MGB Neurology Division of Epilepsy &amp; Neurophysiology &bull; Professor of Neurology, HMS</p>
+            <span class="eyebrow" style="margin-block-end: 0.4rem;"><span class="eyebrow__dot"></span>Cash Lab &bull; Founding Director</span>
+            <h2 id="dialog-title-cash" style="margin: 0; font-size: var(--text-xl);">Dr. Sydney Cash, MD, PhD</h2>
+            <p class="text-muted" style="margin: 0.25rem 0 0; font-size: 0.9rem;">
+              Division Chief of MGB Neurology Division of Epilepsy &amp; Neurophysiology &bull; Professor of Neurology, HMS
+            </p>
           </div>
-          <button type="button" class="dialog-close-btn" commandfor="home-modal-cash" command="close" aria-label="Close Cash Lab biography">&#10005;</button>
+          <button type="button" class="dialog-close-btn" commandfor="modal-cash" command="close" aria-label="Close Cash Lab biography">&#10005;</button>
         </div>
         <p class="text-muted">
-          Division Chief of MGB Neurology Division of Epilepsy and Neurophysiology and Professor of Neurology at Harvard Medical School. He is the founding director of the NeuroHINTS Lab (formerly the NDM Group) and co-director of the Center for Neurotechnology and Neurorecovery (CNTR). His work focuses on understanding brain physiology at multiple scales, from single neurons to large-scale networks, particularly in the contexts of epilepsy, sleep, and cognition.
+          Division Chief of MGB Neurology Division of Epilepsy and Neurophysiology and Professor of Neurology at Harvard Medical School. He is the founding director of the NeuroHINTS Lab and co-director of the Center for Neurotechnology and Neurorecovery (CNTR). His work focuses on understanding brain physiology at multiple scales, from single neurons to large-scale networks, particularly in the contexts of epilepsy, sleep, and cognition.
         </p>
-        <div style="display: flex; gap: 0.65rem; flex-wrap: wrap;">
-          <a href="./research/epilepsy-neuromodulation/" class="btn btn-outline btn-sm">Epilepsy &amp; Neuromodulation</a>
-          <a href="./research/cognition-sleep/" class="btn btn-outline btn-sm">Cognition &amp; Sleep</a>
-          <a href="./research/neurotechnology/" class="btn btn-outline btn-sm">Neurotechnology</a>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.65rem; margin-block-start: 1.25rem;">
+          <a href="./research/epilepsy-neuromodulation/" class="btn btn-primary">Epilepsy &amp; Neuromodulation</a>
+          <a href="./research/cognition-sleep/" class="btn btn-outline">Cognition &amp; Sleep</a>
+          <a href="./research/neurotechnology/" class="btn btn-outline">Neurotechnology</a>
         </div>
       </div>
     </dialog>
 
-    <dialog class="lab-dialog" id="home-modal-paulk" closedby="any" aria-labelledby="home-title-paulk">
+    <dialog class="lab-dialog" id="modal-paulk" closedby="any" aria-labelledby="dialog-title-paulk">
       <div class="dialog-inner">
         <div class="dialog-header">
           <div>
-            <span class="eyebrow" style="margin-block-end: 0.35rem;"><span class="eyebrow__dot"></span>Paulk Lab &bull; Principal Investigator</span>
-            <h2 id="home-title-paulk" style="margin: 0; font-size: var(--text-xl); color: var(--crimson-color);">Dr. Angelique Paulk, Ph.D.</h2>
-            <p class="text-muted" style="margin: 0.25rem 0 0; font-size: 0.9rem;">Assistant Professor of Neurology, MGH &amp; Harvard Medical School</p>
+            <span class="eyebrow" style="margin-block-end: 0.4rem;"><span class="eyebrow__dot"></span>Paulk Lab</span>
+            <h2 id="dialog-title-paulk" style="margin: 0; font-size: var(--text-xl);">Dr. Angelique Paulk, Ph.D.</h2>
+            <p class="text-muted" style="margin: 0.25rem 0 0; font-size: 0.9rem;">
+              Assistant Professor of Neurology, Massachusetts General Hospital &amp; Harvard Medical School
+            </p>
           </div>
-          <button type="button" class="dialog-close-btn" commandfor="home-modal-paulk" command="close" aria-label="Close Paulk Lab biography">&#10005;</button>
+          <button type="button" class="dialog-close-btn" commandfor="modal-paulk" command="close" aria-label="Close Paulk Lab biography">&#10005;</button>
         </div>
         <p class="text-muted">
-          Assistant Professor and a leading neuroscientist focused on systems neuroscience and the development of next-generation high-density recording technologies. Her lab pioneers the use of Neuropixels and advanced microelectrodes in the human brain. Notably, her NIH-funded research is paving the way for the emerging field of Cancer Neuroscience, exploring how tumor infiltration alters neural activity signatures.
+          Assistant Professor with a background in systems neuroscience. She investigates how human brain circuits process information and respond to direct electrical stimulation using advanced microelectrodes including Neuropixels and PtNRGrids. She also leads an NIH-funded research effort in Cancer Neuroscience, studying how brain tumors interact with and alter surrounding neural networks.
         </p>
-        <div style="display: flex; gap: 0.65rem; flex-wrap: wrap;">
-          <a href="./research/cancer-neuroscience/" class="btn btn-outline btn-sm">Cancer Neuroscience</a>
-          <a href="./research/neurotechnology/" class="btn btn-outline btn-sm">Neurotechnology</a>
-          <a href="./research/epilepsy-neuromodulation/" class="btn btn-outline btn-sm">Epilepsy &amp; Neuromodulation</a>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.65rem; margin-block-start: 1.25rem;">
+          <a href="./research/cancer-neuroscience/" class="btn btn-primary">Cancer Neuroscience</a>
+          <a href="./research/neurotechnology/" class="btn btn-outline">Neurotechnology</a>
+          <a href="./research/epilepsy-neuromodulation/" class="btn btn-outline">Epilepsy &amp; Neuromodulation</a>
         </div>
       </div>
     </dialog>
 
-    <dialog class="lab-dialog" id="home-modal-salami" closedby="any" aria-labelledby="home-title-salami">
+    <dialog class="lab-dialog" id="modal-salami" closedby="any" aria-labelledby="dialog-title-salami">
       <div class="dialog-inner">
         <div class="dialog-header">
           <div>
-            <span class="eyebrow" style="margin-block-end: 0.35rem;"><span class="eyebrow__dot"></span>Salami Lab &bull; Principal Investigator</span>
-            <h2 id="home-title-salami" style="margin: 0; font-size: var(--text-xl); color: var(--secondary-color);">Dr. Pariya Salami, Ph.D.</h2>
-            <p class="text-muted" style="margin: 0.25rem 0 0; font-size: 0.9rem;">Instructor in Neurology, MGH &amp; Harvard Medical School</p>
+            <span class="eyebrow" style="margin-block-end: 0.4rem;"><span class="eyebrow__dot"></span>Salami Lab</span>
+            <h2 id="dialog-title-salami" style="margin: 0; font-size: var(--text-xl);">Dr. Pariya Salami, Ph.D.</h2>
+            <p class="text-muted" style="margin: 0.25rem 0 0; font-size: 0.9rem;">
+              Instructor in Neurology, Massachusetts General Hospital &amp; Harvard Medical School
+            </p>
           </div>
-          <button type="button" class="dialog-close-btn" commandfor="home-modal-salami" command="close" aria-label="Close Salami Lab biography">&#10005;</button>
+          <button type="button" class="dialog-close-btn" commandfor="modal-salami" command="close" aria-label="Close Salami Lab biography">&#10005;</button>
         </div>
         <p class="text-muted">
-          Instructor and an investigator focusing on neurophysiology, electroencephalography (EEG), and advanced signal processing. Her lab specializes in deploying sophisticated computational algorithms to extract meaningful patterns from brain activity, significantly contributing to our understanding of epileptic networks and the mechanisms of neuromodulation.
+          Instructor whose research focuses on neurophysiology, EEG, and computational signal processing. She uses intracranial recordings in patients with epilepsy to study how seizures start, spread, and terminate, and how surrounding brain states influence seizure dynamics.
         </p>
-        <div style="display: flex; gap: 0.65rem; flex-wrap: wrap;">
-          <a href="./research/epilepsy-neuromodulation/" class="btn btn-outline btn-sm">Epilepsy &amp; Neuromodulation</a>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.65rem; margin-block-start: 1.25rem;">
+          <a href="./research/epilepsy-neuromodulation/" class="btn btn-primary">Epilepsy &amp; Neuromodulation</a>
         </div>
       </div>
     </dialog>
 
-    <dialog class="lab-dialog" id="home-modal-zelmann" closedby="any" aria-labelledby="home-title-zelmann">
+    <dialog class="lab-dialog" id="modal-zelmann" closedby="any" aria-labelledby="dialog-title-zelmann">
       <div class="dialog-inner">
         <div class="dialog-header">
           <div>
-            <span class="eyebrow" style="margin-block-end: 0.35rem;"><span class="eyebrow__dot"></span>Zelmann Lab &bull; Principal Investigator</span>
-            <h2 id="home-title-zelmann" style="margin: 0; font-size: var(--text-xl); color: var(--mgb-teal);">Dr. Rina Zelmann, Ph.D.</h2>
-            <p class="text-muted" style="margin: 0.25rem 0 0; font-size: 0.9rem;">Assistant Professor of Neurology, MGH &amp; Harvard Medical School</p>
+            <span class="eyebrow" style="margin-block-end: 0.4rem;"><span class="eyebrow__dot"></span>Zelmann Lab</span>
+            <h2 id="dialog-title-zelmann" style="margin: 0; font-size: var(--text-xl);">Dr. Rina Zelmann, Ph.D.</h2>
+            <p class="text-muted" style="margin: 0.25rem 0 0; font-size: 0.9rem;">
+              Assistant Professor of Neurology, Massachusetts General Hospital &amp; Harvard Medical School
+            </p>
           </div>
-          <button type="button" class="dialog-close-btn" commandfor="home-modal-zelmann" command="close" aria-label="Close Zelmann Lab biography">&#10005;</button>
+          <button type="button" class="dialog-close-btn" commandfor="modal-zelmann" command="close" aria-label="Close Zelmann Lab biography">&#10005;</button>
         </div>
         <p class="text-muted">
-          Assistant Professor whose lab operates at the intersection of biomedical engineering and clinical neuroscience. Her research heavily utilizes intracranial EEG to map brain dynamics. She plays a crucial role in analyzing high-frequency oscillations and studying both pathological states like epilepsy and physiological states such as sleep and memory consolidation.
+          Assistant Professor working at the intersection of biomedical engineering and clinical neuroscience. She specializes in intracranial EEG analysis, high-frequency oscillations, and closed-loop stimulation (CLoSES), with a focus on modulating brain networks involved in epilepsy, sleep, and cognition.
         </p>
-        <div style="display: flex; gap: 0.65rem; flex-wrap: wrap;">
-          <a href="./research/cognition-sleep/" class="btn btn-outline btn-sm">Cognition &amp; Sleep</a>
-          <a href="./research/epilepsy-neuromodulation/" class="btn btn-outline btn-sm">Epilepsy &amp; Neuromodulation</a>
-          <a href="./research/neurotechnology/" class="btn btn-outline btn-sm">Neurotechnology (CLoSES)</a>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.65rem; margin-block-start: 1.25rem;">
+          <a href="./research/cognition-sleep/" class="btn btn-primary">Cognition &amp; Sleep</a>
+          <a href="./research/epilepsy-neuromodulation/" class="btn btn-outline">Epilepsy &amp; Neuromodulation</a>
+          <a href="./research/neurotechnology/" class="btn btn-outline">Neurotechnology</a>
         </div>
       </div>
     </dialog>
 
-    <dialog class="lab-dialog" id="home-modal-hadar" closedby="any" aria-labelledby="home-title-hadar">
+    <dialog class="lab-dialog" id="modal-hadar" closedby="any" aria-labelledby="dialog-title-hadar">
       <div class="dialog-inner">
         <div class="dialog-header">
           <div>
-            <span class="eyebrow" style="margin-block-end: 0.35rem;"><span class="eyebrow__dot"></span>Hadar Lab &bull; Principal Investigator</span>
-            <h2 id="home-title-hadar" style="margin: 0; font-size: var(--text-xl); color: var(--amber-color);">Dr. Peter Hadar, MD, MS</h2>
-            <p class="text-muted" style="margin: 0.25rem 0 0; font-size: 0.9rem;">Instructor in Neurology, MGH &amp; Harvard Medical School &bull; Epilepsy Therapeutics &amp; AI</p>
+            <span class="eyebrow" style="margin-block-end: 0.4rem;"><span class="eyebrow__dot"></span>Hadar Lab &bull; Epilepsy Therapeutics &amp; AI</span>
+            <h2 id="dialog-title-hadar" style="margin: 0; font-size: var(--text-xl);">Dr. Peter Hadar, MD, MS</h2>
+            <p class="text-muted" style="margin: 0.25rem 0 0; font-size: 0.9rem;">
+              Epilepsy Therapeutics &amp; AI &bull; Instructor in Neurology, MGH, BWH &amp; Harvard Medical School
+            </p>
           </div>
-          <button type="button" class="dialog-close-btn" commandfor="home-modal-hadar" command="close" aria-label="Close Hadar Lab biography">&#10005;</button>
+          <button type="button" class="dialog-close-btn" commandfor="modal-hadar" command="close" aria-label="Close Hadar Lab biography">&#10005;</button>
         </div>
         <p class="text-muted">
-          Instructor in Neurology whose lab focuses on <strong>Epilepsy Therapeutics &amp; Artificial Intelligence</strong> in medicine. His group investigates novel therapeutic strategies for epilepsy alongside clinical applications of deep learning and Large Language Models (LLMs) in neurology—including AI-derived biomarkers from massive sleep and clinical EEG cohorts and frameworks to safely integrate generative AI into neurological practice and medical education.
+          Instructor in Neurology focusing on Epilepsy Therapeutics &amp; AI who applies artificial intelligence and machine learning to clinical neurophysiology and medical text. His projects include using deep learning on sleep and clinical EEG to improve epilepsy diagnosis and leveraging Large Language Models to extract clinically meaningful insights from electronic health records.
         </p>
-        <div style="display: flex; gap: 0.65rem; flex-wrap: wrap;">
-          <a href="./research/epilepsy-neuromodulation/" class="btn btn-outline btn-sm">Epilepsy &amp; Neuromodulation</a>
-          <a href="./research/ai-neurology/" class="btn btn-outline btn-sm">AI in Neurology &amp; Neuroscience</a>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.65rem; margin-block-start: 1.25rem;">
+          <a href="./research/epilepsy-neuromodulation/" class="btn btn-primary">Epilepsy &amp; Neuromodulation</a>
+          <a href="./research/ai-neurology/" class="btn btn-outline">AI in Neurology &amp; Neuroscience</a>
         </div>
       </div>
     </dialog>
@@ -923,28 +460,28 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-brand">
-            <div style="display: flex; align-items: center; gap: 0.75rem; margin-block-end: 1rem;">
-              <img src="./photos/neurohints_mark.png" alt="" width="42" height="34" loading="lazy" />
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-block-end: 0.85rem;">
+              <img src="./photos/neurohints_mark.png" alt="" width="44" height="35" loading="lazy" />
               <div>
-                <h3 style="font-size: 1.2rem; margin: 0;">
-                  <span style="color: var(--accent-color);">Neuro</span><span style="color: var(--secondary-color);">HINTS</span> Lab
-                </h3>
-                <span style="font-size: 0.72rem; font-family: var(--font-mono); color: var(--text-muted); text-transform: uppercase;">
-                  Formerly NDM Group &bull; MGH / HMS
+                <strong style="font-size: 1.15rem; display: block; line-height: 1.1;">
+                  <span class="neuro-part">Neuro</span><span class="hints-part">HINTS</span> <span class="lab-part">LAB</span>
+                </strong>
+                <span style="font-size: 0.72rem; font-family: var(--font-mono); color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em;">
+                  Mass General Brigham &bull; MGH &bull; HMS
                 </span>
               </div>
             </div>
-            <p class="text-muted" style="font-size: 0.9rem; max-inline-size: 36ch; margin-block-end: 1rem;">
-              Human Intracranial Neurophysiology, Neurotechnology, and Stimulation Lab at Massachusetts General Hospital, Mass General Brigham, and Harvard Medical School.
+            <p class="text-muted" style="max-inline-size: 38ch; font-size: 0.9rem;">
+              Human Intracranial Neurophysiology, Neurotechnology, and Stimulation Lab at Massachusetts General Hospital, Brigham and Women's Hospital (Mass General Brigham), and Harvard Medical School.
             </p>
-            <div style="display: inline-flex; flex-wrap: wrap; align-items: center; gap: 0.85rem; padding: 0.55rem 0.85rem; background: #ffffff; border: 1px solid var(--glass-border); border-radius: var(--radius-sm);">
-              <img src="./photos/mgb_logo.svg" alt="Mass General Brigham" width="135" height="22" loading="lazy" style="block-size: 1.35rem; inline-size: auto;" />
-              <img src="./photos/hms_logo.svg" alt="Harvard Medical School" width="135" height="24" loading="lazy" style="block-size: 1.45rem; inline-size: auto;" />
+            <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-block-start: 1rem;">
+              <img src="./photos/mgb_logo.svg" alt="Mass General Brigham" width="140" height="22" loading="lazy" style="block-size: 20px; inline-size: auto;" />
+              <img src="./photos/hms_logo.svg" alt="Harvard Medical School" width="130" height="24" loading="lazy" style="block-size: 22px; inline-size: auto;" />
             </div>
           </div>
 
           <div class="footer-links">
-            <h4 style="font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em;">Research Teams</h4>
+            <h3>Research Teams</h3>
             <ul>
               <li><a href="./research/epilepsy-neuromodulation/">Epilepsy &amp; Neuromodulation</a></li>
               <li><a href="./research/cognition-sleep/">Cognition &amp; Sleep</a></li>
@@ -955,37 +492,32 @@
           </div>
 
           <div class="footer-links">
-            <h4 style="font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em;">Navigation</h4>
+            <h3>Directory &amp; Science</h3>
             <ul>
-              <li><a href="./">Home</a></li>
-              <li><a href="./research/">Research &amp; Teams Hub</a></li>
-              <li><a href="./people/">People &amp; PI Labs</a></li>
-              <li><a href="./resources/">Publications &amp; Open Science</a></li>
-              <li><a href="./contact/">Contact &amp; Join Us</a></li>
+              <li><a href="./people/">Principal Investigator Labs</a></li>
+              <li><a href="./people/#fellows-staff">Fellows, Grad Students &amp; Staff</a></li>
+              <li><a href="./resources/#publications">Publications Archive</a></li>
+              <li><a href="./resources/#tools">Open-Source Tools (CLoSES / DABI)</a></li>
+              <li><a href="./resources/#opportunities">Fellowships &amp; Careers</a></li>
             </ul>
           </div>
 
-          <div class="footer-contact">
-            <h4 style="font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em;">Headquarters</h4>
-            <p class="text-muted" style="font-size: 0.9rem; margin-block-end: 0.75rem;">
-              Department of Neurology<br />
-              Massachusetts General Hospital<br />
-              55 Fruit Street, Boston, MA 02114
-            </p>
-            <a
-              href="https://giving.massgeneral.org/donate?re_fund=208223&is_designation=1&designation=Cash%20Laboratory"
-              target="_blank"
-              rel="noopener"
-              class="btn btn-primary btn-sm"
-            >
-              Support Our Research
-            </a>
+          <div class="footer-links">
+            <h3>Affiliations &amp; Contact</h3>
+            <ul>
+              <li><a href="https://www.cntr.mgh.harvard.edu/" target="_blank" rel="noopener">Center for Neurotechnology &amp; Neurorecovery</a></li>
+              <li><a href="https://cdac.mgh.harvard.edu/" target="_blank" rel="noopener">Clinical Data Animation Center (CDAC)</a></li>
+              <li><a href="https://www.braingate.org/" target="_blank" rel="noopener">BrainGate Consortium</a></li>
+              <li><a href="./contact/">55 Fruit Street, Boston, MA 02114</a></li>
+            </ul>
           </div>
         </div>
 
         <div class="footer-bottom">
-          <p style="margin: 0;">&copy; 2026 NeuroHINTS Lab (NeuroDynamics &amp; NeuroModulation Group) &mdash; MGH / Harvard Medical School. All rights reserved.</p>
-          <p style="margin: 0; font-family: var(--font-mono); font-size: 0.78rem;">CNTR &bull; CDAC &bull; BrainGate Consortium</p>
+          <p style="margin: 0;">&copy; 2026 NeuroHINTS Lab &mdash; Massachusetts General Hospital &amp; Harvard Medical School. All rights reserved.</p>
+          <p style="margin: 0; font-family: var(--font-mono); font-size: 0.75rem;">
+            Press <kbd style="padding: 0.1rem 0.35rem; border: 1px solid var(--glass-border); border-radius: 4px;">&#8984;K</kbd> to search research, people &amp; publications
+          </p>
         </div>
       </div>
     </footer>
