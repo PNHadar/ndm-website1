@@ -3,60 +3,148 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cancer Neuroscience Team - NDM Group</title>
+    <meta name="color-scheme" content="light dark" />
+    <meta name="text-scale" content="scale" />
+    <meta
+      name="description"
+      content="Cancer Neuroscience Team at NeuroHINTS Lab (MGH/Harvard) — Mapping high-density electrophysiological signatures of glioma and brain tumor infiltration using Neuropixels."
+    />
+    <title>Cancer Neuroscience Team | NeuroHINTS Lab — MGH &amp; Harvard</title>
+    <link rel="icon" type="image/png" href="../../photos/neurohints_mark.png" />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('neurohints-mgb-theme');
+          document.documentElement.setAttribute('data-theme', saved === 'dark' ? 'dark' : 'light');
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="../../style.css" />
   </head>
   <body>
-    <!-- Global Navigation -->
-    <nav class="navbar">
+    <a href="#main-content" class="skip-link visually-hidden">Skip to main content</a>
+
+    <div class="inst-ribbon">
+      <div class="container inst-ribbon__inner">
+        <div class="inst-ribbon__left">
+          <img src="../../photos/mgb_logo_white.svg" alt="Mass General Brigham" width="148" height="22" style="block-size: 1.25rem; inline-size: auto;" />
+          <span class="inst-pill">MGH &bull; BWH &bull; HMS</span>
+          <span>Department of Neurology &bull; Massachusetts General Hospital &amp; Harvard Medical School</span>
+        </div>
+        <div class="inst-ribbon__links">
+          <a href="../">&larr; All Research Teams</a>
+          <a href="../../resources/#publications">Publications</a>
+          <a href="https://giving.massgeneral.org/donate?re_fund=208223&is_designation=1&designation=Cash%20Laboratory" target="_blank" rel="noopener">Support Our Research &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <header class="navbar">
       <div class="container">
-        <a href="/ndm-website1/" class="nav-brand" style="font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem;">
-          <img src="/photos/ndm_darklogo.png" alt="NDM Logo" style="height: 32px; width: auto;">
-          <span><strong>N</strong>euro<strong>D</strong>ynamics & <strong>M</strong>odulation (NDM) Group</span>
+        <a href="../../" class="nav-brand" aria-label="NeuroHINTS Lab Home">
+          <img src="../../photos/neurohints_mark.png" alt="" width="44" height="35" class="nav-brand__mark" />
+          <div class="nav-brand__text">
+            <span class="nav-brand__title">
+              <span class="neuro-part">Neuro</span><span class="hints-part">HINTS</span><span class="lab-part">LAB</span>
+            </span>
+            <span class="nav-brand__sub">Human Intracranial Neurophysiology, Neurotechnology &amp; Stimulation</span>
+          </div>
         </a>
-        <button class="mobile-menu-btn" aria-label="Toggle Navigation">☰</button>
-        <ul class="nav-links">
-          <li><a href="/ndm-website1/">Home</a></li>
-          <li><a href="/ndm-website1/research/" class="active">Research & Teams</a></li>
-          <li><a href="/ndm-website1/people/">People & Labs</a></li>
-          <li><a href="/ndm-website1/resources/">Resources & Opportunities</a></li>
-          <li><a href="/ndm-website1/contact/">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
 
-    <!-- Page Content -->
-    <main style="padding-top: calc(var(--nav-height) + 4rem); min-height: 80vh;">
-      <div class="container">
-        <a href="/ndm-website1/research/" class="btn btn-outline" style="margin-bottom: 2rem; padding: 0.5rem 1rem;">&larr; Back to Teams</a>
-        
-        <h1 class="text-gradient fade-in" style="margin-bottom: 2rem;">Cancer Neuroscience Team</h1>
-        
-        <div style="height: 400px; background: linear-gradient(135deg, rgba(244, 63, 94, 0.4), rgba(225, 29, 72, 0.1)); border-radius: 16px; margin-bottom: 3rem; display: flex; align-items: center; justify-content: center;" class="fade-in">
-          <h2 style="color: #f43f5e; font-size: 3rem;">Tumor & Neural Signatures</h2>
-        </div>
+        <nav aria-label="Primary">
+          <ul class="nav-links" id="primary-nav-list">
+            <li><a href="../../">Home</a></li>
+            <li><a href="../" class="active">Research &amp; Teams</a></li>
+            <li><a href="../../people/">People &amp; Labs</a></li>
+            <li><a href="../../resources/">Resources &amp; Publications</a></li>
+            <li><a href="../../contact/">Contact</a></li>
+          </ul>
+        </nav>
 
-        <div class="glass-panel fade-in" style="margin-bottom: 3rem;">
-          <h2 style="color: #f43f5e;">Neural Activity Signatures of Tumor Infiltration</h2>
-          <p class="text-muted">
-            The intersection of oncology and neurophysiology represents a rapidly expanding frontier. Brain tumors do not exist in isolation; they integrate into functional neural networks. Recent evidence suggests that neuronal activity can directly promote the growth and infiltration of gliomas and other malignant brain tumors. 
-          </p>
-          <p class="text-muted">
-            Led by Dr. Angelique Paulk, our team investigates how tumor infiltration physically alters the surrounding neural tissue and distorts electrical signaling. By deploying high-density Neuropixels probes and advanced microelectrodes in human patients, we map the electrophysiological signatures—the "electrical footprints"—of tumor borders. This high-resolution mapping helps define functional boundaries, providing critical insights that could revolutionize surgical resection and lead to novel, electroceutical therapies targeting the tumor microenvironment.
-          </p>
+        <div class="nav-actions">
+          <button type="button" id="open-search-btn" class="nav-icon-btn" aria-label="Search site (Command K)">
+            <span aria-hidden="true">&#8981;</span>
+            <span>Search</span>
+            <kbd>&#8984;K</kbd>
+          </button>
+          <button type="button" id="theme-toggle-btn" class="nav-icon-btn" aria-label="Toggle color theme">
+            <span aria-hidden="true">&#9728;</span>
+            <span>Light</span>
+          </button>
+          <button type="button" class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav-list">
+            <span aria-hidden="true">&#9776;</span>
+          </button>
         </div>
       </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <section style="padding-block-start: 3rem;">
+        <div class="container">
+          <a href="../" class="btn btn-outline btn-sm" style="margin-block-end: 1.75rem;">&larr; Back to Research &amp; Teams</a>
+
+          <div class="fade-in" style="margin-block-end: 2.5rem;">
+            <span class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Research Team 04 &bull; Tumor-Neural Circuit Coupling</span>
+            <h1 style="color: var(--crimson-color);">Cancer Neuroscience Team</h1>
+            <p class="text-muted" style="font-size: var(--text-lg);">
+              Decoding the high-resolution electrophysiological footprints of glioma and brain tumor infiltration in the living human cortex.
+            </p>
+
+            <!-- Custom NeuroHINTS Group Emblem Dock -->
+            <div class="subpage-emblem-dock">
+              <div class="subpage-emblem-badge">
+                <img src="../../photos/group_mark_tumor.png" alt="NeuroHINTS Tumor Group emblem" width="54" height="58" fetchpriority="high" />
+                <div class="subpage-emblem-badge__text">
+                  <span class="subpage-emblem-badge__brand"><span style="color: var(--accent-color);">Neuro</span><span style="color: var(--secondary-color);">HINTS</span> <span style="color: var(--text-muted); font-weight: 500;">LAB</span></span>
+                  <span class="subpage-emblem-badge__title">Tumor Group</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+              <a href="../../people/#lab-paulk" class="tag-chip">Paulk Lab (Lead)</a>
+              <a href="../../people/#lab-cash" class="tag-chip">Cash Lab</a>
+              <span class="tag-chip">NIH-Funded Program</span>
+            </div>
+          </div>
+
+          <div class="glass-panel feature-split fade-in" style="margin-block-end: 2.5rem;">
+            <div>
+              <span class="tag-chip" style="color: var(--crimson-color); margin-block-end: 0.65rem; display: inline-block;">Intraoperative Neuropixels &bull; Glioma Microenvironment</span>
+              <h2 style="color: var(--crimson-color);">Neural Activity Signatures of Tumor Infiltration</h2>
+              <p class="text-muted">
+                The intersection of oncology and human neurophysiology represents one of medicine's fastest-growing frontiers. Malignant brain tumors do not exist in isolation; gliomas synaptically and electrically integrate into functional neural circuits, where neuronal hyperexcitability can directly accelerate tumor proliferation and invasion.
+              </p>
+              <p class="text-muted" style="margin-block-end: 0;">
+                Led by <strong>Dr. Angelique Paulk</strong>, our NIH-funded Cancer Neuroscience team investigates how tumor infiltration physically alters surrounding human cortical tissue and distorts single-unit and laminar electrical signaling. By deploying high-density <strong>Neuropixels</strong> probes and microelectrode arrays during awake and anesthetized craniotomies, we map the precise electrophysiological signatures&mdash;the "electrical footprints"&mdash;of tumor margins to guide functional surgical resection and pioneer electroceutical therapies targeting the tumor microenvironment.
+              </p>
+            </div>
+            <figure class="feature-figure">
+              <img
+                src="../../photos/CancerTeam_primary.jpg"
+                alt="Cancer Neuroscience Team investigating neural signatures of brain tumor infiltration"
+                width="600"
+                height="400"
+                fetchpriority="high"
+              />
+              <figcaption>Mapping single-neuron and local field potential hyperexcitability across human glioma infiltration borders.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!-- Global Footer -->
     <footer class="site-footer">
       <div class="container">
         <div class="footer-bottom">
-          <p>&copy; 2026 NeuroDynamics and NeuroModulation Group - MGH/Harvard. All rights reserved.</p>
+          <p style="margin: 0;">&copy; 2026 NeuroHINTS Lab (NeuroDynamics &amp; NeuroModulation Group) &mdash; MGH / Harvard Medical School. All rights reserved.</p>
+          <a href="../" style="color: var(--primary-color);">&larr; Back to All Research Teams</a>
         </div>
       </div>
     </footer>
 
-    <script type="module" src="/main.js"></script>
-    <link rel="stylesheet" href="/ndm-website1/style.css">
+    <script type="module" src="../../main.js"></script>
   </body>
 </html>

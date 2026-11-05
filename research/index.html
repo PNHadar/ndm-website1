@@ -3,97 +3,383 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Research & Teams - NeuroDynamics and NeuroModulation Group</title>
+    <meta name="color-scheme" content="light dark" />
+    <meta name="text-scale" content="scale" />
+    <meta
+      name="description"
+      content="Explore the 5 specialized research teams of the NeuroHINTS Lab at MGH and Harvard Medical School: Epilepsy & Neuromodulation, Cognition & Sleep, Neurotechnology, Cancer Neuroscience, and AI in Neurology."
+    />
+    <title>Research &amp; Teams | NeuroHINTS Lab — MGH &amp; Harvard</title>
+    <link rel="icon" type="image/png" href="../photos/neurohints_mark.png" />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('neurohints-mgb-theme');
+          document.documentElement.setAttribute('data-theme', saved === 'dark' ? 'dark' : 'light');
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
-    <!-- Global Navigation -->
-    <nav class="navbar">
-      <div class="container">
-        <a href="/ndm-website1/" class="nav-brand" style="font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem;">
-          <img src="/photos/ndm_darklogo.png" alt="NDM Logo" style="height: 32px; width: auto;">
-          <span><strong>N</strong>euro<strong>D</strong>ynamics & <strong>M</strong>odulation (NDM) Group</span>
-        </a>
-        <button class="mobile-menu-btn" aria-label="Toggle Navigation">☰</button>
-        <ul class="nav-links">
-          <li><a href="/ndm-website1/">Home</a></li>
-          <li><a href="/ndm-website1/research/" class="active">Research & Teams</a></li>
-          <li><a href="/ndm-website1/people/">People & Labs</a></li>
-          <li><a href="/ndm-website1/resources/">Resources & Opportunities</a></li>
-          <li><a href="/ndm-website1/contact/">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+    <a href="#main-content" class="skip-link visually-hidden">Skip to main content</a>
 
-    <!-- Page Content -->
-    <main style="padding-top: calc(var(--nav-height) + 4rem); min-height: 80vh;">
-      <div class="container">
-        <h1 class="text-gradient fade-in">Research & Teams</h1>
-        <p class="text-muted fade-in" style="font-size: 1.2rem; max-width: 800px; margin-bottom: 4rem;">
-          Our group is organized into five specialized, collaborative teams. Together, we integrate neurophysiology, engineering, clinical neurology, and AI to unravel the complexities of brain function.
-        </p>
-
-        <div style="display: grid; grid-template-columns: 1fr; gap: 3rem;">
-          <!-- Team 1 -->
-          <a href="/ndm-website1/research/epilepsy-neuromodulation/" class="glass-panel fade-in" style="display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: center;">
-            <div style="height: 250px; background-image: url('/photos/EpilepsyTeam_primary.png'); background-size: cover; background-position: center; border-radius: 8px;"></div>
-            <div>
-              <h3 style="color: var(--primary-color);">Epilepsy & Neuromodulation Team</h3>
-              <p class="text-muted">
-                Investigating the spatial and temporal dynamics of seizure initiation, the fundamentals of cortical oscillations, and how direct electrical stimulation can map and modulate the human brain.
-              </p>
-              <span class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem; margin-top: 1rem;">Explore Team</span>
-            </div>
-          </a>
-
-          <!-- Team 2 -->
-          <a href="/ndm-website1/research/cognition-sleep/" class="glass-panel fade-in" style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; align-items: center;">
-            <div style="order: 2; height: 250px; background-image: url('/photos/CognitionSleepTeam_primary.png'); background-size: cover; background-position: center; border-radius: 8px;"></div>
-            <div style="order: 1;">
-              <h3 style="color: var(--secondary-color);">Cognition & Sleep Team</h3>
-              <p class="text-muted">
-                Understanding how memory is consolidated and how information is processed during both waking cognition and the fundamental states of sleep and dreams.
-              </p>
-              <span class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem; margin-top: 1rem;">Explore Team</span>
-            </div>
-          </a>
-          
-          <!-- Team 3 -->
-          <a href="/ndm-website1/research/neurotechnology/" class="glass-panel fade-in" style="display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: center;">
-            <div style="height: 250px; background-image: url('/photos/NeurotechnologyTeam_primary.png'); background-size: cover; background-position: center; border-radius: 8px;"></div>
-            <div>
-              <h3 style="color: var(--accent-color);">Neurotechnology Team</h3>
-              <p class="text-muted">
-                Developing highly detailed microelectrode recordings and closed-loop brain-computer interfaces (BCIs) to decode pathological states and deliver real-time therapeutic interventions.
-              </p>
-              <span class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem; margin-top: 1rem;">Explore Team</span>
-            </div>
-          </a>
-
-          <!-- Team 4 -->
-          <a href="/ndm-website1/research/cancer-neuroscience/" class="glass-panel fade-in" style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; align-items: center;">
-            <div style="order: 2; height: 250px; background-image: url('/photos/CancerTeam_primary.jpg'); background-size: cover; background-position: center; border-radius: 8px;"></div>
-            <div style="order: 1;">
-              <h3 style="color: #f43f5e;">Cancer Neuroscience Team</h3>
-              <p class="text-muted">
-                Investigating neural activity signatures of tumor infiltration in the human brain. This emerging field explores the complex interactions between cancer progression and the nervous system.
-              </p>
-              <span class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem; margin-top: 1rem;">Explore Team</span>
-            </div>
-          </a>
-
-          <!-- Team 5 -->
-          <a href="/ndm-website1/research/ai-neurology/" class="glass-panel fade-in" style="display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: center;">
-            <div style="height: 250px; background-image: url('/photos/AITeam_primary.png'); background-size: cover; background-position: center; border-radius: 8px;"></div>
-            <div>
-              <h3 style="color: #eab308;">AI in Neurology & Neuroscience Team</h3>
-              <p class="text-muted">
-                Leveraging Large Language Models (LLMs), prompt engineering, and deep learning techniques to identify biomarkers (e.g., from Sleep EEG) for cognition, disease prediction, and mortality.
-              </p>
-              <span class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem; margin-top: 1rem;">Explore Team</span>
-            </div>
-          </a>
+    <!-- Official Mass General Brigham (MGB) Institutional Top Ribbon -->
+    <div class="inst-ribbon">
+      <div class="container inst-ribbon__inner">
+        <div class="inst-ribbon__left">
+          <img src="../photos/mgb_logo_white.svg" alt="Mass General Brigham" width="148" height="22" style="block-size: 1.25rem; inline-size: auto;" />
+          <span class="inst-pill">MGH &bull; BWH &bull; HMS</span>
+          <span>Department of Neurology &bull; Massachusetts General Hospital &amp; Harvard Medical School</span>
+        </div>
+        <div class="inst-ribbon__links">
+          <a href="https://www.cntr.mgh.harvard.edu/" target="_blank" rel="noopener">Center for Neurotechnology &amp; Neurorecovery (CNTR)</a>
+          <a href="../resources/#publications">Publications</a>
+          <a href="https://giving.massgeneral.org/donate?re_fund=208223&is_designation=1&designation=Cash%20Laboratory" target="_blank" rel="noopener">Support Our Research &rarr;</a>
         </div>
       </div>
+    </div>
+
+    <!-- Primary Sticky Header -->
+    <header class="navbar">
+      <div class="container">
+        <a href="../" class="nav-brand" aria-label="NeuroHINTS Lab Home">
+          <img src="../photos/neurohints_mark.png" alt="" width="44" height="35" class="nav-brand__mark" />
+          <div class="nav-brand__text">
+            <span class="nav-brand__title">
+              <span class="neuro-part">Neuro</span><span class="hints-part">HINTS</span><span class="lab-part">LAB</span>
+            </span>
+            <span class="nav-brand__sub">Human Intracranial Neurophysiology, Neurotechnology &amp; Stimulation</span>
+          </div>
+        </a>
+
+        <nav aria-label="Primary">
+          <ul class="nav-links" id="primary-nav-list">
+            <li><a href="../">Home</a></li>
+            <li><a href="./" class="active" aria-current="page">Research &amp; Teams</a></li>
+            <li><a href="../people/">People &amp; Labs</a></li>
+            <li><a href="../resources/">Resources &amp; Publications</a></li>
+            <li><a href="../contact/">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button type="button" id="open-search-btn" class="nav-icon-btn" aria-label="Search site (Command K)">
+            <span aria-hidden="true">&#8981;</span>
+            <span>Search</span>
+            <kbd>&#8984;K</kbd>
+          </button>
+          <button type="button" id="theme-toggle-btn" class="nav-icon-btn" aria-label="Toggle color theme">
+            <span aria-hidden="true">&#9728;</span>
+            <span>Light</span>
+          </button>
+          <button type="button" class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav-list">
+            <span aria-hidden="true">&#9776;</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <section style="padding-block-start: 3.5rem;">
+        <div class="container">
+          <div class="fade-in" style="margin-block-end: 2.5rem;">
+            <span class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Interdisciplinary Science &amp; Group Identities</span>
+            <h1>Research Groups &amp; Specialized Teams</h1>
+            <p class="text-muted" style="font-size: var(--text-lg); max-inline-size: 72ch;">
+              The NeuroHINTS Lab is organized into specialized research groups and five collaborative teams. Together, we integrate single-neuron and intracranial electrophysiology, neural engineering, clinical neurology, oncology, and artificial intelligence to decode and modulate the human brain.
+            </p>
+          </div>
+
+          <!-- 5 NeuroHINTS Research Group Variations Showcase -->
+          <div class="group-variations-grid fade-in" role="region" aria-label="NeuroHINTS Lab Research Group Variations">
+            <a
+              href="./epilepsy-neuromodulation/"
+              class="group-emblem-card"
+              style="--group-accent: #38bdf8; --group-glow: rgba(56, 189, 248, 0.3);"
+            >
+              <img
+                src="../photos/group_mark_stimulation.png"
+                alt="NeuroHINTS Lab Stimulation Group emblem"
+                width="204"
+                height="220"
+                fetchpriority="high"
+                class="group-emblem-card__img"
+              />
+              <span class="group-emblem-card__brand"><span class="neuro-part">Neuro</span><span class="hints-part">HINTS</span></span>
+              <span class="group-emblem-card__lab">LAB</span>
+              <span class="group-emblem-card__group">Stimulation Group</span>
+              <span class="group-emblem-card__sub">SPES &bull; CCEP &bull; Closed-Loop BCI</span>
+            </a>
+
+            <a
+              href="./epilepsy-neuromodulation/"
+              class="group-emblem-card"
+              style="--group-accent: #22c55e; --group-glow: rgba(34, 197, 94, 0.3);"
+            >
+              <img
+                src="../photos/group_mark_epilepsy.png"
+                alt="NeuroHINTS Lab Epilepsy Group emblem"
+                width="204"
+                height="220"
+                fetchpriority="high"
+                class="group-emblem-card__img"
+              />
+              <span class="group-emblem-card__brand"><span class="neuro-part">Neuro</span><span class="hints-part">HINTS</span></span>
+              <span class="group-emblem-card__lab">LAB</span>
+              <span class="group-emblem-card__group">Epilepsy Group</span>
+              <span class="group-emblem-card__sub">sEEG Networks &bull; Seizure Dynamics</span>
+            </a>
+
+            <a
+              href="./cancer-neuroscience/"
+              class="group-emblem-card"
+              style="--group-accent: #fb7185; --group-glow: rgba(244, 63, 94, 0.32);"
+            >
+              <img
+                src="../photos/group_mark_tumor.png"
+                alt="NeuroHINTS Lab Tumor Group emblem"
+                width="204"
+                height="220"
+                fetchpriority="high"
+                class="group-emblem-card__img"
+              />
+              <span class="group-emblem-card__brand"><span class="neuro-part">Neuro</span><span class="hints-part">HINTS</span></span>
+              <span class="group-emblem-card__lab">LAB</span>
+              <span class="group-emblem-card__group">Tumor Group</span>
+              <span class="group-emblem-card__sub">Cancer Neuroscience &bull; Glioma Circuits</span>
+            </a>
+
+            <a
+              href="./cognition-sleep/"
+              class="group-emblem-card"
+              style="--group-accent: #38bdf8; --group-glow: rgba(56, 189, 248, 0.34);"
+            >
+              <img
+                src="../photos/group_mark_sleep.png"
+                alt="NeuroHINTS Lab Sleep Group emblem"
+                width="204"
+                height="220"
+                fetchpriority="high"
+                class="group-emblem-card__img"
+              />
+              <span class="group-emblem-card__brand"><span class="neuro-part">Neuro</span><span class="hints-part">HINTS</span></span>
+              <span class="group-emblem-card__lab">LAB</span>
+              <span class="group-emblem-card__group">Sleep Group</span>
+              <span class="group-emblem-card__sub">Spindles &bull; Ripples &bull; Memory Replay</span>
+            </a>
+
+            <a
+              href="./cognition-sleep/"
+              class="group-emblem-card"
+              style="--group-accent: #a855f7; --group-glow: rgba(168, 85, 247, 0.34);"
+            >
+              <img
+                src="../photos/group_mark_cognitive.png"
+                alt="NeuroHINTS Lab Cognitive Group emblem"
+                width="204"
+                height="220"
+                fetchpriority="high"
+                class="group-emblem-card__img"
+              />
+              <span class="group-emblem-card__brand"><span class="neuro-part">Neuro</span><span class="hints-part">HINTS</span></span>
+              <span class="group-emblem-card__lab">LAB</span>
+              <span class="group-emblem-card__group">Cognitive Group</span>
+              <span class="group-emblem-card__sub">Single Neurons &bull; Language &bull; AI</span>
+            </a>
+          </div>
+
+          <div class="team-showcase-list">
+            <!-- Team 1 -->
+            <a href="./epilepsy-neuromodulation/" class="glass-panel team-showcase-card fade-in">
+              <div class="team-showcase-card__img" style="position: relative;">
+                <img
+                  src="../photos/EpilepsyTeam_primary.png"
+                  alt="Epilepsy and Neuromodulation Team"
+                  width="640"
+                  height="400"
+                  fetchpriority="high"
+                />
+                <div class="pillar-card__emblems">
+                  <span class="pillar-emblem-chip">
+                    <img src="../photos/group_mark_epilepsy.png" alt="" width="26" height="28" loading="lazy" />
+                    <span>Epilepsy Group</span>
+                  </span>
+                  <span class="pillar-emblem-chip">
+                    <img src="../photos/group_mark_stimulation.png" alt="" width="26" height="28" loading="lazy" />
+                    <span>Stimulation Group</span>
+                  </span>
+                </div>
+              </div>
+              <div>
+                <span class="tag-chip" style="color: var(--primary-color); margin-block-end: 0.65rem; display: inline-block;">
+                  Pillar 01 &bull; Cash Lab &bull; Salami Lab &bull; Zelmann Lab &bull; Paulk Lab
+                </span>
+                <h2 style="color: var(--primary-color); font-size: var(--text-xl);">Epilepsy &amp; Neuromodulation Team</h2>
+                <p class="text-muted">
+                  Investigating the spatial and temporal dynamics of seizure initiation and termination, laminar cortical oscillations (alpha rhythms, slow waves, high-frequency ripples), and direct electrical cortical stimulation (SPES, CCEPs, and 100 Hz theta-burst remodeling) to map and treat drug-resistant epilepsy.
+                </p>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-block-end: 1.25rem;">
+                  <span class="tag-chip">Microelectrode Seizure Dynamics</span>
+                  <span class="tag-chip">CCEP Network Mapping</span>
+                  <span class="tag-chip">Theta-Burst Stimulation</span>
+                </div>
+                <span class="btn btn-primary btn-sm">Explore Team &amp; 12 Publications &rarr;</span>
+              </div>
+            </a>
+
+            <!-- Team 2 -->
+            <a href="./cognition-sleep/" class="glass-panel team-showcase-card team-showcase-card--reverse fade-in">
+              <div>
+                <span class="tag-chip" style="color: var(--secondary-color); margin-block-end: 0.65rem; display: inline-block;">
+                  Pillar 02 &bull; Cash Lab &bull; Zelmann Lab
+                </span>
+                <h2 style="color: var(--secondary-color); font-size: var(--text-xl);">Cognition &amp; Sleep Team</h2>
+                <p class="text-muted">
+                  Uncovering how memories are consolidated across waking cognition, NREM sleep, and dreams. We track travelling cortical sleep spindles, hippocampal sharp-wave ripples, motor cortex replay, and closed-loop spindle-locked intracranial stimulation in humans.
+                </p>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-block-end: 1.25rem;">
+                  <span class="tag-chip">Travelling Sleep Spindles</span>
+                  <span class="tag-chip">Sharp-Wave Ripples</span>
+                  <span class="tag-chip">Neural Replay</span>
+                </div>
+                <span class="btn btn-outline btn-sm">Explore Team &amp; 10 Publications &rarr;</span>
+              </div>
+              <div class="team-showcase-card__img" style="position: relative;">
+                <img
+                  src="../photos/CognitionSleepTeam_primary.png"
+                  alt="Cognition and Sleep Team"
+                  width="640"
+                  height="400"
+                  loading="lazy"
+                />
+                <div class="pillar-card__emblems">
+                  <span class="pillar-emblem-chip">
+                    <img src="../photos/group_mark_sleep.png" alt="" width="26" height="28" loading="lazy" />
+                    <span>Sleep Group</span>
+                  </span>
+                  <span class="pillar-emblem-chip">
+                    <img src="../photos/group_mark_cognitive.png" alt="" width="26" height="28" loading="lazy" />
+                    <span>Cognitive Group</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Team 3 -->
+            <a href="./neurotechnology/" class="glass-panel team-showcase-card fade-in">
+              <div class="team-showcase-card__img" style="position: relative;">
+                <img
+                  src="../photos/NeurotechnologyTeam_primary.png"
+                  alt="Neurotechnology Team"
+                  width="640"
+                  height="400"
+                  loading="lazy"
+                />
+                <div class="pillar-card__emblems">
+                  <span class="pillar-emblem-chip">
+                    <img src="../photos/group_mark_stimulation.png" alt="" width="26" height="28" loading="lazy" />
+                    <span>Stimulation Group</span>
+                  </span>
+                  <span class="pillar-emblem-chip">
+                    <img src="../photos/group_mark_cognitive.png" alt="" width="26" height="28" loading="lazy" />
+                    <span>Cognitive BCI</span>
+                  </span>
+                </div>
+              </div>
+              <div>
+                <span class="tag-chip" style="color: var(--accent-color); margin-block-end: 0.65rem; display: inline-block;">
+                  Pillar 03 &bull; Cash Lab &bull; Paulk Lab &bull; Zelmann Lab &bull; BrainGate
+                </span>
+                <h2 style="color: var(--accent-color); font-size: var(--text-xl);">Neurotechnology Team</h2>
+                <p class="text-muted">
+                  Developing high-density flexible microelectrode arrays (porous Pt nanorods, Neuropixels), microfabricated magnetic stimulation solenoids, and real-time closed-loop brain-computer interfaces (CLoSES &amp; BrainGate) to decode neural states and deliver rapid therapeutic intervention.
+                </p>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-block-end: 1.25rem;">
+                  <span class="tag-chip">Porous Pt Nanorods</span>
+                  <span class="tag-chip">CLoSES Closed-Loop Platform</span>
+                  <span class="tag-chip">Micromagnetic Stimulation</span>
+                </div>
+                <span class="btn btn-outline btn-sm">Explore Team &amp; 8 Publications &rarr;</span>
+              </div>
+            </a>
+
+            <!-- Team 4 -->
+            <a href="./cancer-neuroscience/" class="glass-panel team-showcase-card team-showcase-card--reverse fade-in">
+              <div>
+                <span class="tag-chip" style="color: var(--crimson-color); margin-block-end: 0.65rem; display: inline-block;">
+                  Pillar 04 &bull; Paulk Lab &bull; NIH-Funded Initiative
+                </span>
+                <h2 style="color: var(--crimson-color); font-size: var(--text-xl);">Cancer Neuroscience Team</h2>
+                <p class="text-muted">
+                  Investigating the electrophysiological footprints of glioma and brain tumor infiltration in the human cortex. Using intraoperative high-density Neuropixels and microelectrode arrays, we map how malignant tumors remodel local neural circuits and excitability at surgical margins.
+                </p>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-block-end: 1.25rem;">
+                  <span class="tag-chip">Intraoperative Neuropixels</span>
+                  <span class="tag-chip">Glioma Network Remodeling</span>
+                  <span class="tag-chip">Electroceutical Oncology</span>
+                </div>
+                <span class="btn btn-outline btn-sm">Explore Cancer Neuroscience &rarr;</span>
+              </div>
+              <div class="team-showcase-card__img" style="position: relative;">
+                <img
+                  src="../photos/CancerTeam_primary.jpg"
+                  alt="Cancer Neuroscience Team"
+                  width="640"
+                  height="400"
+                  loading="lazy"
+                />
+                <div class="pillar-card__emblems">
+                  <span class="pillar-emblem-chip">
+                    <img src="../photos/group_mark_tumor.png" alt="" width="26" height="28" loading="lazy" />
+                    <span>Tumor Group</span>
+                  </span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Team 5 -->
+            <a href="./ai-neurology/" class="glass-panel team-showcase-card fade-in">
+              <div class="team-showcase-card__img" style="position: relative;">
+                <img
+                  src="../photos/AITeam_primary.png"
+                  alt="AI in Neurology and Neuroscience Team"
+                  width="640"
+                  height="400"
+                  loading="lazy"
+                />
+                <div class="pillar-card__emblems">
+                  <span class="pillar-emblem-chip">
+                    <img src="../photos/group_mark_cognitive.png" alt="" width="26" height="28" loading="lazy" />
+                    <span>Cognitive Group</span>
+                  </span>
+                  <span class="pillar-emblem-chip">
+                    <img src="../photos/group_mark_sleep.png" alt="" width="26" height="28" loading="lazy" />
+                    <span>Sleep EEG AI</span>
+                  </span>
+                </div>
+              </div>
+              <div>
+                <span class="tag-chip" style="color: var(--amber-color); margin-block-end: 0.65rem; display: inline-block;">
+                  Pillar 05 &bull; Hadar Lab &bull; CDAC
+                </span>
+                <h2 style="color: var(--amber-color); font-size: var(--text-xl);">AI in Neurology &amp; Neuroscience Team</h2>
+                <p class="text-muted">
+                  Leveraging end-to-end deep learning on massive clinical sleep EEG cohorts to extract biomarkers for brain aging, cognitive decline, and mortality, while pioneering rigorous clinical evaluation and prompt-engineering frameworks for Large Language Models (LLMs) in neurology.
+                </p>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-block-end: 1.25rem;">
+                  <span class="tag-chip">Sleep EEG Deep Learning</span>
+                  <span class="tag-chip">Brain Age Biomarkers</span>
+                  <span class="tag-chip">Clinical LLMs</span>
+                </div>
+                <span class="btn btn-outline btn-sm">Explore AI in Neurology &rarr;</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Global Footer -->
@@ -101,19 +387,69 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-brand">
-            <h3 style="font-size: 1.2rem; line-height: 1.2;">NeuroDynamics & <span style="font-weight: 300; color: var(--text-muted);">NeuroModulation Group</span></h3>
-            <p class="text-muted" style="max-width: 300px; font-size: 0.95rem;">
-              Mass General Brigham (Massachusetts General Hospital and Brigham and Women's Hospital) and Harvard Medical School.
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-block-end: 1rem;">
+              <img src="../photos/neurohints_mark.png" alt="" width="42" height="34" loading="lazy" />
+              <div>
+                <h3 style="font-size: 1.2rem; margin: 0;">
+                  <span style="color: var(--accent-color);">Neuro</span><span style="color: var(--secondary-color);">HINTS</span> Lab
+                </h3>
+                <span style="font-size: 0.72rem; font-family: var(--font-mono); color: var(--text-muted); text-transform: uppercase;">
+                  Formerly NDM Group &bull; MGH / HMS
+                </span>
+              </div>
+            </div>
+            <p class="text-muted" style="font-size: 0.9rem; max-inline-size: 36ch;">
+              Human Intracranial Neurophysiology, Neurotechnology, and Stimulation Lab at Massachusetts General Hospital, Mass General Brigham, and Harvard Medical School.
             </p>
           </div>
+
+          <div class="footer-links">
+            <h4 style="font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em;">Research Teams</h4>
+            <ul>
+              <li><a href="./epilepsy-neuromodulation/">Epilepsy &amp; Neuromodulation</a></li>
+              <li><a href="./cognition-sleep/">Cognition &amp; Sleep</a></li>
+              <li><a href="./neurotechnology/">Neurotechnology</a></li>
+              <li><a href="./cancer-neuroscience/">Cancer Neuroscience</a></li>
+              <li><a href="./ai-neurology/">AI in Neurology &amp; Neuroscience</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4 style="font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em;">Navigation</h4>
+            <ul>
+              <li><a href="../">Home</a></li>
+              <li><a href="./">Research &amp; Teams Hub</a></li>
+              <li><a href="../people/">People &amp; PI Labs</a></li>
+              <li><a href="../resources/">Publications &amp; Open Science</a></li>
+              <li><a href="../contact/">Contact &amp; Join Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4 style="font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em;">Headquarters</h4>
+            <p class="text-muted" style="font-size: 0.9rem; margin-block-end: 0.75rem;">
+              Department of Neurology<br />
+              Massachusetts General Hospital<br />
+              55 Fruit Street, Boston, MA 02114
+            </p>
+            <a
+              href="https://giving.massgeneral.org/donate?re_fund=208223&is_designation=1&designation=Cash%20Laboratory"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-primary btn-sm"
+            >
+              Support Our Research
+            </a>
+          </div>
         </div>
+
         <div class="footer-bottom">
-          <p>&copy; 2026 NeuroDynamics and NeuroModulation Group - MGH/Harvard. All rights reserved.</p>
+          <p style="margin: 0;">&copy; 2026 NeuroHINTS Lab (NeuroDynamics &amp; NeuroModulation Group) &mdash; MGH / Harvard Medical School. All rights reserved.</p>
+          <p style="margin: 0; font-family: var(--font-mono); font-size: 0.78rem;">CNTR &bull; CDAC &bull; BrainGate Consortium</p>
         </div>
       </div>
     </footer>
 
-    <script type="module" src="/main.js"></script>
-    <link rel="stylesheet" href="/ndm-website1/style.css">
+    <script type="module" src="../main.js"></script>
   </body>
 </html>

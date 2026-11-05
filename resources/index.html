@@ -3,75 +3,459 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resources & Opportunities - NDM Group</title>
+    <meta name="color-scheme" content="light dark" />
+    <meta name="text-scale" content="scale" />
+    <title>Publications, Open Science &amp; Opportunities | NeuroHINTS Lab — MGH &amp; Harvard</title>
+    <meta
+      name="description"
+      content="Explore peer-reviewed publications, open-source electrophysiological software and datasets (CLoSES, CDAC, CNTR), and fellowship opportunities in the NeuroHINTS Lab at MGH and Harvard Medical School."
+    />
+    <link rel="icon" type="image/png" href="../photos/neurohints_mark.png" />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('neurohints-mgb-theme');
+          document.documentElement.setAttribute('data-theme', saved === 'dark' ? 'dark' : 'light');
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
-    <!-- Global Navigation -->
-    <nav class="navbar">
-      <div class="container">
-        <a href="/ndm-website1/" class="nav-brand" style="font-size: 1.1rem; display: flex; align-items: center; gap: 0.5rem;">
-          <img src="/photos/ndm_darklogo.png" alt="NDM Logo" style="height: 32px; width: auto;">
-          <span><strong>N</strong>euro<strong>D</strong>ynamics & <strong>M</strong>odulation (NDM) Group</span>
-        </a>
-        <button class="mobile-menu-btn" aria-label="Toggle Navigation">☰</button>
-        <ul class="nav-links">
-          <li><a href="/ndm-website1/">Home</a></li>
-          <li><a href="/ndm-website1/research/">Research & Teams</a></li>
-          <li><a href="/ndm-website1/people/">People & Labs</a></li>
-          <li><a href="/ndm-website1/resources/" class="active">Resources & Opportunities</a></li>
-          <li><a href="/ndm-website1/contact/">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+    <a href="#main-content" class="skip-link visually-hidden">Skip to main content</a>
 
-    <!-- Page Content -->
-    <main style="padding-top: calc(var(--nav-height) + 4rem); min-height: 80vh;">
-      <div class="container">
-        <h1 class="text-gradient fade-in">Resources & Opportunities</h1>
-        <p class="text-muted fade-in" style="font-size: 1.2rem; max-width: 800px; margin-bottom: 4rem;">
-          Access our latest publications, shared datasets, open-source code repositories, and explore opportunities to join our teams.
-        </p>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
-          
-          <div class="glass-panel fade-in">
-            <h3 style="color: var(--primary-color);">Publications</h3>
-            <p class="text-muted" style="margin-bottom: 1.5rem;">
-              Browse our peer-reviewed articles covering epilepsy, sleep dynamics, cognition, neuroengineering, and clinical AI.
-            </p>
-            <a href="#" class="btn btn-primary">View Publications</a>
-          </div>
-
-          <div class="glass-panel fade-in" style="transition-delay: 0.1s;">
-            <h3 style="color: var(--secondary-color);">Data and Code</h3>
-            <p class="text-muted" style="margin-bottom: 1.5rem;">
-              We believe in open science. Access our shared electrophysiological datasets, deep learning models, and analysis pipelines.
-            </p>
-            <a href="#" class="btn btn-outline">Explore Github</a>
-          </div>
-
-          <div class="glass-panel fade-in" style="transition-delay: 0.2s;">
-            <h3 style="color: var(--accent-color);">Opportunities</h3>
-            <p class="text-muted" style="margin-bottom: 1.5rem;">
-              Information for prospective graduate students, postdocs, and clinical trainees interested in joining one of our labs. We are always looking for passionate researchers!
-            </p>
-            <a href="/ndm-website1/contact/" class="btn btn-outline">Learn More</a>
-          </div>
-
+    <!-- Official Mass General Brigham (MGB) Institutional Top Ribbon -->
+    <div class="inst-ribbon">
+      <div class="container inst-ribbon__inner">
+        <div class="inst-ribbon__left">
+          <img src="../photos/mgb_logo_white.svg" alt="Mass General Brigham" width="148" height="22" style="block-size: 1.25rem; inline-size: auto;" />
+          <span class="inst-pill">MGH &bull; BWH &bull; HMS</span>
+          <span>Department of Neurology &bull; Massachusetts General Hospital &amp; Harvard Medical School</span>
+        </div>
+        <div class="inst-ribbon__links">
+          <a href="https://www.cntr.mgh.harvard.edu/" target="_blank" rel="noopener">Center for Neurotechnology &amp; Neurorecovery (CNTR)</a>
+          <a href="#publications">Publications</a>
+          <a href="https://giving.massgeneral.org/donate?re_fund=208223&is_designation=1&designation=Cash%20Laboratory" target="_blank" rel="noopener">Support Our Research &rarr;</a>
         </div>
       </div>
+    </div>
+
+    <!-- Primary Sticky Header -->
+    <header class="navbar">
+      <div class="container">
+        <a href="../" class="nav-brand" aria-label="NeuroHINTS Lab Home">
+          <img src="../photos/neurohints_mark.png" alt="" width="44" height="35" class="nav-brand__mark" />
+          <div class="nav-brand__text">
+            <span class="nav-brand__title">
+              <span class="neuro-part">Neuro</span><span class="hints-part">HINTS</span><span class="lab-part">LAB</span>
+            </span>
+            <span class="nav-brand__sub">Human Intracranial Neurophysiology, Neurotechnology &amp; Stimulation</span>
+          </div>
+        </a>
+
+        <nav aria-label="Primary">
+          <ul class="nav-links" id="primary-nav-list">
+            <li><a href="../">Home</a></li>
+            <li><a href="../research/">Research &amp; Teams</a></li>
+            <li><a href="../people/">People &amp; Labs</a></li>
+            <li><a href="./" class="active" aria-current="page">Resources &amp; Publications</a></li>
+            <li><a href="../contact/">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button type="button" id="open-search-btn" class="nav-icon-btn" aria-label="Search site (Command K)">
+            <span aria-hidden="true">&#8981;</span>
+            <span>Search</span>
+            <kbd>&#8984;K</kbd>
+          </button>
+          <button type="button" id="theme-toggle-btn" class="nav-icon-btn" aria-label="Toggle color theme">
+            <span aria-hidden="true">&#9728;</span>
+            <span>Light</span>
+          </button>
+          <button type="button" class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav-list">
+            <span aria-hidden="true">&#9776;</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <section style="padding-block-start: 3.5rem;">
+        <div class="container">
+          <div class="fade-in" style="margin-block-end: 3rem;">
+            <span class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Open Science, Publications &amp; Training</span>
+            <h1>Resources, Publications &amp; Opportunities</h1>
+            <p class="text-muted" style="font-size: var(--text-lg); max-inline-size: 72ch;">
+              Access our peer-reviewed publications across human intracranial neurophysiology, neurotechnology, and closed-loop stimulation, explore our open-source hardware/software platforms and collaborative consortia, or learn about joining one of our laboratories at MGH and Harvard Medical School.
+            </p>
+          </div>
+
+          <!-- 3 Resource Pillar Cards -->
+          <div class="pillar-grid fade-in" style="margin-block-end: 4rem;">
+            <article class="glass-panel" style="display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <span class="tag-chip" style="color: var(--primary-color); margin-block-end: 0.75rem; display: inline-block;">Literature Archive</span>
+                <h2 style="font-size: var(--text-xl); color: var(--primary-color);">Peer-Reviewed Publications</h2>
+                <p class="text-muted">
+                  Browse and filter our peer-reviewed articles covering epilepsy, sleep dynamics, human single-neuron cognition, neuroengineering, and clinical AI.
+                </p>
+              </div>
+              <div>
+                <a href="#publications" class="btn btn-primary btn-sm">Explore Publications Below &darr;</a>
+              </div>
+            </article>
+
+            <article class="glass-panel" style="display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <span class="tag-chip" style="color: var(--secondary-color); margin-block-end: 0.75rem; display: inline-block;">Open Science &amp; Consortia</span>
+                <h2 style="font-size: var(--text-xl); color: var(--secondary-color);">Data, Code &amp; Platforms</h2>
+                <p class="text-muted">
+                  We champion open science through shared electrophysiological datasets, deep learning models, our open-source <strong>CLoSES</strong> closed-loop stimulation platform, and repositories at <strong>CDAC</strong> and <strong>CNTR</strong>.
+                </p>
+              </div>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.6rem;">
+                <a href="https://cdac.mgh.harvard.edu/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">CDAC Data Hub &#8599;</a>
+                <a href="https://www.cntr.mgh.harvard.edu/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">MGH CNTR &#8599;</a>
+              </div>
+            </article>
+
+            <article class="glass-panel" style="display: flex; flex-direction: column; justify-content: space-between;">
+              <div>
+                <span class="tag-chip" style="color: var(--accent-color); margin-block-end: 0.75rem; display: inline-block;">Join the Lab</span>
+                <h2 style="font-size: var(--text-xl); color: var(--accent-color);">Opportunities</h2>
+                <p class="text-muted">
+                  Information for prospective graduate students, postdoctoral fellows, clinical residents/fellows, and research technicians interested in joining one of our labs at MGH and Harvard Medical School.
+                </p>
+              </div>
+              <div>
+                <a href="../contact/" class="btn btn-outline btn-sm">Inquire About Positions &rarr;</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Interactive Publications Explorer -->
+          <div id="publications" class="fade-in">
+            <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem; margin-block-end: 1.5rem;">
+              <div>
+                <span class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>Interactive Bibliography</span>
+                <h2 style="margin-block-end: 0;">Selected Peer-Reviewed Publications</h2>
+              </div>
+              <span id="pub-count-badge" aria-live="polite" class="tag-chip" style="font-size: 0.82rem;">26 Publications</span>
+            </div>
+
+            <div class="filter-bar">
+              <div class="filter-pills" role="group" aria-label="Filter publications by research domain">
+                <button type="button" class="filter-pill" data-pub-filter="all" aria-pressed="true">All Domains</button>
+                <button type="button" class="filter-pill" data-pub-filter="epilepsy" aria-pressed="false">Epilepsy &amp; Neuromodulation</button>
+                <button type="button" class="filter-pill" data-pub-filter="cognition" aria-pressed="false">Cognition &amp; Sleep</button>
+                <button type="button" class="filter-pill" data-pub-filter="neurotech" aria-pressed="false">Neurotechnology &amp; Micro-Recording</button>
+              </div>
+
+              <search class="search-input-wrap">
+                <label for="pub-search-input" class="visually-hidden">Search publications by author, title, journal, or year</label>
+                <input
+                  type="search"
+                  id="pub-search-input"
+                  class="search-input"
+                  placeholder="Search author, title, journal, or year..."
+                  autocomplete="off"
+                />
+              </search>
+            </div>
+
+            <ul class="pub-list" role="list">
+              <li class="pub-item" data-team="cognition">
+                <div class="pub-item__meta">
+                  <span class="pub-year">2025</span>
+                  <span class="pub-journal">Journal of Neuroscience</span>
+                  <span class="tag-chip">Cognition &amp; Sleep</span>
+                </div>
+                <p style="margin-block-end: 0.5rem;">
+                  <strong>Zelmann, R.</strong>, Paulk, A. C., Tian, F., Balanza Villegas, G. A., Peralta, J. D., ... &amp; Cash, S. S. (2025). Focused Auditorium-Scale Cortical Responses in the Human Brain during Movie Viewing.
+                </p>
+                <a href="https://doi.org/10.1523/JNEUROSCI.1517-24.2025" target="_blank" rel="noopener" style="color: var(--primary-color); font-size: 0.85rem; font-weight: 600;">DOI: 10.1523/JNEUROSCI.1517-24.2025 &#8599;</a>
+              </li>
+
+              <li class="pub-item" data-team="epilepsy">
+                <div class="pub-item__meta">
+                  <span class="pub-year">2025</span>
+                  <span class="pub-journal">Annals of Neurology</span>
+                  <span class="tag-chip">Epilepsy &amp; Neuromodulation</span>
+                </div>
+                <p style="margin-block-end: 0.5rem;">
+                  <strong>Salami, P.</strong>, Ganglberger, J., Goparaju, B., ... &amp; Cash, S. S. (2025). Thalamic Seizure Onset Categories Determine Lateralized Propagation and State Dependency in Human Focal Epilepsy.
+                </p>
+                <a href="https://doi.org/10.1002/ana.27150" target="_blank" rel="noopener" style="color: var(--primary-color); font-size: 0.85rem; font-weight: 600;">DOI: 10.1002/ana.27150 &#8599;</a>
+              </li>
+
+              <li class="pub-item" data-team="cognition">
+                <div class="pub-item__meta">
+                  <span class="pub-year">2024</span>
+                  <span class="pub-journal">Nature</span>
+                  <span class="tag-chip">Cognition &amp; Sleep</span>
+                </div>
+                <p style="margin-block-end: 0.5rem;">
+                  <strong>Jamali, M.</strong>, Grannan, B., Haroush, K., Moses, Z. B., ... Paulk, A. C., Cash, S. S., &amp; Williams, Z. M. (2024). Semantic encoding during language comprehension at single-cell resolution in the human brain. <em>Nature</em>, 631(8021), 610–616.
+                </p>
+                <a href="https://doi.org/10.1038/s41586-024-07643-2" target="_blank" rel="noopener" style="color: var(--primary-color); font-size: 0.85rem; font-weight: 600;">DOI: 10.1038/s41586-024-07643-2 &#8599;</a>
+              </li>
+
+              <li class="pub-item" data-team="cognition">
+                <div class="pub-item__meta">
+                  <span class="pub-year">2024</span>
+                  <span class="pub-journal">Nature</span>
+                  <span class="tag-chip">Cognition &amp; Sleep</span>
+                </div>
+                <p style="margin-block-end: 0.5rem;">
+                  <strong>Khanna, A. R.</strong>, Muñoz, W., Kim, Y. J., Kfir, Y., Paulk, A. C., ... Cash, S. S., &amp; Williams, Z. M. (2024). Single-neuronal elements of speech production in humans. <em>Nature</em>, 626(7999), 603–610.
+                </p>
+                <a href="https://doi.org/10.1038/s41586-023-06982-w" target="_blank" rel="noopener" style="color: var(--primary-color); font-size: 0.85rem; font-weight: 600;">DOI: 10.1038/s41586-023-06982-w &#8599;</a>
+              </li>
+
+              <li class="pub-item" data-team="neurotech">
+                <div class="pub-item__meta">
+                  <span class="pub-year">2023</span>
+                  <span class="pub-journal">Nature Protocols</span>
+                  <span class="tag-chip">Neurotechnology</span>
+                </div>
+                <p style="margin-block-end: 0.5rem;">
+                  <strong>Coughlin, B.</strong>, Muñoz, W., Kfir, Y., Young, M. J., ... Cash, S. S., &amp; Paulk, A. C. (2023). Modified Neuropixels probes for recording human neurophysiology in the operating room. <em>Nature Protocols</em>, 18(10), 2927–2953.
+                </p>
+                <a href="https://doi.org/10.1038/s41596-023-00871-2" target="_blank" rel="noopener" style="color: var(--primary-color); font-size: 0.85rem; font-weight: 600;">DOI: 10.1038/s41596-023-00871-2 &#8599;</a>
+              </li>
+
+              <li class="pub-item" data-team="cognition">
+                <div class="pub-item__meta">
+                  <span class="pub-year">2023</span>
+                  <span class="pub-journal">Brain Stimulation</span>
+                  <span class="tag-chip">Cognition &amp; Sleep</span>
+                </div>
+                <p style="margin-block-end: 0.5rem;">
+                  <strong>Zelmann, R.</strong>, Paulk, A. C., Basu, I., Sarma, A., Yousefi, A., Crocker, B., Eskandar, E., Williams, Z., Dougherty, D. D., &amp; Cash, S. S. (2023). Preferential modulation of individual context-dependent neurons by closed-loop microstimulation in humans. <em>Brain Stimulation</em>, 16(6), 1614–1625.
+                </p>
+                <a href="https://doi.org/10.1016/j.brs.2023.10.011" target="_blank" rel="noopener" style="color: var(--primary-color); font-size: 0.85rem; font-weight: 600;">DOI: 10.1016/j.brs.2023.10.011 &#8599;</a>
+              </li>
+
+              <li class="pub-item" data-team="neurotech">
+                <div class="pub-item__meta">
+                  <span class="pub-year">2022</span>
+                  <span class="pub-journal">Nature Neuroscience</span>
+                  <span class="tag-chip">Neurotechnology</span>
+                </div>
+                <p style="margin-block-end: 0.5rem;">
+                  <strong>Paulk, A. C.</strong>, Kfir, Y., Khanna, A. R., Mustroph, M. L., Trautmann, E. M., Soper, D. J., ... &amp; Cash, S. S. (2022). Large-scale neural recordings with single neuron resolution using Neuropixels probes in human cortex. <em>Nature Neuroscience</em>, 25(2), 252–263.
+                </p>
+                <a href="https://doi.org/10.1038/s41593-021-00997-0" target="_blank" rel="noopener" style="color: var(--primary-color); font-size: 0.85rem; font-weight: 600;">DOI: 10.1038/s41593-021-00997-0 &#8599;</a>
+              </li>
+
+              <li class="pub-item" data-team="neurotech">
+                <div class="pub-item__meta">
+                  <span class="pub-year">2022</span>
+                  <span class="pub-journal">Science Translational Medicine</span>
+                  <span class="tag-chip">Neurotechnology</span>
+                </div>
+                <p style="margin-block-end: 0.5rem;">
+                  <strong>Tchoe, Y.</strong>, Bourhis, A. M., Cleary, D. R., Stedelin, B., Lee, J., Tonsfeldt, K. J., ... Paulk, A. C., Cash, S. S., &amp; Dayeh, S. A. (2022). Human brain mapping with multithousand-channel PtNRGrids resolves spatiotemporal dynamics. <em>Science Translational Medicine</em>, 14(628), eabj1441.
+                </p>
+                <a href="https://doi.org/10.1126/scitranslmed.abj1441" target="_blank" rel="noopener" style="color: var(--primary-color); font-size: 0.85rem; font-weight: 600;">DOI: 10.1126/scitranslmed.abj1441 &#8599;</a>
+              </li>
+
+              <li class="pub-item" data-team="epilepsy">
+                <div class="pub-item__meta">
+                  <span class="pub-year">2022</span>
+                  <span class="pub-journal">Brain Stimulation</span>
+                  <span class="tag-chip">Epilepsy &amp; Neuromodulation</span>
+                </div>
+                <p style="margin-block-end: 0.5rem;">
+                  <strong>Paulk, A. C.</strong>, Zelmann, R., Crocker, B., Widge, A. S., Dougherty, D. D., Eskandar, E. N., Weisholtz, D. S., Richardson, R. M., Cosgrove, G. R., Williams, Z. M., &amp; Cash, S. S. (2022). Local and distant cortical responses to single pulse intracranial stimulation in the human brain are differentially modulated by specific stimulation parameters. <em>Brain Stimulation</em>, 15(2), 491–508.
+                </p>
+                <a href="https://doi.org/10.1016/j.brs.2022.02.017" target="_blank" rel="noopener" style="color: var(--primary-color); font-size: 0.85rem; font-weight: 600;">DOI: 10.1016/j.brs.2022.02.017 &#8599;</a>
+              </li>
+
+              <li class="pub-item" data-team="epilepsy">
+                <div class="pub-item__meta">
+                  <span class="pub-year">2022</span>
+                  <span class="pub-journal">Neurobiology of Disease</span>
+                  <span class="tag-chip">Epilepsy &amp; Neuromodulation</span>
+                </div>
+                <p style="margin-block-end: 0.5rem;">
+                  <strong>Salami, P.</strong>, Borzello, M., Kramer, M. A., Westover, M. B., &amp; Cash, S. S. (2022). Quantifying seizure termination patterns reveals limited pathways to end a seizure. <em>Neurobiology of Disease</em>, 165, 105645.
+                </p>
+                <a href="https://doi.org/10.1016/j.nbd.2022.105645" target="_blank" rel="noopener" style="color: var(--primary-color); font-size: 0.85rem; font-weight: 600;">DOI: 10.1016/j.nbd.2022.105645 &#8599;</a>
+              </li>
+
+              <li class="pub-item" data-team="cognition">
+                <div class="pub-item__meta">
+                  <span class="pub-year">2022</span>
+                  <span class="pub-journal">Journal of Neuroscience</span>
+                  <span class="tag-chip">Cognition &amp; Sleep</span>
+                </div>
+                <p style="margin-block-end: 0.5rem;">
+                  <strong>Rubin, D. B.</strong>, Angelini, B., ... Paulk, A. C., Cash, S. S., &amp; Hochberg, L. R. (2022). Learned motor patterns are replayed in human motor cortex during sleep. <em>Journal of Neuroscience</em>, 42(25), 5007–5020.
+                </p>
+                <a href="https://doi.org/10.1523/JNEUROSCI.2074-21.2022" target="_blank" rel="noopener" style="color: var(--primary-color); font-size: 0.85rem; font-weight: 600;">DOI: 10.1523/JNEUROSCI.2074-21.2022 &#8599;</a>
+              </li>
+
+              <li class="pub-item" data-team="cognition">
+                <div class="pub-item__meta">
+                  <span class="pub-year">2021</span>
+                  <span class="pub-journal">Nature Communications</span>
+                  <span class="tag-chip">Cognition &amp; Sleep</span>
+                </div>
+                <p style="margin-block-end: 0.5rem;">
+                  <strong>Dickey, C. W.</strong>, Sargsyan, A., Madsen, J. R., Eskandar, E. N., Cash, S. S., &amp; Halgren, E. (2021). Travelling spindles create necessary conditions for spike-timing-dependent plasticity in humans. <em>Nature Communications</em>, 12(1), 1027.
+                </p>
+                <a href="https://doi.org/10.1038/s41467-021-21298-x" target="_blank" rel="noopener" style="color: var(--primary-color); font-size: 0.85rem; font-weight: 600;">DOI: 10.1038/s41467-021-21298-x &#8599;</a>
+              </li>
+
+              <li class="pub-item" data-team="epilepsy">
+                <div class="pub-item__meta">
+                  <span class="pub-year">2021</span>
+                  <span class="pub-journal">Nature Biomedical Engineering</span>
+                  <span class="tag-chip">Epilepsy &amp; Neuromodulation</span>
+                </div>
+                <p style="margin-block-end: 0.5rem;">
+                  <strong>Basu, I.</strong>, Yousefi, A., Crocker, B., Zelmann, R., Paulk, A. C., Peled, N., ... &amp; Cash, S. S. (2021). Closed-loop enhancement and neural decoding of cognitive control in humans. <em>Nature Biomedical Engineering</em>, 5(11), 1370–1383.
+                </p>
+                <a href="https://doi.org/10.1038/s41551-021-00804-y" target="_blank" rel="noopener" style="color: var(--primary-color); font-size: 0.85rem; font-weight: 600;">DOI: 10.1038/s41551-021-00804-y &#8599;</a>
+              </li>
+
+              <li class="pub-item" data-team="epilepsy neurotech">
+                <div class="pub-item__meta">
+                  <span class="pub-year">2020</span>
+                  <span class="pub-journal">NeuroImage</span>
+                  <span class="tag-chip">Closed-Loop BCI</span>
+                </div>
+                <p style="margin-block-end: 0.5rem;">
+                  <strong>Zelmann, R.</strong>, Paulk, A. C., Peled, N., Sarma, A., Yousefi, A., Crocker, B., Widge, A. S., Eskandar, E. N., Dougherty, D. D., &amp; Cash, S. S. (2020). CLoSES: A platform for closed-loop intracranial stimulation in humans. <em>NeuroImage</em>, 223, 117314.
+                </p>
+                <a href="https://doi.org/10.1016/j.neuroimage.2020.117314" target="_blank" rel="noopener" style="color: var(--primary-color); font-size: 0.85rem; font-weight: 600;">DOI: 10.1016/j.neuroimage.2020.117314 &#8599;</a>
+              </li>
+
+              <li class="pub-item" data-team="epilepsy">
+                <div class="pub-item__meta">
+                  <span class="pub-year">2020</span>
+                  <span class="pub-journal">Clinical Neurophysiology</span>
+                  <span class="tag-chip">Epilepsy &amp; Neuromodulation</span>
+                </div>
+                <p style="margin-block-end: 0.5rem;">
+                  <strong>Salami, P.</strong>, Peled, N., Nadkarni, S. S., Halchenko, Y. O., Stufflebeam, S. M., &amp; Cash, S. S. (2020). Seizure onset location shapes dynamics of initiation. <em>Clinical Neurophysiology</em>, 131(8), 1782–1797.
+                </p>
+                <a href="https://doi.org/10.1016/j.clinph.2020.04.168" target="_blank" rel="noopener" style="color: var(--primary-color); font-size: 0.85rem; font-weight: 600;">DOI: 10.1016/j.clinph.2020.04.168 &#8599;</a>
+              </li>
+
+              <li class="pub-item" data-team="cognition epilepsy">
+                <div class="pub-item__meta">
+                  <span class="pub-year">2019</span>
+                  <span class="pub-journal">PNAS</span>
+                  <span class="tag-chip">Cortical Oscillations</span>
+                </div>
+                <p style="margin-block-end: 0.5rem;">
+                  <strong>Halgren, M.</strong>, Ulbert, I., Bastuji, H., Fabó, D., Erőss, L., Rey, M., Devinsky, O., Doyle, W. K., Maksimenko, V., Halgren, E., &amp; Cash, S. S. (2019). The generation and propagation of the human alpha rhythm. <em>PNAS</em>, 116(47), 23772–23782.
+                </p>
+                <a href="https://doi.org/10.1073/pnas.1913092116" target="_blank" rel="noopener" style="color: var(--primary-color); font-size: 0.85rem; font-weight: 600;">DOI: 10.1073/pnas.1913092116 &#8599;</a>
+              </li>
+
+              <li class="pub-item" data-team="epilepsy">
+                <div class="pub-item__meta">
+                  <span class="pub-year">2011</span>
+                  <span class="pub-journal">Nature Neuroscience</span>
+                  <span class="tag-chip">Epilepsy &amp; Neuromodulation</span>
+                </div>
+                <p style="margin-block-end: 0.5rem;">
+                  <strong>Truccolo, W.</strong>, Donoghue, J. A., Hochberg, L. R., Eskandar, E. N., Madsen, J. R., Anderson, W. S., Brown, E. N., Halgren, E., &amp; Cash, S. S. (2011). Single-neuron dynamics in human focal epilepsy. <em>Nature Neuroscience</em>, 14(5), 635–641.
+                </p>
+                <a href="https://doi.org/10.1038/nn.2782" target="_blank" rel="noopener" style="color: var(--primary-color); font-size: 0.85rem; font-weight: 600;">DOI: 10.1038/nn.2782 &#8599;</a>
+              </li>
+
+              <li class="pub-item" data-team="cognition">
+                <div class="pub-item__meta">
+                  <span class="pub-year">2009</span>
+                  <span class="pub-journal">Science</span>
+                  <span class="tag-chip">Cognition &amp; Sleep</span>
+                </div>
+                <p style="margin-block-end: 0.5rem;">
+                  <strong>Cash, S. S.</strong>, Halgren, E., Dehghani, N., Rossetti, A. O., Thesen, T., Wang, C., Devinsky, O., Kuzniecky, R., Doyle, W., Madsen, J. R., ... &amp; Ulbert, I. (2009). The human K-complex represents an isolated cortical down-state. <em>Science</em>, 324(5930), 1084–1087.
+                </p>
+                <a href="https://doi.org/10.1126/science.1169626" target="_blank" rel="noopener" style="color: var(--primary-color); font-size: 0.85rem; font-weight: 600;">DOI: 10.1126/science.1169626 &#8599;</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Global Footer -->
     <footer class="site-footer">
       <div class="container">
-        <div class="footer-bottom" style="text-align: center;">
-          <p>&copy; 2026 NeuroDynamics and NeuroModulation Group - MGH/Harvard. All rights reserved.</p>
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-block-end: 1rem;">
+              <img src="../photos/neurohints_mark.png" alt="" width="42" height="34" loading="lazy" />
+              <div>
+                <h3 style="font-size: 1.2rem; margin: 0;">
+                  <span style="color: var(--accent-color);">Neuro</span><span style="color: var(--secondary-color);">HINTS</span> Lab
+                </h3>
+                <span style="font-size: 0.72rem; font-family: var(--font-mono); color: var(--text-muted); text-transform: uppercase;">
+                  Formerly NDM Group &bull; MGH / HMS
+                </span>
+              </div>
+            </div>
+            <p class="text-muted" style="font-size: 0.9rem; max-inline-size: 36ch;">
+              Human Intracranial Neurophysiology, Neurotechnology, and Stimulation Lab at Massachusetts General Hospital, Mass General Brigham, and Harvard Medical School.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h4 style="font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em;">Research Teams</h4>
+            <ul>
+              <li><a href="../research/epilepsy-neuromodulation/">Epilepsy &amp; Neuromodulation</a></li>
+              <li><a href="../research/cognition-sleep/">Cognition &amp; Sleep</a></li>
+              <li><a href="../research/neurotechnology/">Neurotechnology</a></li>
+              <li><a href="../research/cancer-neuroscience/">Cancer Neuroscience</a></li>
+              <li><a href="../research/ai-neurology/">AI in Neurology &amp; Neuroscience</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4 style="font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em;">Navigation</h4>
+            <ul>
+              <li><a href="../">Home</a></li>
+              <li><a href="../research/">Research &amp; Teams Hub</a></li>
+              <li><a href="../people/">People &amp; PI Labs</a></li>
+              <li><a href="./">Publications &amp; Open Science</a></li>
+              <li><a href="../contact/">Contact &amp; Join Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4 style="font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.05em;">Headquarters</h4>
+            <p class="text-muted" style="font-size: 0.9rem; margin-block-end: 0.75rem;">
+              Department of Neurology<br />
+              Massachusetts General Hospital<br />
+              55 Fruit Street, Boston, MA 02114
+            </p>
+            <a
+              href="https://giving.massgeneral.org/donate?re_fund=208223&is_designation=1&designation=Cash%20Laboratory"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-primary btn-sm"
+            >
+              Support Our Research
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p style="margin: 0;">&copy; 2026 NeuroHINTS Lab (NeuroDynamics &amp; NeuroModulation Group) &mdash; MGH / Harvard Medical School. All rights reserved.</p>
+          <p style="margin: 0; font-family: var(--font-mono); font-size: 0.78rem;">CNTR &bull; CDAC &bull; BrainGate Consortium</p>
         </div>
       </div>
     </footer>
 
-    <script type="module" src="/main.js"></script>
-    <link rel="stylesheet" href="/ndm-website1/style.css">
+    <script type="module" src="../main.js"></script>
   </body>
 </html>
