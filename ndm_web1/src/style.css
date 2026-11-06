@@ -1281,10 +1281,10 @@
     color: var(--text-secondary);
   }
 
-  /* Research Group Variations Showcase (5 Custom Brain Emblems on Bright MGB Surface) */
+  /* Research Group Variations Showcase (6 Custom Brain Emblems on Bright MGB Surface) */
   .group-variations-grid {
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.25rem;
     margin-block-end: 2.75rem;
   }
