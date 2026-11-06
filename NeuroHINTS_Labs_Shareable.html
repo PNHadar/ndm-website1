@@ -958,9 +958,19 @@
     }
 
     /* Mobile & Phone Text Wrapping and Responsive Refinements */
-    h1, h2, h3, h4, p, span, a, button, div {
+    h1, h2, h3, h4, p, span {
       overflow-wrap: break-word;
-      word-break: break-word;
+    }
+
+    .nav-link,
+    .filter-pill,
+    .btn-primary,
+    .btn-outline,
+    .pi-card__btn,
+    .pub-doi {
+      white-space: nowrap;
+      word-break: normal;
+      overflow-wrap: normal;
     }
 
     .hero-grid > *,
@@ -1405,7 +1415,7 @@
               <span class="team-tab-card__badge">NeuroTechnology &amp; NeuroAI Group</span>
             </div>
             <h3 class="team-tab-card__title">AI in Neurology and Neuroscience of AI</h3>
-            <p class="team-tab-card__pis">Hadar Lab</p>
+            <p class="team-tab-card__pis">Cash &amp; Hadar Labs</p>
           </button>
         </div>
 
@@ -1563,9 +1573,9 @@
         <div class="team-detail-panel" id="team-panel-ai">
           <div class="team-detail-header">
             <div>
-              <span class="eyebrow"><span class="eyebrow__dot"></span>AI in Neurology and Neuroscience of AI (Hadar Lab)</span>
+              <span class="eyebrow"><span class="eyebrow__dot"></span>AI in Neurology and Neuroscience of AI (Cash &amp; Hadar Labs)</span>
               <h3 style="font-family:var(--font-serif);font-size:20px;margin:0 0 4px;">Epilepsy Therapeutics, AI, Mechanistic Interpretability &amp; NeuroEconomics</h3>
-              <p style="margin:0;color:var(--text-secondary);font-size:13px;">Led by Dr. Peter Hadar, MD, MSc, developing deep learning models for neurophysiological biomarker discovery, mechanistic interpretability &amp; representation engineering, investigating the neural basis of decision-making (NeuroEconomics), and evaluating Large Language Models for precision epilepsy therapeutics.</p>
+              <p style="margin:0;color:var(--text-secondary);font-size:13px;">Led by the Cash and Hadar Labs, developing deep learning models for neurophysiological biomarker discovery, mechanistic interpretability &amp; representation engineering, investigating the neural basis of decision-making (NeuroEconomics), and evaluating Large Language Models for precision epilepsy therapeutics.</p>
             </div>
           </div>
           <div class="subtopics-grid">

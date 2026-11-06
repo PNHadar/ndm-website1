@@ -463,20 +463,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: 0.85rem;
   }
 
   .nav-brand {
     display: inline-flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.65rem;
     text-decoration: none;
     flex-shrink: 1;
     min-inline-size: 0;
+    margin-inline-end: 0.25rem;
   }
 
   .nav-brand__mark {
-    inline-size: 2.85rem;
+    inline-size: 2.75rem;
     block-size: auto;
     flex-shrink: 0;
     filter: drop-shadow(0 3px 8px rgba(0, 58, 150, 0.16));
@@ -495,11 +496,11 @@
   }
 
   .nav-brand__title {
-    font-size: 1.28rem;
+    font-size: 1.24rem;
     font-weight: 800;
     letter-spacing: -0.03em;
     color: var(--text-color);
-    overflow-wrap: break-word;
+    white-space: nowrap;
   }
 
   .nav-brand__title .neuro-part {
@@ -519,24 +520,28 @@
   }
 
   .nav-brand__sub {
-    font-size: 0.68rem;
+    font-size: 0.62rem;
     font-weight: 600;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.025em;
     color: var(--text-muted);
     text-transform: uppercase;
     white-space: normal;
+    max-inline-size: 31ch;
+    line-height: 1.22;
     overflow-wrap: break-word;
   }
 
   .nav-links {
     display: flex;
     align-items: center;
-    gap: clamp(0.9rem, 1.6vw, 1.75rem);
+    gap: clamp(0.65rem, 1.2vw, 1.35rem);
     list-style: none;
+    margin-inline-end: auto;
+    margin-inline-start: clamp(0.4rem, 1.2vw, 1.25rem);
   }
 
   .nav-links a {
-    font-size: 0.93rem;
+    font-size: 0.88rem;
     font-weight: 600;
     color: var(--text-secondary);
     padding-block: 0.4rem;
@@ -578,6 +583,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    flex-shrink: 0;
   }
 
   .nav-icon-btn {
@@ -587,13 +593,15 @@
     gap: 0.4rem;
     min-block-size: 2.35rem;
     min-inline-size: 2.35rem;
-    padding-inline: 0.7rem;
+    padding-inline: 0.75rem;
     border-radius: var(--radius-sm);
     border: 1px solid var(--glass-border);
     background: var(--surface-color);
     color: var(--text-secondary);
     font-size: 0.82rem;
     font-weight: 600;
+    white-space: nowrap;
+    flex-shrink: 0;
     transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
   }
 
@@ -2002,9 +2010,25 @@
     max-inline-size: 100%;
   }
 
-  :where(h1, h2, h3, h4, h5, h6, p, li, a, span, figcaption, .eyebrow, .affil-chip, .tag-chip) {
+  :where(h1, h2, h3, h4, h5, h6, p, li, figcaption, .eyebrow, .affil-chip, .tag-chip) {
     overflow-wrap: break-word;
-    word-break: break-word;
+  }
+
+  .nav-icon-btn,
+  .nav-icon-btn span,
+  .nav-links a {
+    white-space: nowrap;
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+
+  @media (max-width: 74em) {
+    .nav-icon-btn kbd {
+      display: none;
+    }
+    .nav-links {
+      gap: clamp(0.55rem, 1vw, 1rem);
+    }
   }
 
   /* Responsive Breakpoints using em units to respect OS/user text scale */
