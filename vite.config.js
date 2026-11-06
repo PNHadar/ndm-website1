@@ -17,6 +17,11 @@ export default defineConfig({
         cancer: resolve(__dirname, 'research/cancer-neuroscience/index.html'),
         ai: resolve(__dirname, 'research/ai-neurology/index.html'),
       },
+      output: {
+        entryFileNames: 'assets/[name].js',
+        chunkFileNames: 'assets/[name].js',
+        assetFileNames: 'assets/[name][extname]',
+      },
     },
   },
 });
