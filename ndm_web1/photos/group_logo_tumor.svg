@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 524" width="480" height="524" role="img" aria-label="NeuroHINTS Labs Official Vector Logo">
+  <defs>
+    <linearGradient id="nh-facet-0" x1="123" y1="18" x2="179.0" y2="28.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#b568e5"/><stop offset="55%" stop-color="#ba6ceb"/><stop offset="100%" stop-color="#bb6ce9"/></linearGradient>
+    <linearGradient id="nh-facet-1" x1="209" y1="8" x2="182.0" y2="45.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#9b2ae3"/><stop offset="55%" stop-color="#9628db"/><stop offset="100%" stop-color="#9a25e4"/></linearGradient>
+    <linearGradient id="nh-facet-2" x1="51" y1="58" x2="106.5" y2="53.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#861ed1"/><stop offset="55%" stop-color="#891bd2"/><stop offset="100%" stop-color="#881ad0"/></linearGradient>
+    <linearGradient id="nh-facet-3" x1="123" y1="18" x2="105.5" y2="96.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#b770ec"/><stop offset="55%" stop-color="#b96aea"/><stop offset="100%" stop-color="#af5ddf"/></linearGradient>
+    <linearGradient id="nh-facet-4" x1="123" y1="18" x2="135.0" y2="77.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#7b2ab4"/><stop offset="55%" stop-color="#8034b8"/><stop offset="100%" stop-color="#8333bc"/></linearGradient>
+    <linearGradient id="nh-facet-5" x1="13" y1="118" x2="70.5" y2="73.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#a151d3"/><stop offset="55%" stop-color="#af61e1"/><stop offset="100%" stop-color="#af65de"/></linearGradient>
+    <linearGradient id="nh-facet-6" x1="13" y1="118" x2="76.0" y2="114.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#861ad0"/><stop offset="55%" stop-color="#841bcf"/><stop offset="100%" stop-color="#861bcd"/></linearGradient>
+    <linearGradient id="nh-facet-7" x1="90" y1="88" x2="91.5" y2="122.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#6319a4"/><stop offset="55%" stop-color="#6614a8"/><stop offset="100%" stop-color="#6216ac"/></linearGradient>
+    <linearGradient id="nh-facet-8" x1="13" y1="118" x2="47.5" y2="159.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#5f14ac"/><stop offset="55%" stop-color="#5d15a4"/><stop offset="100%" stop-color="#5e16a6"/></linearGradient>
+    <linearGradient id="nh-facet-9" x1="62" y1="140" x2="65.0" y2="184.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#410b7e"/><stop offset="55%" stop-color="#3f0c7e"/><stop offset="100%" stop-color="#420d80"/></linearGradient>
+    <linearGradient id="nh-facet-10" x1="62" y1="140" x2="109.0" y2="147.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#861bcb"/><stop offset="55%" stop-color="#8819d0"/><stop offset="100%" stop-color="#8519cf"/></linearGradient>
+    <linearGradient id="nh-facet-11" x1="121" y1="105" x2="154.5" y2="75.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#73dc7a"/><stop offset="55%" stop-color="#6fd77a"/><stop offset="100%" stop-color="#67d173"/></linearGradient>
+    <linearGradient id="nh-facet-12" x1="149" y1="49" x2="170.5" y2="87.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#9dd9f0"/><stop offset="55%" stop-color="#9fd7f3"/><stop offset="100%" stop-color="#7dd3b3"/></linearGradient>
+    <linearGradient id="nh-facet-13" x1="121" y1="105" x2="171.5" y2="119.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#784e91"/><stop offset="55%" stop-color="#8555a8"/><stop offset="100%" stop-color="#8a54a9"/></linearGradient>
+    <linearGradient id="nh-facet-14" x1="160" y1="101" x2="182.0" y2="105.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#832ac9"/><stop offset="55%" stop-color="#882dcb"/><stop offset="100%" stop-color="#8a31cb"/></linearGradient>
+    <linearGradient id="nh-facet-15" x1="149" y1="49" x2="198.0" y2="57.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#81d986"/><stop offset="55%" stop-color="#6fd779"/><stop offset="100%" stop-color="#60cf70"/></linearGradient>
+    <linearGradient id="nh-facet-16" x1="215" y1="41" x2="196.5" y2="76.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#5a9acc"/><stop offset="55%" stop-color="#519ecc"/><stop offset="100%" stop-color="#5c9acb"/></linearGradient>
+    <linearGradient id="nh-facet-17" x1="215" y1="41" x2="234.0" y2="75.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#9bd7f3"/><stop offset="55%" stop-color="#9dd7f4"/><stop offset="100%" stop-color="#9fd6f5"/></linearGradient>
+    <linearGradient id="nh-facet-18" x1="181" y1="73" x2="214.0" y2="92.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#b47bd9"/><stop offset="55%" stop-color="#bc8bdd"/><stop offset="100%" stop-color="#a345d8"/></linearGradient>
+    <linearGradient id="nh-facet-19" x1="212" y1="80" x2="236.0" y2="88.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#67b1d7"/><stop offset="55%" stop-color="#65afdc"/><stop offset="100%" stop-color="#64aed8"/></linearGradient>
+    <linearGradient id="nh-facet-20" x1="181" y1="73" x2="199.5" y2="121.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#ba7cdf"/><stop offset="55%" stop-color="#c28ce0"/><stop offset="100%" stop-color="#a751dc"/></linearGradient>
+    <linearGradient id="nh-facet-21" x1="256" y1="71" x2="234.5" y2="115.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#9fd6f1"/><stop offset="55%" stop-color="#9dd7f3"/><stop offset="100%" stop-color="#9ed6f4"/></linearGradient>
+    <linearGradient id="nh-facet-22" x1="216" y1="105" x2="218.0" y2="131.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#7de086"/><stop offset="55%" stop-color="#7ce084"/><stop offset="100%" stop-color="#7ee07f"/></linearGradient>
+    <linearGradient id="nh-facet-23" x1="121" y1="105" x2="140.0" y2="163.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#6b22a5"/><stop offset="55%" stop-color="#6b24a6"/><stop offset="100%" stop-color="#6b24a6"/></linearGradient>
+    <linearGradient id="nh-facet-24" x1="97" y1="190" x2="177.0" y2="157.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#824da4"/><stop offset="55%" stop-color="#9b5dbf"/><stop offset="100%" stop-color="#a664cc"/></linearGradient>
+    <linearGradient id="nh-facet-25" x1="97" y1="190" x2="139.5" y2="200.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#7315a8"/><stop offset="55%" stop-color="#7a1ab3"/><stop offset="100%" stop-color="#7f18be"/></linearGradient>
+    <linearGradient id="nh-facet-26" x1="108" y1="222" x2="159.0" y2="207.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#5f14a6"/><stop offset="55%" stop-color="#6115a5"/><stop offset="100%" stop-color="#6116a6"/></linearGradient>
+    <linearGradient id="nh-facet-27" x1="147" y1="237" x2="173.0" y2="204.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#420b7c"/><stop offset="55%" stop-color="#410b80"/><stop offset="100%" stop-color="#410b80"/></linearGradient>
+    <linearGradient id="nh-facet-28" x1="183" y1="137" x2="233.5" y2="138.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#62add3"/><stop offset="55%" stop-color="#66aedb"/><stop offset="100%" stop-color="#6baed6"/></linearGradient>
+    <linearGradient id="nh-facet-29" x1="183" y1="137" x2="210.0" y2="164.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#9dd9f7"/><stop offset="55%" stop-color="#99d8f4"/><stop offset="100%" stop-color="#9cd8f4"/></linearGradient>
+    <linearGradient id="nh-facet-30" x1="183" y1="137" x2="188.5" y2="177.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#65add8"/><stop offset="55%" stop-color="#66adda"/><stop offset="100%" stop-color="#6aafd9"/></linearGradient>
+    <linearGradient id="nh-facet-31" x1="171" y1="178" x2="207.0" y2="186.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#4d2294"/><stop offset="55%" stop-color="#5d17a0"/><stop offset="100%" stop-color="#5c16a4"/></linearGradient>
+    <linearGradient id="nh-facet-32" x1="171" y1="178" x2="190.0" y2="195.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#7520b5"/><stop offset="55%" stop-color="#781bba"/><stop offset="100%" stop-color="#6c24ae"/></linearGradient>
+    <linearGradient id="nh-facet-33" x1="171" y1="178" x2="173.5" y2="213.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#6716a5"/><stop offset="55%" stop-color="#6096cb"/><stop offset="100%" stop-color="#617fc3"/></linearGradient>
+    <linearGradient id="nh-facet-34" x1="172" y1="195" x2="200.5" y2="203.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#a3d5f6"/><stop offset="55%" stop-color="#96d6f3"/><stop offset="100%" stop-color="#96d5f4"/></linearGradient>
+    <linearGradient id="nh-facet-35" x1="208" y1="195" x2="204.0" y2="217.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#79a9e5"/><stop offset="55%" stop-color="#6ab5d7"/><stop offset="100%" stop-color="#65b4d8"/></linearGradient>
+    <linearGradient id="nh-facet-36" x1="215" y1="224" x2="184.0" y2="221.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#3e70ae"/><stop offset="55%" stop-color="#2979a8"/><stop offset="100%" stop-color="#2677a2"/></linearGradient>
+    <linearGradient id="nh-facet-37" x1="175" y1="231" x2="182.5" y2="203.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#559fcb"/><stop offset="55%" stop-color="#56a2ce"/><stop offset="100%" stop-color="#56a4d2"/></linearGradient>
+    <linearGradient id="nh-facet-38" x1="209" y1="8" x2="249.0" y2="35.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#7cdf85"/><stop offset="55%" stop-color="#78e181"/><stop offset="100%" stop-color="#7adf83"/></linearGradient>
+    <linearGradient id="nh-facet-39" x1="215" y1="41" x2="269.5" y2="50.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#9f32e2"/><stop offset="55%" stop-color="#9e32ec"/><stop offset="100%" stop-color="#a033e2"/></linearGradient>
+    <linearGradient id="nh-facet-40" x1="283" y1="30" x2="292.5" y2="73.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#78e17e"/><stop offset="55%" stop-color="#7ce085"/><stop offset="100%" stop-color="#75e082"/></linearGradient>
+    <linearGradient id="nh-facet-41" x1="256" y1="71" x2="310.0" y2="90.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#9829e0"/><stop offset="55%" stop-color="#9b2ce3"/><stop offset="100%" stop-color="#9d2ce6"/></linearGradient>
+    <linearGradient id="nh-facet-42" x1="256" y1="71" x2="272.0" y2="115.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#9425d2"/><stop offset="55%" stop-color="#9326d4"/><stop offset="100%" stop-color="#9126d4"/></linearGradient>
+    <linearGradient id="nh-facet-43" x1="291" y1="106" x2="291.0" y2="100.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#be6fea"/><stop offset="55%" stop-color="#bd69ec"/><stop offset="100%" stop-color="#b45ce6"/></linearGradient>
+    <linearGradient id="nh-facet-44" x1="329" y1="75" x2="280.0" y2="131.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#ba71e8"/><stop offset="55%" stop-color="#be6eee"/><stop offset="100%" stop-color="#b86be6"/></linearGradient>
+    <linearGradient id="nh-facet-45" x1="329" y1="75" x2="333.5" y2="141.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#72df77"/><stop offset="55%" stop-color="#78de80"/><stop offset="100%" stop-color="#72db7f"/></linearGradient>
+    <linearGradient id="nh-facet-46" x1="253" y1="125" x2="281.5" y2="168.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#43ba61"/><stop offset="55%" stop-color="#45bb63"/><stop offset="100%" stop-color="#44bb62"/></linearGradient>
+    <linearGradient id="nh-facet-47" x1="214" y1="151" x2="254.5" y2="161.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#9421d7"/><stop offset="55%" stop-color="#9322d9"/><stop offset="100%" stop-color="#9123d7"/></linearGradient>
+    <linearGradient id="nh-facet-48" x1="206" y1="177" x2="235.0" y2="174.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#9122d6"/><stop offset="55%" stop-color="#8f22d8"/><stop offset="100%" stop-color="#9122da"/></linearGradient>
+    <linearGradient id="nh-facet-49" x1="208" y1="195" x2="231.0" y2="187.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#63219d"/><stop offset="55%" stop-color="#6d26a1"/><stop offset="100%" stop-color="#7422ab"/></linearGradient>
+    <linearGradient id="nh-facet-50" x1="208" y1="195" x2="235.5" y2="211.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#6417a1"/><stop offset="55%" stop-color="#5d189d"/><stop offset="100%" stop-color="#5e16a0"/></linearGradient>
+    <linearGradient id="nh-facet-51" x1="307" y1="138" x2="347.5" y2="168.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#45bc5c"/><stop offset="55%" stop-color="#38a45c"/><stop offset="100%" stop-color="#2f9759"/></linearGradient>
+    <linearGradient id="nh-facet-52" x1="256" y1="198" x2="321.0" y2="164.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#159359"/><stop offset="55%" stop-color="#159556"/><stop offset="100%" stop-color="#149656"/></linearGradient>
+    <linearGradient id="nh-facet-53" x1="215" y1="224" x2="295.5" y2="194.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#400e80"/><stop offset="55%" stop-color="#5e16a6"/><stop offset="100%" stop-color="#6014a3"/></linearGradient>
+    <linearGradient id="nh-facet-54" x1="215" y1="224" x2="305.0" y2="201.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#352e68"/><stop offset="55%" stop-color="#46298a"/><stop offset="100%" stop-color="#435878"/></linearGradient>
+    <linearGradient id="nh-facet-55" x1="275" y1="212" x2="322.0" y2="214.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#41b861"/><stop offset="55%" stop-color="#42b864"/><stop offset="100%" stop-color="#41b763"/></linearGradient>
+    <linearGradient id="nh-facet-56" x1="275" y1="212" x2="280.0" y2="246.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#16834a"/><stop offset="55%" stop-color="#17844b"/><stop offset="100%" stop-color="#168348"/></linearGradient>
+    <linearGradient id="nh-facet-57" x1="215" y1="224" x2="263.0" y2="233.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#4a7663"/><stop offset="55%" stop-color="#4b7864"/><stop offset="100%" stop-color="#4b7763"/></linearGradient>
+    <linearGradient id="nh-facet-58" x1="175" y1="231" x2="235.0" y2="257.5" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#420a80"/><stop offset="55%" stop-color="#420d7e"/><stop offset="100%" stop-color="#3c107e"/></linearGradient>
+    <linearGradient id="nh-facet-59" x1="215" y1="224" x2="253.0" y2="273.0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#3db75a"/><stop offset="55%" stop-color="#3eba59"/><stop offset="100%" stop-color="#3db65e"/></linearGradient>
+    <radialGradient id="pedestal-shadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Subtle Floating Shadow -->
+  <ellipse id="brain-shadow" cx="235" cy="296" rx="76" ry="7" fill="url(#pedestal-shadow)" />
+
+  <!-- Editable Low-Poly Brain Mesh (Centered in 480px Canvas) -->
+  <g id="neurohints-brain-container" transform="translate(54, 6)">
+    <g id="neurohints-brain-mesh">
+    <polygon id="facet-0-P15-P0-Q1" points="123,18 209,8 149,49" fill="url(#nh-facet-0)" stroke="#ba6ceb" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-1-P0-Q3-Q1" points="209,8 215,41 149,49" fill="url(#nh-facet-1)" stroke="#9628db" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-2-P14-P15-I1" points="51,58 123,18 90,88" fill="url(#nh-facet-2)" stroke="#891bd2" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-3-P15-I2-I1" points="123,18 121,105 90,88" fill="url(#nh-facet-3)" stroke="#b96aea" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-4-P15-Q1-I2" points="123,18 149,49 121,105" fill="url(#nh-facet-4)" stroke="#8034b8" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-5-P13-P14-I1" points="13,118 51,58 90,88" fill="url(#nh-facet-5)" stroke="#af61e1" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-6-P13-I1-I3" points="13,118 90,88 62,140" fill="url(#nh-facet-6)" stroke="#841bcf" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-7-I1-I2-I3" points="90,88 121,105 62,140" fill="url(#nh-facet-7)" stroke="#6614a8" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-8-P13-I3-P12" points="13,118 62,140 33,178" fill="url(#nh-facet-8)" stroke="#5d15a4" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-9-I3-P11-P12" points="62,140 97,190 33,178" fill="url(#nh-facet-9)" stroke="#3f0c7e" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-10-I3-I2-P11" points="62,140 121,105 97,190" fill="url(#nh-facet-10)" stroke="#8819d0" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-11-I2-Q1-Q2" points="121,105 149,49 160,101" fill="url(#nh-facet-11)" stroke="#6fd77a" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-12-Q1-Q4-Q2" points="149,49 181,73 160,101" fill="url(#nh-facet-12)" stroke="#9fd7f3" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-13-I2-Q2-I4" points="121,105 160,101 183,137" fill="url(#nh-facet-13)" stroke="#8555a8" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-14-Q2-Q4-I4" points="160,101 181,73 183,137" fill="url(#nh-facet-14)" stroke="#882dcb" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-15-Q1-Q3-Q4" points="149,49 215,41 181,73" fill="url(#nh-facet-15)" stroke="#6fd779" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-16-Q3-Q5-Q4" points="215,41 212,80 181,73" fill="url(#nh-facet-16)" stroke="#519ecc" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-17-Q3-Q6-Q5" points="215,41 256,71 212,80" fill="url(#nh-facet-17)" stroke="#9dd7f4" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-18-Q4-Q5-Q7" points="181,73 212,80 216,105" fill="url(#nh-facet-18)" stroke="#bc8bdd" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-19-Q5-Q6-Q7" points="212,80 256,71 216,105" fill="url(#nh-facet-19)" stroke="#65afdc" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-20-Q4-Q7-I4" points="181,73 216,105 183,137" fill="url(#nh-facet-20)" stroke="#c28ce0" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-21-Q6-Q8-Q7" points="256,71 253,125 216,105" fill="url(#nh-facet-21)" stroke="#9dd7f3" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-22-Q7-Q8-I4" points="216,105 253,125 183,137" fill="url(#nh-facet-22)" stroke="#7ce084" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-23-I2-I4-P11" points="121,105 183,137 97,190" fill="url(#nh-facet-23)" stroke="#6b24a6" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-24-P11-I4-I5" points="97,190 183,137 171,178" fill="url(#nh-facet-24)" stroke="#9b5dbf" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-25-P11-I5-P10" points="97,190 171,178 108,222" fill="url(#nh-facet-25)" stroke="#7a1ab3" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-26-P10-I5-P9" points="108,222 171,178 147,237" fill="url(#nh-facet-26)" stroke="#6115a5" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-27-P9-I5-P8" points="147,237 171,178 175,231" fill="url(#nh-facet-27)" stroke="#410b80" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-28-I4-Q8-Q10" points="183,137 253,125 214,151" fill="url(#nh-facet-28)" stroke="#66aedb" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-29-I4-Q10-Q9" points="183,137 214,151 206,177" fill="url(#nh-facet-29)" stroke="#99d8f4" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-30-I4-Q9-I5" points="183,137 206,177 171,178" fill="url(#nh-facet-30)" stroke="#66adda" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-31-I5-Q9-B2" points="171,178 206,177 208,195" fill="url(#nh-facet-31)" stroke="#5d17a0" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-32-I5-B2-B1" points="171,178 208,195 172,195" fill="url(#nh-facet-32)" stroke="#781bba" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-33-I5-B1-P8" points="171,178 172,195 175,231" fill="url(#nh-facet-33)" stroke="#6096cb" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-34-B1-B2-BC" points="172,195 208,195 193,211" fill="url(#nh-facet-34)" stroke="#96d6f3" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-35-B2-B3-BC" points="208,195 215,224 193,211" fill="url(#nh-facet-35)" stroke="#6ab5d7" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-36-B3-P8-BC" points="215,224 175,231 193,211" fill="url(#nh-facet-36)" stroke="#2979a8" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-37-P8-B1-BC" points="175,231 172,195 193,211" fill="url(#nh-facet-37)" stroke="#56a2ce" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-38-P0-P1-Q3" points="209,8 283,30 215,41" fill="url(#nh-facet-38)" stroke="#78e181" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-39-Q3-P1-Q6" points="215,41 283,30 256,71" fill="url(#nh-facet-39)" stroke="#9e32ec" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-40-P1-P2-Q6" points="283,30 329,75 256,71" fill="url(#nh-facet-40)" stroke="#7ce085" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-41-Q6-P2-R1" points="256,71 329,75 291,106" fill="url(#nh-facet-41)" stroke="#9b2ce3" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-42-Q6-R1-Q8" points="256,71 291,106 253,125" fill="url(#nh-facet-42)" stroke="#9326d4" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-43-R1-P2-Q8" points="291,106 329,75 253,125" fill="url(#nh-facet-43)" stroke="#bd69ec" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-44-P2-R2-Q8" points="329,75 307,138 253,125" fill="url(#nh-facet-44)" stroke="#be6eee" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-45-P2-P3-R2" points="329,75 360,145 307,138" fill="url(#nh-facet-45)" stroke="#78de80" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-46-Q8-R2-R3" points="253,125 307,138 256,198" fill="url(#nh-facet-46)" stroke="#45bb63" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-47-Q10-Q8-R3" points="214,151 253,125 256,198" fill="url(#nh-facet-47)" stroke="#9322d9" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-48-Q9-Q10-R3" points="206,177 214,151 256,198" fill="url(#nh-facet-48)" stroke="#8f22d8" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-49-B2-Q9-R3" points="208,195 206,177 256,198" fill="url(#nh-facet-49)" stroke="#6d26a1" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-50-B2-R3-B3" points="208,195 256,198 215,224" fill="url(#nh-facet-50)" stroke="#5d189d" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-51-R2-P3-P4" points="307,138 360,145 335,191" fill="url(#nh-facet-51)" stroke="#38a45c" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-52-R3-R2-P4" points="256,198 307,138 335,191" fill="url(#nh-facet-52)" stroke="#159556" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-53-B3-R3-P4" points="215,224 256,198 335,191" fill="url(#nh-facet-53)" stroke="#5e16a6" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-54-B3-P4-R4" points="215,224 335,191 275,212" fill="url(#nh-facet-54)" stroke="#46298a" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-55-R4-P4-P5" points="275,212 335,191 309,237" fill="url(#nh-facet-55)" stroke="#42b864" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-56-R4-P5-P6" points="275,212 309,237 251,255" fill="url(#nh-facet-56)" stroke="#17844b" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-57-B3-R4-P6" points="215,224 275,212 251,255" fill="url(#nh-facet-57)" stroke="#4b7864" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-58-P8-B3-P7" points="175,231 215,224 255,291" fill="url(#nh-facet-58)" stroke="#420d7e" stroke-width="0.65" stroke-linejoin="round" />
+    <polygon id="facet-59-B3-P6-P7" points="215,224 251,255 255,291" fill="url(#nh-facet-59)" stroke="#3eba59" stroke-width="0.65" stroke-linejoin="round" />
+    </g>
+
+  <!-- Editable Tumor Group Overlay: Glioma Hyperexcitability Focus & Stereotactic Crosshair -->
+  <g id="group-overlay-tumor">
+    <defs>
+      <radialGradient id="tumor-focus-grad" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#2b0960" stop-opacity="0.95"/>
+        <stop offset="32%" stop-color="#c9184a" stop-opacity="0.82"/>
+        <stop offset="65%" stop-color="#ff758f" stop-opacity="0.48"/>
+        <stop offset="100%" stop-color="#ffb3c1" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <circle id="tumor-glow-halo" cx="250" cy="108" r="64" fill="url(#tumor-focus-grad)" />
+    <circle id="tumor-ring-outer" cx="250" cy="108" r="50" fill="none" stroke="#6b2d5c" stroke-width="1.6" stroke-opacity="0.65" />
+    <circle id="tumor-ring-inner" cx="250" cy="108" r="36" fill="none" stroke="#ffccd5" stroke-width="1.2" stroke-opacity="0.55" />
+    <g id="tumor-crosshair" stroke="#1e0a3c" stroke-width="2.6" stroke-linecap="round">
+      <line x1="250" y1="36" x2="250" y2="63" />
+      <line x1="250" y1="153" x2="250" y2="180" />
+      <line x1="178" y1="108" x2="205" y2="108" />
+      <line x1="295" y1="108" x2="322" y2="108" />
+    </g>
+  </g>
+
+  </g>
+
+  <!-- Editable Vector Typography: NeuroHINTS LABS (Plural) -->
+  <g id="neurohints-typography" text-anchor="middle" font-family="Montserrat, 'Avenir Next', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif">
+    <text id="title-neurohints" x="240" y="352" font-size="56" font-weight="800" letter-spacing="-0.02em">
+      <tspan fill="#3D1273" font-weight="700">Neuro</tspan><tspan fill="#16934A" font-weight="800">HINTS</tspan>
+    </text>
+    <text id="title-labs" x="240" y="400" font-size="42" font-weight="500" fill="#484B52" letter-spacing="0.06em">LABS</text>
+    <text id="subtitle-line-1" x="240" y="430" font-size="14.5" font-weight="600" fill="#111827" letter-spacing="0.03em">HUMAN INTRACRANIAL NEUROPHYSIOLOGY,</text>
+    <text id="subtitle-line-2" x="240" y="451" font-size="14.5" font-weight="600" fill="#111827" letter-spacing="0.03em">NEUROTECHNOLOGY, AND STIMULATION</text>
+  </g>
+  <!-- Editable Research Group Title & Subtitle -->
+  <g id="neurohints-group-label" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif">
+    <text x="240" y="472" font-size="24" font-weight="700" fill="#C9184A">Tumor Group</text>
+    <text x="240" y="496" font-size="12.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" fill="#111827" letter-spacing="0.04em">CANCER NEUROSCIENCE • GLIOMA CIRCUITS • TUMOR-RELATED EPILEPSY</text>
+  </g>
+</svg>
